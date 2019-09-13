@@ -470,8 +470,9 @@ h1, h2, h3, h4, h5,
         text-decoration: none !important; }
         .site-navbar .site-navigation .site-menu > li > a:hover {
           color: #fb7400; }
+          /*mainColor*/
       .site-navbar .site-navigation .site-menu > li.active > a {
-        color: #fb7400 !important; }
+        color: #000 !important; }
     .site-navbar .site-navigation .site-menu .has-children {
       position: relative; }
       .site-navbar .site-navigation .site-menu .has-children > a {
@@ -1545,7 +1546,7 @@ h1, h2, h3, h4, h5,
   -o-transition: .3s all ease;
   transition: .3s all ease; }
   .service-2 .svg {
-    width:445px;
+    width:100%;
     margin-bottom: 30px; }
     .service-2 .svg img {
       max-width: 100%; }
