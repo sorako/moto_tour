@@ -270,9 +270,9 @@ h1, h2, h3, h4, h5,
     padding: 4em 0; }
 
 .site-footer {
-  padding: 4em 0;
+  padding: 0em 0;
   background: #000; }
-  @media (min-width: 768px) {
+  @media (min-width: 100%) {
     .site-footer {
       padding: 8em 0; } }
   .site-footer .border-top {
