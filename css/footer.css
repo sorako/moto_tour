@@ -1,16 +1,25 @@
 li.footer-li{
-	 list-style-type: none;
-	font-size: 14px; font-family:timenewRoman; color: #D2D5DA; margin-top: -5px;
+	list-style-type: none;
+	font-size: 14px;
+	font-family:timenewRoman; 
+	color: #D2D5DA; 
+	margin-top: -5px;
 }
 div.footer-div{
-	margin-left: 50px; font-size: 20px; color: #D2D5DA;
+	margin-left: 50px; 
+	font-size: 20px; 
+	color: #D2D5DA;
 }
 li.info-li{
 	 list-style-type: none;
-	font-size: 12px; color: #231F20 ; margin-top: -5px;
+	font-size: 13px; 
+	color: #231F20 ; 
+	margin-top: -5px;
 }
 div.info-div{
-	margin-left: 50px; font-size: 20px; color: #231F20;
+	margin-left: 50px; 
+	font-size: 20px; 
+	color: #231F20;
 }
 /*fb tw*/
 div.logo-high{
@@ -23,3 +32,9 @@ img.height{
     text-decoration: none;
     font-family:sans-serif;
 } 
+/* a.footer-link:hover {
+    text-decoration: none;
+    font-family:sans-serif;
+    color: #D2232A
+}*/
+
