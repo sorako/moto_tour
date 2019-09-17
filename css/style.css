@@ -1617,16 +1617,16 @@ h1, h2, h3, h4, h5,
         bottom: 0;
         left: 0;
         width: 100%;
-        background-color: #efefef;
+        background-color: lightgray;
         height: 4px; }
   .service-2:hover {
-    background-color: #CA9C4E;
+    background-color: gray;
     -webkit-box-shadow: 0 5px 50px 0 rgba(46, 49, 146, 0.1);
     box-shadow: 0 5px 50px 0 rgba(46, 49, 146, 0.1); }
     .service-2:hover h3 {
       color: #fff; }
       .service-2:hover h3 span:after {
-        background-color: #fb7400; }
+        background-color: black; }
     .service-2:hover p {
       color: rgba(255, 255, 255, 0.7); }
 
