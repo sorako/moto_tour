@@ -1258,10 +1258,10 @@ h1, h2, h3, h4, h5,
   background-repeat: no-repeat; }
   .ftco-cover-2, .ftco-cover-2 .container > .row {
     height: 40vh;
-    min-height: 100px; }
+    min-height: 250px; }
   .ftco-cover-2.innerpage, .ftco-cover-2.innerpage .container > .row {
     height: 90vh;
-    min-height: 400px; }
+    min-height: 700px; }
   .ftco-cover-2 > .container {
     position: relative; }
   .ftco-cover-2.overlay {
