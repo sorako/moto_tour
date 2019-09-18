@@ -1621,16 +1621,16 @@ pre {
     -webkit-box-shadow: 0 0 0 0.2rem rgba(255, 139, 0, 0.25);
     box-shadow: 0 0 0 0.2rem rgba(255, 139, 0, 0.25); }
   .form-control::-webkit-input-placeholder {
-    color: #BABDBE ;
+    color: #6c757d;
     opacity: 1; }
   .form-control:-ms-input-placeholder {
-    color: #BABDBE ;
+    color: #6c757d;
     opacity: 1; }
   .form-control::-ms-input-placeholder {
-    color: #BABDBE ;
+    color: #6c757d;
     opacity: 1; }
   .form-control::placeholder {
-    color:#BABDBE ;
+    color: #6c757d;
     opacity: 1; }
   .form-control:disabled, .form-control[readonly] {
     background-color: #e9ecef;
@@ -2070,30 +2070,22 @@ fieldset:disabled a.btn {
   pointer-events: none; }
 
 .btn-primary {
-  color: #212529;
-  background-color: #ff8b00;
-  border-color: #ff8b00; }
+  color: gray;
+  background-color: #3D3E3F;
+  border-width: 3px;
+  border-color: gray; }
   .btn-primary:hover {
-    color: #fff;
-    background-color: #d97600;
-    border-color: #cc6f00; }
+    color: black;
+    background-color: lightgray;
+    border-color: gray; }
   .btn-primary:focus, .btn-primary.focus {
-    -webkit-box-shadow: 0 0 0 0.2rem rgba(222, 124, 6, 0.5);
-    box-shadow: 0 0 0 0.2rem rgba(222, 124, 6, 0.5); }
+    -webkit-box-shadow: 0 0 0 0.1rem rgba(128,128,128,1);
+    box-shadow: 0 0 0 0.1rem rgba(128,128,128,1); }
   .btn-primary.disabled, .btn-primary:disabled {
-    color: #212529;
-    background-color: #ff8b00;
+    color: black;
+    background-color:  #FFF;
     border-color: #ff8b00; }
-  .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active,
-  .show > .btn-primary.dropdown-toggle {
-    color: #fff;
-    background-color: #cc6f00;
-    border-color: #bf6800; }
-    .btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus,
-    .show > .btn-primary.dropdown-toggle:focus {
-      -webkit-box-shadow: 0 0 0 0.2rem rgba(222, 124, 6, 0.5);
-      box-shadow: 0 0 0 0.2rem rgba(222, 124, 6, 0.5); }
-
+  
 .btn-secondary {
   color: #fff;
   background-color: #6c757d;
@@ -3364,7 +3356,7 @@ input[type="button"].btn-block {
 
 .nav-link {
   display: block;
-  padding: 0.5rem 1rem; }
+  padding: 0.5rem 2rem; }
   .nav-link:hover, .nav-link:focus {
     text-decoration: none; }
   .nav-link.disabled {

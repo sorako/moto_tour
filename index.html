@@ -9,29 +9,37 @@
     <link href="https://fonts.googleapis.com/css?family=Squada+One&display=swap" rel="stylesheet">
     <link href="css/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/main.css">
   </head>
-  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300" style="background-color:#FEFEFE;">
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 <!-- header -->
-      <header class="site-navbar " role="banner">
+      <header class="site-navbar" role="banner">
         <div class="container">
           <div class="row align-items-center position-relative">
             <div class="col-3 ">
+              <div></div>
               <div class="site-logo">
-                <a href="index.html"><strong>Tour</strong>Sorako <span class="text-primary">.</span> </a>
+                <a  href="index.html"><strong>Tour</strong>Sorako <span class="text-primary">.</span> </a>
               </div>
             </div>
-            <div class="col-9  text-right">
-              <nav class="site-navigation text-right " role="navigation">
+            <div class="col-9 text-right">
+              <nav class="nav site-navigation text-right ">
                 <ul class="site-menu main-menu js-clone-nav ml-auto ">
-                  <li class="active"><a href="index.html" class="nav-link"style="font-family: 'Squada One', cursive;">HOME</a></li>
-                  <li><a href="#" class="nav-link" style="font-family: 'Squada One', cursive;"><b>ABOUT US</b></a></li>
-                  <li><a href="#" class="nav-link"style="font-family: 'Squada One', cursive;">SERVICES</a></li>
-                  <li><a href="#" class="nav-link"style="font-family: 'Squada One', cursive;">PROJECTS</a></li>
-                  <li><a href="#" class="nav-link"style="font-family: 'Squada One', cursive;">BLOG</a></li>
-                  <li><a href="#" class="nav-link"style="font-family: 'Squada One', cursive;">CONNECT</a></li>
+                  <li class="dev"><a href="index.html" class="nav-link">HOME</a></li>
+                  <li class="dev"><a href="projects.html" class="nav-link edit" style="margin-left: -10px;">ABOUT US</a></li>
+                  <li class="dev"><a href="index.html" class="nav-link">TOURS</a>
+                    <ul class="down">
+                      <li class="drow"><a href="gobi.html">OFFROADBIKE TOUR</a></li>
+                      <li class="drow" style="margin-left: 5px;"><a href="#">MOUNTAIN BIKE TOUR</a></li>
+                      <li class="drow"><a href="#">HORSE RIDING TOUR</a></li>
+                      <li class="drow" style="margin-left: -16px;"><a href="#">FISHING TOUR</a></li>
+                    </ul>
+                  </li>
+                  <li class="dev"><a href="projects.html" class="nav-link">Q&A</a></li>
+                  <li class="dev"><a href="blog.html" class="nav-link">BOOKING</a></li>
+                  <li class="dev"><a href="contact.html" class="nav-link">INFO</a></li>
                 </ul>
-              </nav>
+              </nav> 
             </div>
           </div>  
         </div>
@@ -85,28 +93,6 @@
               </div>
 
               <h3><span>tour2</span></h3>
-              <p>Consectetur adipisicing elit. Numquam repellendus aut labore</p>
-
-            </div>
-          </div>
-          <div class="col-md-14 mb-5 mb-lg-5 col-lg-3">
-            <div class="service-2 h-100">
-              <div class="svg">
-                <img src="images/tour3.jpg" alt="Image" class="">
-              </div>
-
-              <h3><span>tour3</span></h3>
-              <p>Consectetur adipisicing elit. Numquam repellendus aut labore</p>
-
-            </div>
-          </div>
-          <div class="col-md-14 mb-5 mb-lg-5 col-lg-3">
-            <div class="service-2 h-100">
-              <div class="svg">
-                <img src="images/tour3.jpg" alt="Image" class="">
-              </div>
-
-              <h3><span>tour3</span></h3>
               <p>Consectetur adipisicing elit. Numquam repellendus aut labore</p>
 
             </div>
@@ -303,14 +289,14 @@
           <div class="row">
             <!-- COMPANY ADRESS -->   
             <div class="col-sm-4">
-              <div class="footer-div" style="margin-left: 20px;">株式会社　カイラス</div>
-                <ul style="margin-left: 5px;">
-                  <li class="footer-li"> 〒123−0022 東京都多摩市一丁目2-89 国立ビル１階</li>
-                  <li class="footer-li" style="margin-top: -15px;">TEL: 030-0000-1234</li>
-                  <li class="footer-li" style="margin-top: -15px;">FAX: 030-1234-5678</li>
-                  <li class="footer-li" style="margin-top: -15px;">営業時間：09:00〜18:00 </li>
-                  <li class="footer-li" style="margin-top: -15px;">(土曜日・日曜日・祝日および年末年始は休業となります）</li>
-                  <li class="footer-li" style="margin-top: -15px;">※　緊急の場合は090−1234−5678までお問合せ下さい。</li>
+                <div class="footer-div" style="margin-left: 20px;">株式会社カイラス</div>
+                <ul style="">
+                  <li class="footer-li" style="margin-top: 7px;"> 〒123−0022 東京都多摩市一丁目2-89 国立ビル１階</li>
+                  <li class="footer-li" style="margin-top: -10px;">TEL: 030-0000-1234</li>
+                  <li class="footer-li" style="margin-top: -10px;">FAX: 030-1234-5678</li>
+                  <li class="footer-li" style="margin-top: -10px;">営業時間：09:00〜18:00 </li>
+                  <li class="footer-li" style="margin-top: -10px;">(土曜日・日曜日・祝日および年末年始は休業となります）</li>
+                  <li class="footer-li" style="margin-top: -10px;">※　緊急の場合は090−1234−5678までお問合せ下さい。</li>
                 </ul>    
             </div> 
             <!-- COMPANY ADRESS END -->   
@@ -318,10 +304,10 @@
             <div class="col-sm-4">
               <div class="footer-div" style="margin-left: 140px;">ご利用ガイド:</div>                   
               <ul  style="margin-left: 150px;">
-                <li class="footer-li"><a class="footer-link" href="https://docs.google.com/spreadsheets/d/16Yd47TfA5AYKCCYvIHl_HvvlLZkgqOd_KZJXUpaepDE/edit#gid=0">旅の持参品リスト</a> </li>
-                <li class="footer-li"><a class="footer-link" href="https://docs.google.com/document/d/1uKTXefmAa6Q7SPSNnFKh2p6E5KUDWAqjatgfcFKxcJ0/edit">旅のモンゴル語</a> </li>
-                <li class="footer-li"><a class="footer-link" href="https://docs.google.com/document/d/1EZSbvQN40mzuG0VhIxwTbENqDE3njRkE0aqFCHdPfew/edit">プライバシー</a> </li>
-                <li class="footer-li"><a class="footer-link" href="https://docs.google.com/spreadsheets/d/1BcGEN6UtJtGmUfyQzcFTQ-KcXzfRcoqPmuCP8fXpHAE/edit#gid=379165017&range=A19">旅行業約款</a> </li>
+                <li class="footer-li"style="margin-top: 7px;"><a class="footer-link" href="#">旅の持参品リスト</a> </li>
+                <li class="footer-li"><a class="footer-link" href="#">旅のモンゴル語</a> </li>
+                <li class="footer-li"><a class="footer-link" href="#">プライバシー</a> </li>
+                <li class="footer-li"><a class="footer-link" href="#">旅行業約款</a> </li>
               </ul>  
             </div>
             <!-- PDF END -->   
@@ -329,8 +315,8 @@
             <div class="col-sm-4">
               <div class="row rm-8">
                 <form class="form-inline">
-                  <input type="text" class="form-control" placeholder="Enter your email address" style="width: 400px; margin-left:130px;">
-                  <button type="submit" class="btn btn-primary" style="margin-left: 10px;">送信</button>
+                  <input type="text" class="form-control" placeholder="メールアドレスを入力してください" style="width: 400px; margin-left:130px;">
+                  <button type="submit" class="btn btn-primary" style=" border-color: lightgray; margin-left: 10px;">送信</button>
                 </form>
               </div>  <!-- send mail end -->
               <div class="row rm-6 text-right">
@@ -344,19 +330,16 @@
           </div>
           <!-- send mail END -->
         <!-- logo Partners: -->
-        <div class="row " style="margin-top: 130px;">
-            <!-- <img src="images/logo/BOYlogo.png" style="width: 7%;height:5%;"> -->
-            <!-- <img src="images/logo/nzasag.png" style="width: 7%;height:20%;"> -->
-            <!-- <img src="images/logo/logo.png" style="height: 80px; margin-left: 20%"> -->
-            <img src="images/logo/jta.png" class="height" style="margin-left: 30%">
+        <div class="row mb-5 mb-lg-5 " style="margin-top:30px;">
+            <img src="images/logo/jta.png" class="height" style="margin-left: 35%">
             <img src="images/logo/MIAT.png" class="height" style="margin-left: 40px;" >
-            <img src="images/logo/MNAIlogo.png" class="height" style="margin-left: 50px;  margin-top: 10px;">
+            <img src="images/logo/MNAIlogo.png" class="height" style="height: 70px; margin-left: 50px;">
             <img src="images/logo/logoTumen.png" class="height" style=" margin-left:30px;">  
         </div>
         <!-- logo Partners End: -->
           <div class="row pt-5 mt-5 text-center">
             <div class="col-md-12">
-              <p style="color: #D2D5DA; margin-top: 40px;">
+              <p style="color: #D2D5DA;">
               ©2020　モンゴルオフロードバイクツアー専門店　株式会社 カイラス <i class="icon-smile text-danger" aria-hidden="true"></i>  <a href="https://sorako.jp" target="_blank" ></a>
               </p>
             </div>
@@ -365,7 +348,6 @@
     </footer>
 <!-- Footer End -->
 <!-- SCRIPT  -->
-<script type="text/javascript"></script>
 <!-- SCRIPT END -->
   </body>
 

@@ -206,7 +206,7 @@ html {
 
 body {
   line-height: 1.7;
-  color: #364d59 !important;
+  color: #FEFEFE; !important;
   font-weight: 300;
   font-size: 1rem; }
 
@@ -226,7 +226,7 @@ a {
   a:hover {
     text-decoration: none; }
 
-h1, h2, h3, h4, h5,
+h1, h2, h3, h4, h5,h6,
 .h1, .h2, .h3, .h4, .h5 {
   font-weight: 300;
   color: #364d59; }
@@ -1273,11 +1273,12 @@ h1, h2, h3, h4, h5,
       left: 0;
       right: 0;
       bottom: 0;
-      opacity: .4;
+      opacity: .2;
       background: #CA9C4E; }
     .ftco-cover-2.overlay h1 {
-      color: #fff;
-      font-size: 3rem;
+      color: #05759A  ;
+      font-family: 'Noto Serif JP', serif;
+      font-size: 2.8rem;
       font-weight: 900; }
       .ftco-cover-2.overlay h1.line-bottom {
         position: relative;
@@ -1696,8 +1697,10 @@ h1, h2, h3, h4, h5,
 form .form-control,
 form .btn {
   height: 45px;
-  border-radius: 4px; }
-
+  border-radius: 10px; }
+form .btn{
+  border-radius: 30px;
+}
 form .form-control {
   
   padding-left: 20px;
