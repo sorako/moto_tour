@@ -1695,15 +1695,19 @@ h1, h2, h3, h4, h5,
 
 form .form-control,
 form .btn {
-  height: 55px;
+  height: 45px;
   border-radius: 4px; }
 
 form .form-control {
+  
   padding-left: 20px;
   padding-right: 20px;
   border-color: transparent;
   margin-right: 10px;
-  background: #efefef; }
+  margin-left: 320px;
+  background: #3D3E3F ;
+}
+
   form .form-control:active, form .form-control:focus {
     border-color: transparent;
     background: #efefef;
