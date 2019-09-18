@@ -1,0 +1,97 @@
+
+/* HEADER START*/
+*{
+  margin: 0;
+  padding: 0;
+}
+ul li.dev {
+  list-style: none;
+  width: 90px;
+  height: 25px;
+  position: relative;
+  text-align: center;
+  float: left;
+  background-color: transparent;
+}
+ul li ul.down{
+	list-style-type: none;
+	margin-top: -15px;
+  	display: none;
+}
+.nav ul li:hover ul{
+  display: block;
+  color: white;
+}
+li.drow{
+	font-family: 'Squada One', cursive;
+}
+a.nav-link{
+	font-family: 'Squada One', cursive;font-size: 20px;
+}
+a.edit{
+	width: 100px;
+
+}
+li.drow a{
+	margin-left: -10px;
+	width:170px;  
+	font-family: 'Squada One', cursive;
+	color: black;
+}
+
+/* HEADER END*/
+/*FOOTER START*/
+li.footer-li{
+	margin-left: 40px;
+	list-style-type: none;
+	font-size: 12px;
+	font-family: 'Sawarabi Gothic', sans-serif; 
+	color: #D2D5DA; 
+	margin-top: -5px;
+}
+div.footer-div{
+	margin-left: 50px; 
+	font-size: 16px; 
+	color: #D2D5DA;
+}
+li.info-li{
+	 list-style-type: none;
+	font-size: 13px; 
+	color: #231F20 ; 
+	margin-top: -5px;
+	font-family: 'Sawarabi Gothic', sans-serif;
+}
+div.info-div{
+	margin-left: 50px; 
+	font-size: 20px; 
+	color: #231F20;
+}
+div.logo-high{
+	margin-top: 100px;
+}
+img.height{
+	height: 50px;
+}
+ a.footer-link:hover {
+    text-decoration: none;
+    font-family: 'Kosugi Maru';
+} 
+.yote{
+	padding: 10px 10px;
+	text-align: center;
+	font-size: 13px;
+	color: #231F20;
+	font-family: 'Sawarabi Gothic', sans-serif;
+}
+.yote1{
+	margin-left: 1px;
+	margin-right: 1px; 
+	background-color: white;
+}
+
+p{
+	margin-left: 12px;
+	margin-right: 2px; 
+	color:  #231F20 ;
+}
+/*FOOTER END*/
