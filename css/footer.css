@@ -33,21 +33,24 @@ img.height{
     font-family:sans-serif;
 } 
 .yote{
-		text-align: center;
-		font-size: 15px;
-		color: #231F20;
-	}
-	.yote1{
-		margin-left: 1px;
-		margin-right: 1px; 
-		background-color: white;
-	}
+	text-align: center;
+	font-size: 15px;
+	color: #231F20;
+}
+.yote1{
+	margin-left: 1px;
+	margin-right: 1px; 
+	background-color: white;
+}
 
-	p{
-		margin-left: 1px;
-		margin-right: 1px; 
-		t : white;
-	}
+p{
+	margin-left: 1px;
+	margin-right: 1px; 
+	t : white;
+}
+
+
+
 /* a.footer-link:hover {
     text-decoration: none;
     font-family:sans-serif;
