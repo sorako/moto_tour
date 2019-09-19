@@ -342,7 +342,8 @@ h1, h2, h3, h4, h5,h6,
       bottom: 0;
       z-index: 0;
       width: 100%;
-      background: rgba(0, 0, 0, 0.5); }
+      background: rgba(0, 0, 0, 0.1); 
+    }
   .bg-image > .container {
     position: relative;
     z-index: 1; }
@@ -1224,7 +1225,7 @@ h1, h2, h3, h4, h5,h6,
       left: 0;
       right: 0;
       bottom: 0;
-      opacity: .4;
+      opacity: .01;
       background: #CA9C4E; }
     .ftco-cover-1.overlay h1 {
       color: #fff;
@@ -1621,15 +1622,15 @@ h1, h2, h3, h4, h5,h6,
         background-color: lightgray;
         height: 4px; }
   .service-2:hover {
-    background-color: gray;
+    /*background-color: lightgray;*/
     -webkit-box-shadow: 0 5px 50px 0 rgba(46, 49, 146, 0.1);
-    box-shadow: 0 5px 50px 0 rgba(46, 49, 146, 0.1); }
+    box-shadow: 0 5px 10px 0 rgba(46, 49, 146, 0.1); }
     .service-2:hover h3 {
-      color: #fff; }
+      color:gray; }
       .service-2:hover h3 span:after {
-        background-color: black; }
+        background-color: gray; }
     .service-2:hover p {
-      color: rgba(255, 255, 255, 0.7); }
+      color:gray; }
 
 .section-3 {
   background-size: cover;
@@ -1710,20 +1711,6 @@ form .form-control {
   margin-left: 320px;
   background: #3D3E3F ;
 }
-
-  form .form-control:active, form .form-control:focus {
-    border-color: transparent;
-    background: #efefef;
-    -webkit-box-shadow: none;
-    box-shadow: none; }
-
-form textarea {
-  height: auto !important;
-  padding-top: 10px !important;
-  padding-bottom: 10px !important; }
-
-form .btn {
-  border-color: transparent; }
 
 .line-bottom {
   position: relative;
