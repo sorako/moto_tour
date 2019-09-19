@@ -16,11 +16,30 @@ ul li.dev {
   float: left;
   background-color: transparent;
 }
+/*dropdown menu*/
 ul li ul.down{
 	list-style-type: none;
 	margin-top: -15px;
   	display: none;
 }
+
+.shopping-cart {position: relative;display: inline-block;}
+  .minicart-dropdown {
+    margin-left: -20px;
+    margin-top:  -25px;
+    width: 120px;
+    background-color: transparent;
+    min-width: 160px;
+    z-index: 1;
+    padding: 20px;
+    transform: translateY(25%);
+    opacity: 0;
+    transition: all 1s;
+    visibility:hidden;}
+
+  .minicart-dropdown a:hover {font-size: 14px;}
+
+  .shopping-cart:hover .minicart-dropdown {opacity:1;transform:translateY(0%);visibility:visible;}
 .nav ul li:hover ul{
   display: block;
   color: white;
@@ -33,13 +52,12 @@ a.nav-link{
 }
 a.edit{
 	width: 100px;
-
 }
 li.drow a{
 	margin-left: -10px;
 	width:170px;  
 	font-family: 'Squada One', cursive;
-	color: black;
+	color: #0B2161;
 }
 
 /* HEADER END*/
