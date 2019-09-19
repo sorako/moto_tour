@@ -10,9 +10,6 @@
     <link href="css/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/main.css">
-    <style type="text/css">
-      
-    </style>
   </head>
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 <!-- header -->
@@ -27,20 +24,25 @@
             </div>
             <div class="col-9 text-right">
               <nav class="nav site-navigation text-right ">
-                <ul class="site-menu main-menu js-clone-nav ml-auto ">
-                  <li class="dev"><a href="#home-section" class="nav-link">HOME</a></li>
-                  <li class="dev"><a href="#about-section" class="nav-link edit" style="margin-left: -10px;">ABOUT US</a></li>
-                  <li class="dev"><a href="#tour-section" class="nav-link">TOURS</a>
-                    <ul class="down">
-                      <li class="drow"><a href="gobi.html">OFFROADBIKE TOUR</a></li>
-                      <li class="drow" style="margin-left: 5px;"><a href="#">MOUNTAIN BIKE TOUR</a></li>
-                      <li class="drow"><a href="#">HORSE RIDING TOUR</a></li>
-                      <li class="drow" style="margin-left: -16px;"><a href="#">FISHING TOUR</a></li>
-                    </ul>
+                <ul class="site-menu js-clone-nav ml-auto ">
+                  <li class="dev"><a href="#home-section" class="nav-link"><b style="color: #0B2161;">HOME</b></a></li>
+                  <li class="dev"><a href="#about-section" class="nav-link edit" style="margin-left: -10px;"><b style="color: #0B2161;">ABOUT US</b></a></li>
+                  <li class="dev shopping-cart"><a href="#tour-section" class="nav-link"><b style="color: #0B2161;">TOURS</b></a>
+                    <div class="minicart-dropdown">
+                      <div class="cart-buttons">
+                        <ul class="down">
+                          <li class="drow"><a href="gobi.html">OFFROADBIKE TOUR</a></li>
+                          <li class="drow" style=" margin-left: 5px;"><a href="#">MOUNTAIN BIKE TOUR</a></li>
+                          <li class="drow"><a href="#">HORSE RIDING TOUR</a></li>
+                          <li class="drow" style="margin-left: -16px;"><a href="#">FISHING TOUR</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                   
                   </li>
-                  <li class="dev"><a href="#q&a-section" class="nav-link">Q&A</a></li>
-                  <li class="dev"><a href="#booking-section" class="nav-link">BOOKING</a></li>
-                  <li class="dev"><a href="#footer-section" class="nav-link">CONTACT</a></li>
+                  <li class="dev"><a href="#q&a-section" class="nav-link"><b style="color: #0B2161;">Q&A</b></a></li>
+                  <li class="dev"><a href="#booking-section" class="nav-link"><b style="color: #0B2161;">BOOKING</b></a></li>
+                  <li class="dev"><a href="#footer-section" class="nav-link"><b style="color: #0B2161;">CONTACT</b></a></li>
                 </ul>
               </nav> 
             </div>
@@ -339,6 +341,20 @@
     </section>  
 <!-- Footer End -->
 <!-- SCRIPT  -->
+ <script type='text/javascript' src="js/jquery-3.3.1.js"></script>
+ <script type="text/javascript">
+  jQuery(document).ready(function () {
+    jQuery('.has-drop-down-a').hover(
+
+    function () {
+        jQuery(this).children('.drop').slideDown(200);
+    },
+
+    function () {
+        jQuery(this).children('.drop').slideUp(200);
+    });
+});
+</script>
 <!-- SCRIPT END -->
 </body>
 
