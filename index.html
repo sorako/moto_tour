@@ -15,33 +15,21 @@
 
 
 header video {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  height: 200px;
-  z-index: 0;
-  -ms-transform: translateX(-50%) translateY(-50%);
-  -moz-transform: translateX(-50%) translateY(-50%);
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
-}
-
-header .container {
   position: relative;
-  z-index: 2;
+   top: 0px;
+   left: 0px;
+   width: 100%;
+   min-height: 100%;
+   max-width: 800px;
+   height: 380px;
+   z-index: -1000;
+   overflow: hidden;
+    -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
 }
-
-header .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: black;
-  opacity: 0.5;
-  z-index: 1;
-}
-
 
     </style>
   </head>
@@ -64,16 +52,15 @@ header .overlay {
                   <li class="dev"><a href="#about-section" class="nav-link edit" style="margin-left: -10px;"><b style="color: #0B2161;">ABOUT US</b></a></li>
                   <li class="dev shopping-cart"><a href="#tour-section" class="nav-link"><b style="color: #0B2161;">TOURS</b></a>
                     <div class="minicart-dropdown">
-                      <div class="cart-buttons">
-                        <ul class="down">
-                          <li class="drow"><a href="gobi.html">OFFROADBIKE TOUR</a></li>
-                          <li class="drow" style=" margin-left: 5px;"><a href="#">MOUNTAIN BIKE TOUR</a></li>
-                          <li class="drow"><a href="#">HORSE RIDING TOUR</a></li>
-                          <li class="drow" style="margin-left: -16px;"><a href="#">FISHING TOUR</a></li>
-                        </ul>
-                      </div>
+                        <div class="cart-buttons">
+                            <ul class="down">
+                                <li class="drow"><a href="gobi.html">OFFROADBIKE TOUR</a></li>
+                                <li class="drow" style=" margin-left: 5px;"><a href="#">MOUNTAIN BIKE TOUR</a></li>
+                                <li class="drow"><a href="#">HORSE RIDING TOUR</a></li>
+                                <li class="drow" style="margin-left: -16px;"><a href="#">FISHING TOUR</a></li>
+                            </ul>
+                        </div>
                     </div>
-                   
                   </li>
                   <li class="dev"><a href="#q&a-section" class="nav-link"><b style="color: #0B2161;">Q&A</b></a></li>
                   <li class="dev"><a href="#booking-section" class="nav-link"><b style="color: #0B2161;">GALLERY</b></a></li>
@@ -89,9 +76,9 @@ header .overlay {
       <section id="home-section">
         <div class="ftco-blocks-cover-1">
           <div class="row align-items-center">
-              <div class="col-lg-5">
+              <div class="ftco-cover-2.overlay">
                   <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-                  <source src="https://storage.googleapis.com/coverr-main/mp4/Mt_Baker.mp4" type="video/mp4">
+                      <source src="https://storage.googleapis.com/coverr-main/mp4/Mt_Baker.mp4" type="video/mp4">
                   </video>
               </div>
           </div>
