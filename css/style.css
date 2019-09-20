@@ -1619,7 +1619,7 @@ h1, h2, h3, h4, h5,h6,
         bottom: 0;
         left: 0;
         width: 100%;
-        background-color: lightgray;
+        background-color:  #D2232A;
         height: 4px; }
   .service-2:hover {
     /*background-color: lightgray;*/
@@ -1628,7 +1628,7 @@ h1, h2, h3, h4, h5,h6,
     .service-2:hover h3 {
       color:gray; }
       .service-2:hover h3 span:after {
-        background-color: gray; }
+        background-color:  #D2232A; }
     .service-2:hover p {
       color:gray; }
 
@@ -1700,33 +1700,12 @@ form .btn {
   height: 45px;
   border-radius: 5px; }
 form .form-control {
-  
-  width: 400px;
   border-color: transparent;
   margin-right: 10px;
   margin-left:130px;
   background: #3D3E3F;
 }
-@media only screen and (max-width:1600px) {
-  form .form-control {
-    margin-left: -10px;
-  }
-}
-@media only screen and (max-width:1700px) {
-  form .form-control {
-    margin-left:5px;
-  }
-}
-@media only screen and (max-width:1800px) {
-  form .form-control {
-    margin-left:10px;
-  }
-}
-@media only screen and (max-width:1900px) {
-  form .form-control {
-    margin-left:20px;
-  }
-}
+
 
 .line-bottom {
   position: relative;
@@ -1738,7 +1717,7 @@ form .form-control {
     width: 80px;
     height: 3px;
     left: 0;
-    background-color: #fb7400;
+    background-color: #D2232A;
     bottom: 0; }
   .line-bottom.text-center:after {
     left: 50%;

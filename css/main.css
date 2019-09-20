@@ -1,5 +1,11 @@
 
 /* HEADER START*/
+ 
+ 
+input:focus::-webkit-input-placeholder {
+    opacity: 0;
+}
+
 /*HEADER VIDEO */
 .headerVideo{
   position: relative;
