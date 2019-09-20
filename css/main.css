@@ -216,6 +216,19 @@ img.height{
 	color: #231F20;
 	font-family: 'Sawarabi Gothic', sans-serif;
 }
+table.size-table
+{
+	width: 800px;
+}
+.yote2
+{
+	margin-top: -10px;
+	padding: 10px 10px;
+	text-align: center;
+	font-size: 11px;
+	color: #231F20;
+	font-family: 'Sawarabi Gothic', sans-serif;
+}
 h5.atama
 {
 	width: 440px;
