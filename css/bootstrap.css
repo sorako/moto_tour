@@ -196,7 +196,6 @@ button:focus {
   outline: 1px dotted;
   outline: 5px auto -webkit-focus-ring-color; }
 
-input,
 button,
 select,
 optgroup,
@@ -2073,11 +2072,11 @@ fieldset:disabled a.btn {
   color: gray;
   background-color: #3D3E3F;
   border-width: 3px;
-  border-color: gray; }
+  border-color: #D2232A; }
   .btn-primary:hover {
-    color: black;
-    background-color: lightgray;
-    border-color: gray; }
+    color: white;
+    background-color: #D2232A;
+    border-color: #D2232A; }
   .btn-primary:focus, .btn-primary.focus {
     -webkit-box-shadow: 0 0 0 0.1rem rgba(128,128,128,1);
     box-shadow: 0 0 0 0.1rem rgba(128,128,128,1); }
