@@ -1,7 +1,7 @@
 
 /* HEADER START*/
  
- 
+
 input:focus::-webkit-input-placeholder {
     opacity: 0;
 }
@@ -178,11 +178,20 @@ div.footer-div{
 	color: #D2D5DA;
 }
 li.info-li{
-	 list-style-type: none;
+	 list-style-type: circle;
 	font-size: 13px; 
 	color: #231F20 ; 
-	margin-top: -5px;
+	margin-top: 5px;
 	font-family: 'Sawarabi Gothic', sans-serif;
+}
+ @media only screen and (max-width:1300px) {
+	li.info-li  {
+	 padding: 1px 1px;
+	text-align: left;
+	font-size: 12px;
+	color: #231F20;
+	font-family: 'Sawarabi Gothic', sans-serif;
+	}
 }
 div.info-div{
 	margin-left: 50px; 
@@ -199,19 +208,124 @@ img.height{
     text-decoration: none;
     font-family: 'Kosugi Maru';
 } 
-.yote{
+.yote
+{
 	padding: 10px 10px;
 	text-align: center;
 	font-size: 13px;
 	color: #231F20;
 	font-family: 'Sawarabi Gothic', sans-serif;
 }
-.yote1{
-	margin-left: 1px;
-	margin-right: 1px; 
-	background-color: white;
+h5.atama
+{
+	width: 440px;
+	margin-left:40px;
 }
+  @media only screen and (max-width:1900px) {
+	.yote  {
+		 padding: 1px 1px;
+		text-align: left;
+		font-size: 12px;
+		color: #231F20;
+		font-family: 'Sawarabi Gothic', sans-serif;
+	}
+		
+	li.info-li{
+		width: 390px;
+		margin-left: -60px;
+		 list-style-type: circle;
+		 /*background-color: gray;*/
+		font-size: 12px; 
+		color: #231F20 ; 
+		margin-top: 0px;
+		font-family: 'Sawarabi Gothic', sans-serif;
+	}
 
+ }
+
+ @media only screen and (max-width:1800px) {
+	h5.atama
+ 	{
+ 		font-size: 20px;
+		width: 340px;
+		margin-left:20px;
+	}
+
+	.yote  {
+		 padding: 1px 1px;
+		text-align: left;
+		font-size: 13px;
+		color: #231F20;
+		font-family: 'Sawarabi Gothic', sans-serif;
+	}
+		
+	li.info-li{
+		width: 430px;
+		margin-left: 10px;
+		 list-style-type: circle;
+		 /*background-color: red;*/
+		font-size: 13px; 
+		color: #231F20 ; 
+		margin-top: 0px;
+		font-family: 'Sawarabi Gothic', sans-serif;
+	}
+
+ }
+ @media only screen and (max-width:1500px) {
+ 	h5.atama
+ 	{
+ 		font-size: 17px;
+		width: 340px;
+		margin-left:20px;
+	}
+	.yote  {
+		 padding: 1px 1px;
+		text-align: left;
+		font-size: 12px;
+		color: #231F20;
+		font-family: 'Sawarabi Gothic', sans-serif;
+	}
+		
+	li.info-li{
+		width: 390px;
+		margin-left: -40px;
+		 list-style-type: circle;
+		font-size: 12px; 
+		/*background-color: yellow;*/
+		color: #231F20 ; 
+		margin-top: 0px;
+		font-family: 'Sawarabi Gothic', sans-serif;
+	}
+
+ }
+
+@media only screen and (max-width:1300px) {
+	h5.atama
+ 	{
+ 		font-size: 17px;
+		width: 340px;
+		margin-left:-10px;
+	}
+	.yote  {
+		 padding: 1px 1px;
+		text-align: left;
+		font-size: 10px;
+		color: #231F20;
+		font-family: 'Sawarabi Gothic', sans-serif;
+	}
+		
+	li.info-li{
+		width: 390px;
+		margin-left: -60px;
+		 list-style-type: circle;
+		 /*background-color: green;*/
+		font-size: 10px; 
+		color: #231F20 ; 
+		margin-top: 0px;
+		font-family: 'Sawarabi Gothic', sans-serif;
+	}
+
+}
 p{
 	margin-left: 12px;
 	margin-right: 2px; 

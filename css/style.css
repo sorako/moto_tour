@@ -450,6 +450,7 @@ h1, h2, h3, h4, h5,h6,
       .site-navbar .site-logo {
         float: left;
         position: relative; } }
+
   .site-navbar .site-navigation.border-bottom {
     border-bottom: 1px solid white !important; }
   .site-navbar .site-navigation .site-menu {
@@ -1614,23 +1615,24 @@ h1, h2, h3, h4, h5,h6,
       position: relative;
       padding-bottom: 10px; }
       .service-2 h3 span:after {
-        content: "";
+        /*content: "";
         position: absolute;
         bottom: 0;
         left: 0;
         width: 100%;
         background-color:  #D2232A;
-        height: 4px; }
+        height: 4px;*/
+         }
   .service-2:hover {
     /*background-color: lightgray;*/
     -webkit-box-shadow: 0 5px 50px 0 rgba(46, 49, 146, 0.1);
     box-shadow: 0 5px 10px 0 rgba(46, 49, 146, 0.1); }
     .service-2:hover h3 {
-      color:gray; }
+      color:#D2232A; }
       .service-2:hover h3 span:after {
         background-color:  #D2232A; }
     .service-2:hover p {
-      color:gray; }
+      color:black; }
 
 .section-3 {
   background-size: cover;
