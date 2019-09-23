@@ -247,7 +247,6 @@ transform: translateY(-50%);
 -o-transform: translateY(-50%);
 -webkit-transform: translateY(-50%);
 }
-
 /* HEADER END*/
 /*FOOTER START*/
 li.footer-li{
@@ -513,10 +512,17 @@ h5.atama
 		margin-top: 0px;
 		font-family: 'Sawarabi Gothic', sans-serif;
 	}
+	.une{
+		 /*#CDCFD0*/
+		background-color:#CDCFD0;
+		color: black; 
+		text-align: center;	
+		
+
+	}
 	th.yote
 	{
 		font-size: 11px;
-		background-color: red;
 	}
 	td.yote
 	{
