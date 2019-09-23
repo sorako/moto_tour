@@ -1585,7 +1585,9 @@ h1, h2, h3, h4, h5,h6,
   background: #fff;
   -webkit-transition: .3s all ease;
   -o-transition: .3s all ease;
-  transition: .3s all ease; }
+  transition: .3s all ease; 
+ -webkit-box-shadow: 0 5px 50px 0 rgba(46, 49, 146, 0.1);
+    box-shadow: 0 5px 10px 0 rgba(46, 49, 146, 0.1);}
   .service-2 .svg {
     width:100%;
     margin-bottom: 20px; }
@@ -1612,7 +1614,7 @@ h1, h2, h3, h4, h5,h6,
   .service-2:hover {
     /*background-color: lightgray;*/
     -webkit-box-shadow: 0 5px 50px 0 rgba(46, 49, 146, 0.1);
-    box-shadow: 0 5px 10px 0 rgba(46, 49, 146, 0.1); }
+    box-shadow: 0 5px 10px 0 rgba(244, 166, 166 ); }
     .service-2:hover h3 {
       color:#D2232A; }
       .service-2:hover h3 span:after {
