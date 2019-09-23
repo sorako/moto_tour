@@ -24,6 +24,7 @@
     .card1 {
         width: 50px;
         height: 195px;
+        margin-left: 20px;
         background: url("images/logo/fb.png") no-repeat;
         display: inline-block;
     }
@@ -323,6 +324,7 @@
     </div>
   </section>  
 <!--Galary end -->
+ <a href="#" class="back-to-top">トップに戻る</a>
 <!-- Footer -->
     <section id="footer-section">
       <footer class="site-footer">
@@ -393,6 +395,25 @@
 <!-- Footer End -->
 <!-- SCRIPT  -->
  <script type='text/javascript' src="js/jquery-3.3.1.js"></script>
+ <script type="text/javascript">
+   $(document).ready(function() {
+      var offset = 220;
+      var duration = 500;
+      jQuery(window).scroll(function() {
+          if (jQuery(this).scrollTop() > offset) {
+              jQuery('.back-to-top').fadeIn(duration);
+          } else {
+              jQuery('.back-to-top').fadeOut(duration);
+          }
+      });
+      
+      jQuery('.back-to-top').click(function(event) {
+          event.preventDefault();
+          jQuery('html, body').animate({scrollTop: 0}, duration);
+          return false;
+      })
+  });
+ </script>
  <!-- DROPDOWN MENU SCRIPT -->
  <script type="text/javascript">
   jQuery(document).ready(function () {
@@ -406,10 +427,8 @@
         jQuery(this).children('.drop').slideUp(200);
     });
   });
-</script>
-<!-- PHOTO SIZE -->
-<script type="text/javascript">
-  function openModal() {
+  // PHOTO SIZE
+   function openModal() {
     document.getElementById("myModal").style.display = "block";
   }
 
@@ -442,11 +461,8 @@
         dots[i].className = dots[i].className.replace(" active", "");
     }
     slides[slideIndex-1].style.display = "block";
-    dots[slideIndex-1].className += " active";
-    captionText.innerHTML = dots[slideIndex-1].alt;
   }
 </script>
-
 <!-- SCRIPT END -->
 </body>
 
