@@ -229,7 +229,7 @@ a {
 h1, h2, h3, h4, h5,h6,
 .h1, .h2, .h3, .h4, .h5 {
   font-weight: 300;
-  color: #364d59; }
+  color: black; }
 
 .border-2 {
   border-width: 2px; }
@@ -437,20 +437,6 @@ h1, h2, h3, h4, h5,h6,
   .site-navbar .toggle-button {
     position: absolute;
     right: 0px; }
-  .site-navbar .site-logo {
-    margin: 0;
-    padding: 0;
-    font-size: 1.4rem;
-    text-transform: uppercase; }
-    .site-navbar .site-logo strong {
-      font-weight: 1200; }
-    .site-navbar .site-logo a {
-      color: #fff; }
-    @media (max-width: 991.98px) {
-      .site-navbar .site-logo {
-        float: left;
-        position: relative; } }
-
   .site-navbar .site-navigation.border-bottom {
     border-bottom: 1px solid white !important; }
   .site-navbar .site-navigation .site-menu {
