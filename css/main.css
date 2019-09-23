@@ -1,11 +1,27 @@
 
 /* HEADER START*/
- 
+ /*BACK TO TOP CSS*/
+.back-to-top {
+    position: fixed;
+    bottom: 1em;
+    right: 0px;
+    text-decoration: none;
+    color: white;
+    background-color:#2A2A2A;;
+    font-size: 11px;
+    padding: 1em;
+    display: none;
+    z-index: 1;
+}
 
+.back-to-top:hover {    
+    background-color: #D2232A;
+    color: black
+}
 input:focus::-webkit-input-placeholder {
     opacity: 0;
 }
-
+/*BACK TO TOP CSS EBND*/
 /*HEADER VIDEO */
 .headerVideo{
   position: relative;
