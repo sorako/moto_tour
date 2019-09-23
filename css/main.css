@@ -45,6 +45,92 @@ header .overlay {
 }
 
 
+/*PICTURE POP UP*/
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 50px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background: rgba(0,0,0,0.8);
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Hide the slides by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+/*PICTURE RESIZE END*/
 
 html {
 scroll-behavior: smooth;
@@ -184,15 +270,21 @@ li.info-li{
 	margin-top: 5px;
 	font-family: 'Sawarabi Gothic', sans-serif;
 }
- @media only screen and (max-width:1300px) {
-	li.info-li  {
-	 padding: 1px 1px;
-	text-align: left;
-	font-size: 12px;
-	color: #231F20;
-	font-family: 'Sawarabi Gothic', sans-serif;
-	}
-}
+
+.site-navbar .site-logo {
+    margin: 0;
+    padding: 0;
+    font-size: 1.4rem;
+    text-transform: uppercase; }
+    .site-navbar .site-logo strong {
+      font-weight: 1200; }
+    .site-navbar .site-logo a {
+      color: #fff; }
+    @media (max-width: 991.98px) {
+      .site-navbar .site-logo {
+        float: left;
+        position: relative; } }
+
 div.info-div{
 	margin-left: 50px; 
 	font-size: 20px; 
@@ -216,9 +308,36 @@ img.height{
 	color: #231F20;
 	font-family: 'Sawarabi Gothic', sans-serif;
 }
+th.yote
+{
+	background-color: lightgray;
+	padding: 10px 10px;
+	border-color: gray;
+	text-align: center;
+	font-size: 13px;
+	color: #231F20;
+	font-family: 'Sawarabi Gothic', sans-serif;
+}
+td.yote
+{
+	padding: 10px 10px;
+	text-align: left;
+	font-size: 12px;
+	color: #231F20;
+	font-family: 'Sawarabi Gothic', sans-serif;
+}
 table.size-table
 {
 	width: 800px;
+}
+p.yote
+{
+	width: 1200px;
+	padding: 10px 10px;
+	text-align: left;
+	font-size: 13px;
+	color: #231F20;
+	font-family: 'Sawarabi Gothic', sans-serif;
 }
 .yote2
 {
@@ -234,6 +353,12 @@ h5.atama
 	width: 440px;
 	margin-left:40px;
 }
+.une{
+	background-color: #CDCFD0;
+	color: black; 
+	text-align: center;	
+}
+
   @media only screen and (max-width:1900px) {
 	.yote  {
 		 padding: 1px 1px;
@@ -247,13 +372,24 @@ h5.atama
 		width: 390px;
 		margin-left: -60px;
 		 list-style-type: circle;
-		 /*background-color: gray;*/
 		font-size: 12px; 
 		color: #231F20 ; 
 		margin-top: 0px;
 		font-family: 'Sawarabi Gothic', sans-serif;
 	}
-
+	table.une-table{
+		margin-left: 20px;
+		width: 500px;
+	}
+	p.yote
+	{
+		width: 1200px;
+		padding: 10px 10px;
+		text-align: left;
+		font-size: 13px;
+		color: #231F20;
+		font-family: 'Sawarabi Gothic', sans-serif;
+	}
  }
 
  @media only screen and (max-width:1800px) {
@@ -275,11 +411,30 @@ h5.atama
 	li.info-li{
 		width: 430px;
 		margin-left: 10px;
-		 list-style-type: circle;
-		 /*background-color: red;*/
+		 list-style-type: circle
 		font-size: 13px; 
 		color: #231F20 ; 
 		margin-top: 0px;
+		font-family: 'Sawarabi Gothic', sans-serif;
+	}
+
+	.une{
+		background-color: #CDCFD0;
+		color: black; 
+		text-align: center;	
+	}
+
+	table.une-table{
+		margin-left: 20px;
+		width: 450px;
+	}
+	p.yote
+	{
+		width: 1000px;
+		padding: 10px 10px;
+		text-align: left;
+		font-size: 11px;
+		color: #231F20;
 		font-family: 'Sawarabi Gothic', sans-serif;
 	}
 
@@ -304,9 +459,31 @@ h5.atama
 		margin-left: -40px;
 		 list-style-type: circle;
 		font-size: 12px; 
-		/*background-color: yellow;*/
 		color: #231F20 ; 
 		margin-top: 0px;
+		font-family: 'Sawarabi Gothic', sans-serif;
+	}
+
+	.une{
+		 /*#CDCFD0*/
+		background-color:#CDCFD0;
+		color: black; 
+		text-align: center;	
+		margin-left: -40px;
+
+	}
+
+	table.une-table{
+		margin-left: -80px;
+		width: 450px;
+	}
+	p.yote
+	{
+		width: 750px;
+		padding: 10px 10px;
+		text-align: left;
+		font-size: 10px;
+		color: #231F20;
 		font-family: 'Sawarabi Gothic', sans-serif;
 	}
 
@@ -331,13 +508,20 @@ h5.atama
 		width: 390px;
 		margin-left: -60px;
 		 list-style-type: circle;
-		 /*background-color: green;*/
 		font-size: 10px; 
 		color: #231F20 ; 
 		margin-top: 0px;
 		font-family: 'Sawarabi Gothic', sans-serif;
 	}
-
+	th.yote
+	{
+		font-size: 11px;
+		background-color: red;
+	}
+	td.yote
+	{
+		font-size: 10px;
+	}
 }
 p{
 	margin-left: 12px;
