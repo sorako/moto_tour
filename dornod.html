@@ -556,16 +556,17 @@
 	          </div>
 	          <!-- PDF END -->   
 	          <!-- send mail -->
-	          <div class="col-sm-4 ">
-	            <div class="row rm-8  ">
-	              <form class="form-inline rm-12 "> 
-	                <input type="text" class="form-control" placeholder="最新情報を受け取る" >
-	                <button type="submit" class="btn btn-primary">送信</button>
-	              </form>
-	            </div>  <!-- send mail end -->
-	          </div>    
-	        </div>
-	        <!-- send mail END -->
+              <div class="col-sm-4 ">
+                <div class="row rm-8  ">
+                  <form id="test-form" class="form-inline rm-12 ">
+                    <input  type="email" name="Email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="最新情報を受け取る" >
+                    <button type="submit" id="submit"  class="btn btn-primary">送信</button>
+                     <small style="color: gray;"><div class="thanks hide"></div></small>
+                   </form>
+                </div>  <!-- send mail end -->
+              </div>    
+            </div>
+            <!-- send mail END -->
 	      <!-- logo Partners: -->
 	      <div class="container" style="margin-top: ;margin-bottom: -90px;">
 	      <div class="row mb-5 mb-lg-5 ">
@@ -589,89 +590,7 @@
 <!-- Footer End -->
 <!-- SCRIPT  -->
 <script type='text/javascript' src="js/jquery-3.3.1.js"></script>
- <script type="text/javascript">
-   $(document).ready(function() {
-      var offset = 220;
-      var duration = 500;
-      jQuery(window).scroll(function() {
-          if (jQuery(this).scrollTop() > offset) {
-              jQuery('.back-to-top').fadeIn(duration);
-          } else {
-              jQuery('.back-to-top').fadeOut(duration);
-          }
-      });
-      
-      jQuery('.back-to-top').click(function(event) {
-          event.preventDefault();
-          jQuery('html, body').animate({scrollTop: 0}, duration);
-          return false;
-      })
-  });
- </script>
-<script type="text/javascript">
-	function openModal() {
-	  document.getElementById("myModal").style.display = "block";
-	}
-
-	function closeModal() {
-	  document.getElementById("myModal").style.display = "none";
-	}
-
-	var slideIndex = 1;
-	showSlides(slideIndex);
-
-	function plusSlides(n) {
-	  showSlides(slideIndex += n);
-	}
-
-	function currentSlide(n) {
-	  showSlides(slideIndex = n);
-	}
-
-	function showSlides(n) {
-	  var i;
-	  var slides = document.getElementsByClassName("mySlides");
-	  var dots = document.getElementsByClassName("demo");
-	  var captionText = document.getElementById("caption");
-	  if (n > slides.length) {slideIndex = 1}
-	  if (n < 1) {slideIndex = slides.length}
-	  for (i = 0; i < slides.length; i++) {
-	      slides[i].style.display = "none";
-	  }
-	  for (i = 0; i < dots.length; i++) {
-	      dots[i].className = dots[i].className.replace(" active", "");
-	  }
-	  slides[slideIndex-1].style.display = "block";
-	}
-	(function ($) {
-        "use strict";
-
-        $('.card2').each(function () {
-            
-            var $el = $(this);
-            
-            $(window).scroll(function () {
-                updateBackground($el);
-            });
-            updateBackground($el);
-        });
-
-    }(jQuery));
-
-    var speed = 0.4;
-
-    function updateBackground($el) {
-
-        var diff = $(window).scrollTop() - $el.offset().top;
-        var yPos = -(diff * speed);
-
-        var coords = '50% ' + yPos + 'px';
-
-        $el.css({
-            backgroundPosition: coords
-        });
-    }
-</script>
+<script type='text/javascript' src="js/main.js"></script>
 <!-- SCRIPT END -->
 
 </body>

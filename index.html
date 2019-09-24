@@ -39,9 +39,37 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-image: url("images/header.jpg");
+    }   
+   div.success {
+      -webkit-animation: seconds 1.0s forwards;
+      -webkit-animation-iteration-count: 1;
+      -webkit-animation-delay: 5s;
+      animation: seconds 1.0s forwards;
+      animation-iteration-count: 1;
+      animation-delay: 5s;
+      position: relative;
+        
     }
-
-}
+    @-webkit-keyframes seconds {
+      0% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+        left: -9999px; 
+        position: absolute;   
+      }
+    }
+    @keyframes seconds {
+      0% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+        left: -9999px;
+        position: absolute;     
+      }
+    } 
   </style>
   </head>
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300" class='content'>
@@ -369,10 +397,11 @@
               <!-- send mail -->
               <div class="col-sm-4 ">
                 <div class="row rm-8  ">
-                  <form class="form-inline rm-12 "> 
-                    <input type="text" class="form-control" placeholder="最新情報を受け取る" >
-                    <button type="submit" class="btn btn-primary">送信</button>
-                  </form>
+                  <form id="test-form" class="form-inline rm-12 ">
+                    <input  type="email" name="Email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="最新情報を受け取る" >
+                    <button type="submit" id="submit"  class="btn btn-primary">送信</button>
+                     <small style="color: gray;"><div class="thanks success"></div></small>
+                   </form>
                 </div>  <!-- send mail end -->
               </div>    
             </div>
@@ -400,111 +429,8 @@
 <!-- Footer End -->
 <!-- SCRIPT  -->
  <script type='text/javascript' src="js/jquery-3.3.1.js"></script>
- <script type="text/javascript">
-   $(document).ready(function() {
-      var offset = 220;
-      var duration = 500;
-      jQuery(window).scroll(function() {
-          if (jQuery(this).scrollTop() > offset) {
-              jQuery('.back-to-top').fadeIn(duration);
-          } else {
-              jQuery('.back-to-top').fadeOut(duration);
-          }
-      });
-      
-      jQuery('.back-to-top').click(function(event) {
-          event.preventDefault();
-          jQuery('html, body').animate({scrollTop: 0}, duration);
-          return false;
-      })
-  });
-   $(window).scroll(function() {
-      var scrollTop = $(window).scrollTop();
-      var divam = 1.2;
-      $(".sky").css({
-        "top":scrollTop/divam+"px",
-        "height":10000-(Math.round(scrollTop/divam))+"px"
-      });
-  });
-   // parallax
-   (function ($) {
-        "use strict";
-
-        $('.card2').each(function () {
-            
-            var $el = $(this);
-            
-            $(window).scroll(function () {
-                updateBackground($el);
-            });
-            updateBackground($el);
-        });
-
-    }(jQuery));
-
-    var speed = 0.4;
-
-    function updateBackground($el) {
-
-        var diff = $(window).scrollTop() - $el.offset().top;
-        var yPos = -(diff * speed);
-
-        var coords = '50% ' + yPos + 'px';
-
-        $el.css({
-            backgroundPosition: coords
-        });
-    }
- </script>
- <!-- DROPDOWN MENU SCRIPT -->
- <script type="text/javascript">
-  jQuery(document).ready(function () {
-    jQuery('.has-drop-down-a').hover(
-
-    function () {
-        jQuery(this).children('.drop').slideDown(200);
-    },
-
-    function () {
-        jQuery(this).children('.drop').slideUp(200);
-    });
-  });
-  // PHOTO SIZE
-   function openModal() {
-    document.getElementById("myModal").style.display = "block";
-  }
-
-  function closeModal() {
-    document.getElementById("myModal").style.display = "none";
-  }
-
-  var slideIndex = 1;
-  showSlides(slideIndex);
-
-  function plusSlides(n) {
-    showSlides(slideIndex += n);
-  }
-
-  function currentSlide(n) {
-    showSlides(slideIndex = n);
-  }
-
-  function showSlides(n) {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("demo");
-    var captionText = document.getElementById("caption");
-    if (n > slides.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = slides.length}
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex-1].style.display = "block";
-  }
-</script>
+ <script type='text/javascript' src="js/main.js"></script>
+ 
 <!-- SCRIPT END -->
 </body>
 
