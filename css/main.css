@@ -12,6 +12,7 @@
     padding: 1em;
     display: none;
     z-index: 1;
+    border-radius: 5px;
 }
 
 .back-to-top:hover {    
