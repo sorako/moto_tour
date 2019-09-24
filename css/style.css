@@ -1246,7 +1246,8 @@ h1, h2, h3, h4, h5,h6,
   background-repeat: no-repeat; }
   .ftco-cover-2, .ftco-cover-2 .container > .row {
     height: 40vh;
-    min-height: 250px; }
+    /*header image high*/
+    min-height: 500px; }
   .ftco-cover-2.innerpage, .ftco-cover-2.innerpage .container > .row {
     height: 90vh;
     min-height: 700px; }
@@ -1261,7 +1262,7 @@ h1, h2, h3, h4, h5,h6,
       left: 0;
       right: 0;
       bottom: 0;
-      opacity: .2;
+      opacity: .3;
       background: #CA9C4E; }
     .ftco-cover-2.overlay h1 {
       color: #05759A  ;
