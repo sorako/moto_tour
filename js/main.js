@@ -27,8 +27,8 @@ $(document).ready(function(){
       data: form.serializeObject()
     });
       $(".thanks").html("最新情報を受け取る!").css("font-size","2rem");
-      $(".form-control").return();
-      $("#submit").return();
+      $(".form-control").remove();
+      $("#submit").remove();
     });
  });
 
