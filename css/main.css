@@ -292,7 +292,14 @@ div.footer-div{
 	color: #D2D5DA;
 }
 li.info-li{
-	 list-style-type: circle;
+	list-style-type: circle;
+	font-size: 13px; 
+	color: #231F20 ; 
+	margin-top: 5px;
+	font-family: 'Sawarabi Gothic', sans-serif;
+}
+.qa-li{
+	list-style-type: none;
 	font-size: 13px; 
 	color: #231F20 ; 
 	margin-top: 5px;

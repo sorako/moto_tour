@@ -10,6 +10,7 @@
     <link href="css/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/main.css">
+     <link rel="stylesheet" href="css/toggleQA.css">
     <link rel="icon" type="image/x-icon" href="images/logo/logoSorako.ico">
     <style type="text/css">
     .card {
@@ -33,12 +34,12 @@
     }
      .card2 {
   /* The image used */
-    color: #fff;
-    padding: 60px;
-    background-position: 50% 0;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-image: url("images/header.jpg");
+    /*color: #fff;*/
+    /*padding: 60px;*/
+    /*background-position: 50% 0;*/
+    /*background-repeat: no-repeat;*/
+    /*background-attachment: fixed;*/
+     /*background-image: url("images/header.jpg");*/
     }   
    div.success {
       -webkit-animation: seconds 1.0s forwards;
@@ -174,40 +175,109 @@
     </section>  
 <!--TOURS END -->
 <!-- Still road -->
-    <section id="q&a-section" style="margin-top: -60px;">
-        <div class="site-section card2 border-top border-bottom" style="margin-top: -70px;">
-          <div class="container">
-            <div class="row mb-5">
-              <div class="col-md-4 mr-auto">
-                <h2 class="line-bottom">モンゴルへようこそ</h2>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-12" >
-                <div class="tab-content" id="nav-tabContent">
-                  <div class="tab-pane fade show active" id="nav-one" role="tabpanel" aria-labelledby="nav-one-tab" >
-                    <div class="row">
-                      <div class="col-md-4" style=""> 
-                      </div>
-                      <div class="col-md-8 ml-auto" >
-                        <div class="mapouter">
-                          <div class="gmap_canvas"><iframe width="1080" height="530" id="gmap_canvas" src="https://maps.google.com/maps?q=Peace%20Ave%2015a5%2C%20Ulaanbaatar%2014210&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.enable-javascript.net"></a></div>
-                        </div>
-                      </div>
+    <section id="q&a-section" style="margin-top: -160px;">
+      <div class="site-section card2 " style="margin-top: -70px;">
+        <div class="container ">
+          <div class="container border-top"></div>
+          <div class="row mb-5">
+            <div class="col-md-6 mr-auto " style="margin-top: 20px;">
+              <h2 class="line-bottom ">よくあるご質問（FAQ）</h2>
+              <ul style="margin-left: 80px; " class="">
+                <li class="qa-li"><a href="#" id="toggle" style="color: #231F20;"><b>Q.チケットはどこで買えますか？</b></a>
+                    <div id="contact">
+                         各プレイガイドにて販売いたします。早割セット券はローソンチケットのみでの販売です。
                     </div>
-                  </div>
-                </div>
-              </div>
+                </li>
+                 <li class="qa-li"><a href="#" id="toggle1" style="color: #231F20;"><b>Q.当日参加は可能ですか？</b></a>
+                    <div id="contact1">
+                         当日券の販売については未定です。前売りチケットをご購入下さい。
+                    </div>
+                </li>
+                <li class="qa-li"><a href="#" id="toggle2" style="color: #231F20;"><b>Q.子どもも参加できますか？</b></a>
+                    <div id="contact2">
+                         参加可能です。保護者同伴の小学生以下は入場無料です。大人ひとりの料金につきましてはチケットページをご参照下さい。
+                    </div>
+                </li>
+                 <li class="qa-li"><a href="#" id="toggle3" style="color: #231F20;"><b>Q.電車・バスでのアクセスは可能ですか？</b></a>
+                    <div id="contact3">
+                         最寄りバス停からふもとっぱらまでは2km程度ございます。詳しくはこちらのページをご確認下さい。変更している可能性もございますので、必ず各鉄道会社、バス会社にお問い合わせ下さい。
+                    </div>
+                </li>
+                <li class="qa-li"><a href="#" id="toggle4" style="color: #231F20;"><b>Q.バイクでの参加はOKですか？</b></a>
+                    <div id="contact4">
+                         ふもとっぱら会場にて可能です。駐車券は必要ありません。お越しになる人数分の入場券のみご購入下さい。移動可能時間などは各駐車位置の車と同様になります。
+                    </div>
+                </li>
+                <li class="qa-li"><a href="#" id="toggle5" style="color: #231F20;"><b>Q.早朝の入場は可能ですか？</b></a>
+                    <div id="contact5">
+                         できません。土曜日の開場は8:30以降になりますので、開場時間に合わせてお越し頂けるよう、ご協力お願いいたします。現場の状況により、多少前後することがございます。ブランドアベニュー（メーカーの出展ブース）は土曜10:00オープンです。それより前に買い物はできませんのでご了承下さい。前夜祭ではブランドアベニューはオープンしておりません。ふもとっぱら会場は木曜日の宿泊はできません。
+                    </div>
+                </li>
+                <li class="qa-li"><a href="#" id="toggle6" style="color: #231F20;"><b>Q.夜は何時まで入場可能ですか？</b></a>
+                    <div id="contact6">
+                         入場は金曜24:00、土曜22:00までとなります。
+                    </div>
+                </li>
+                <li class="qa-li"><a href="#" id="toggle7" style="color: #231F20;"><b>Q.薪は買えますか？</b></a>
+                    <div id="contact7">
+                         いずれの会場でも一束500円で販売しています。
+                    </div>
+                </li>
+              </ul> 
             </div>
-          </div>
-        <!-- </div> -->
-      </div>  
+            <div class="col-md-6 mr-auto " style="margin-top: 20px;">
+              <ul style="margin-top: 70px; ">
+                <li class="qa-li"><a href="#" id="toggle8" style="color: #231F20;"><b>Q.お風呂はありますか？</b></a>
+                    <div id="contact8">
+                         ふもと村ファミリーサイトにはコインシャワーがございます。ふもと村宿泊者のみ使用可能です。ふもとっぱらにはシャワー・お風呂はありません。 ふもと村ファミリーサイト　24時間　100円／3分 ※シャンプー、タオルなどはご自身でご用意ください。
+                    </div>
+                </li>
+                 <li class="qa-li"><a href="#" id="toggle9" style="color: #231F20;"><b>Q.宿泊施設はありますか？</b></a>
+                    <div id="contact9">
+                         場内の宿泊施設はすべて関係者用となりますので、テントなどキャンプをするための宿泊用具をお持ち下さい。
+                    </div>
+                </li>
+                <li class="qa-li"><a href="#" id="toggle10" style="color: #231F20;"><b>女性の方でも安心してご利用頂けるトイレ完備！</b></a>
+                    <div id="contact10">
+                         JISHEE
+                    </div>
+                </li>
+                 <li class="qa-li"><a href="#" id="toggle11" style="color: #231F20;"><b>あなただけの旅の写真・動画を撮影し、ご帰国の前日にお渡しする！</b></a>
+                    <div id="contact11">
+                         JISHEE
+                    </div>
+                </li>
+                <li class="qa-li"><a href="#" id="toggle12" style="color: #231F20;"><b>日差しの厳しい砂漠では水分補給が大切！飲料水１日２本付！</b></a>
+                    <div id="contact12">
+                         JISHEE
+                    </div>
+                </li>
+                <li class="qa-li"><a href="#" id="toggle13" style="color: #231F20;"><b>１時間の乗馬体験付！さらにラクダに乗る体験（30分）付！</b></a>
+                    <div id="contact13">
+                         JISHEE
+                    </div>
+                </li>
+                <li class="qa-li"><a href="#" id="toggle14" style="color: #231F20;"><b>遊牧民宅訪問・伝統生活スタイル見学付！</b></a>
+                    <div id="contact14">
+                         JISHEE
+                    </div>
+                </li>
+                <li class="qa-li"><a href="#" id="toggle15" style="color: #231F20;"><b>お客様全員、モンゴル現地の旅行保険に加入！</b></a>
+                    <div id="contact15">
+                         JISHEE
+                    </div>
+                </li>
+              </ul> 
+            </div>  
+          </div>  
+        </div>
+      </div> 
     </section>  
 <!-- Still road END-->
 <!-- GALLERY -->
-  <section id="gallery-section" style="margin-top: -20px;">
+  <section id="gallery-section" style="margin-top: -150px;">
     <div class="container text-center" style="margin-top: 20px;">
-      <div class="container">
+      <div class="container border-top">
         <div class="row mb-4">
           <h5 class=" atama"></h5>
           <h5 class=" atama" style="margin-top: 10px;"><b> 写真ギャラリー </b></h5>
@@ -421,7 +491,12 @@
 <!-- SCRIPT  -->
  <script type='text/javascript' src="js/jquery-3.3.1.js"></script>
  <script type='text/javascript' src="js/main.js"></script>
+ <script type='text/javascript' src="js/toggleQA.js"></script>
+ <script type="text/javascript">
  
+
+
+</script>
 <!-- SCRIPT END -->
 </body>
 
