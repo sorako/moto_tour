@@ -298,8 +298,8 @@ li.info-li{
 	margin-top: 5px;
 	font-family: 'Sawarabi Gothic', sans-serif;
 }
-li.qa-li{
-	list-style-type: 'Q';
+.qa-li{
+	list-style-type: none;
 	font-size: 13px; 
 	color: #231F20 ; 
 	margin-top: 5px;
