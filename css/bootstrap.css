@@ -395,8 +395,33 @@ mark,
   max-width: 100%;
   height: 240px;
   background-repeat: no-repeat;
-  background-size: contain; }
-
+  background-size: contain;
+  border-radius: 5px; }
+ @media only screen and (max-width:1900px) {
+  .img-fluid {
+  max-width: 100%;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: contain; 
+  border-radius: 5px;
+  }
+ }
+  @media only screen and (max-width:1800px) {
+.img-fluid {
+  max-width: 100%;
+  height: 180px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 5px; }
+}
+  @media only screen and (max-width:1600px) {
+.img-fluid {
+  max-width: 100%;
+  height: 130px;
+  background-repeat: no-repeat;
+  background-size: contain; 
+  border-radius: 5px;}
+}
 .img-thumbnail {
   padding: 0.25rem;
   background-color: #fff;
