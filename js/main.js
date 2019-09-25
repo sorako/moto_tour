@@ -26,12 +26,12 @@ $(document).ready(function(){
       dataType: "json",
       data: form.serializeObject()
     });
-      $(".thanks").html("最新情報を受け取る!").css("font-size","2rem");
-      $(".form-control").return();
-      $("#submit").return();
+      $(".thanks").html("登録しました。ありがとうございます。").css("font-size","2rem");
+      $(".form-control").remove();
+      $("#submit").remove();
     });
  });
-
+// BACK TO TOP BTN
   $(document).ready(function() {
       var offset = 220;
       var duration = 500;
