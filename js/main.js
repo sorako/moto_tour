@@ -26,12 +26,16 @@ $(document).ready(function(){
       dataType: "json",
       data: form.serializeObject()
     });
+<<<<<<< HEAD
       $(".thanks").html("最新情報を受け取る!").css("font-size","2rem");
+=======
+      $(".thanks").html("登録しました。ありがとうございます。").css("font-size","2rem");
+>>>>>>> 5093e249a6a85dd01f816b0038e91a7d7b6f2b12
       $(".form-control").remove();
       $("#submit").remove();
     });
  });
-
+// BACK TO TOP BTN
   $(document).ready(function() {
       var offset = 220;
       var duration = 500;
