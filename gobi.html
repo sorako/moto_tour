@@ -39,7 +39,13 @@
 	    background-repeat: no-repeat;
 	    background-attachment: fixed;
 	    background-image: url("images/gobi-header.jpg");
-	    }
+	}
+	#contact{
+	    display: none;
+	    background: lightgray;
+	    color: #000;
+	    padding: 10px;
+	}
 	</style>
   </head>
 
@@ -326,14 +332,18 @@
 					<h5 class=" border-top atama"></h5>
 					<h5 class="line-bottom atama" style="margin-top: 10px;"><b>嬉しい情報</b></h5>
 	                <ul style="margin-left: 80px; ">
-	                  <li class="info-li"><b>毎日！天体望遠鏡で満天の星空・天の川を観賞！</b></li>
-	                  <li class="info-li"><b>テント泊ですが、シャワー付！</b></li>
-	                  <li class="info-li"><b>女性の方でも安心してご利用頂けるトイレ完備！</b></li>
-	                  <li class="info-li"><b>あなただけの旅の写真・動画を撮影し、ご帰国の前日にお渡しする！</b></li>
-	                  <li class="info-li"><b>日差しの厳しい砂漠では水分補給が大切！飲料水１日２本付！</b></li>
-	                  <li class="info-li"><b>１時間の乗馬体験付！さらにラクダに乗る体験（30分）付！</b></li>
-	                  <li class="info-li"><b>遊牧民宅訪問・伝統生活スタイル見学付！</b></li>
-	                  <li class="info-li"><b>お客様全員、モンゴル現地の旅行保険に加入！</b></li>
+	                	<li class="info-li"><a href="#" id="toggle">毎日！天体望遠鏡で満天の星空・天の川を観賞！</a>
+							<div id="contact">
+			   					 JISHEE
+							</div>
+						</li>
+		                <li class="info-li"><b>テント泊ですが、シャワー付！</b></li>
+		                <li class="info-li"><b>女性の方でも安心してご利用頂けるトイレ完備！</b></li>
+		                <li class="info-li"><b>あなただけの旅の写真・動画を撮影し、ご帰国の前日にお渡しする！</b></li>
+		                <li class="info-li"><b>日差しの厳しい砂漠では水分補給が大切！飲料水１日２本付！</b></li>
+		                <li class="info-li"><b>１時間の乗馬体験付！さらにラクダに乗る体験（30分）付！</b></li>
+		                <li class="info-li"><b>遊牧民宅訪問・伝統生活スタイル見学付！</b></li>
+		                <li class="info-li"><b>お客様全員、モンゴル現地の旅行保険に加入！</b></li>
 	                </ul> 
 				</div>
 				<!-- 嬉しい情報 END -->	
@@ -560,7 +570,7 @@
               <div class="col-sm-4 ">
                 <div class="row rm-8  ">
                   <form id="test-form" class="form-inline rm-12 ">
-                    <input  type="email" name="Email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="最新情報を受け取る" >
+                    <input  type="email" name="Email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="最新情報を受け取る" required="">
                     <button type="submit" id="submit"  class="btn btn-primary">送信</button>
                      <small style="color: gray;"><div class="thanks success"></div></small>
                    </form>
@@ -592,6 +602,16 @@
 <!-- SCRIPT  -->
 <script type='text/javascript' src="js/jquery-3.3.1.js"></script>
 <script type='text/javascript' src="js/main.js"></script>
+<script type="text/javascript">
+	$(function()
+  {
+     $("a#toggle").click(function()
+                         {
+                            $("#contact").slideToggle();
+                            return false;
+                         }); 
+  });
+</script>
 <!-- SCRIPT END -->
 </body>
 </html>
