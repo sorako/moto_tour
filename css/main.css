@@ -343,6 +343,14 @@ img.height{
 	color: #231F20;
 	font-family: 'Sawarabi Gothic', sans-serif;
 }
+.yote1
+{
+	padding: 10px 10px;
+	text-align: left;
+	font-size: 13px;
+	color: #231F20;
+	font-family: 'Sawarabi Gothic', sans-serif;
+}
 th.yote
 {
 	background-color: lightgray;
@@ -571,3 +579,70 @@ p{
 	color:  #231F20 ;
 }
 /*FOOTER END*/
+/*Happy user*/
+.owl-carousel .owl-nav .owl-prev,
+.owl-carousel .owl-nav .owl-next {
+  position: absolute;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  margin-top: -10px;
+  color: #e86ed0 !important;
+  -moz-transition: all 0.7s ease;
+  -o-transition: all 0.7s ease;
+  -webkit-transition: all 0.7s ease;
+  -ms-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+  opacity: 0; }
+  .owl-carousel .owl-nav .owl-prev span:before,
+  .owl-carousel .owl-nav .owl-next span:before {
+    font-size: 30px; }
+.owl-carousel .owl-nav .owl-prev {
+  left: 0; }
+.owl-carousel .owl-nav .owl-next {
+  
+  right: 0; }
+.owl-carousel .owl-dots {
+  text-align: center; }
+.owl-carousel .owl-dots .owl-dot {
+  width: 10px;
+  height: 10px;
+  margin: 5px;
+  border-radius: 50%;
+  background: #e6e6e6;
+  position: relative; }
+.img,
+.blog-img,
+.user-img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; }
+.testimony-wrap {
+  display: block;
+  position: relative;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0 20px;
+  border: 1px solid rgba(0, 0, 0, 0.02);
+  -webkit-box-shadow: 0px 5px 21px -14px rgba(0, 0, 0, 0.14);
+  -moz-box-shadow: 0px 5px 21px -14px rgba(0, 0, 0, 0.14);
+  box-shadow: 0px 5px 21px -14px rgba(0, 0, 0, 0.14); }
+  .testimony-wrap .user-img {
+    width: 80px;
+    height: 80px;
+    position: relative;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%; }
+  .testimony-wrap .name {
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 0;
+    color: #000000; }
+  .testimony-wrap .position {
+    font-size: 16px;
+    color: #cccccc; }
+.d-flex {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important; }
