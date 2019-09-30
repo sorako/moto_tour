@@ -1442,9 +1442,10 @@ h1, h2, h3, h4, h5,h6,
   .service-2:hover {
     /*background-color: lightgray;*/
     -webkit-box-shadow: 0 5px 50px 0 rgba(46, 49, 146, 0.1);
-    box-shadow: 0 5px 10px 0 rgba(244, 166, 166 ); }
+    box-shadow: 0 5px 10px 0 rgba(148, 147, 147); }
     .service-2:hover h3 {
-      color:#D2232A; }
+      /*:#D2232A*/
+      color:#C2BEBE; }
       .service-2:hover h3 span:after {
         background-color:  #D2232A; }
     .service-2:hover p {
