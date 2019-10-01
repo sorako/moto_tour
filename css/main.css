@@ -181,6 +181,7 @@ ul li.dev {
 ul li ul.down{
 	list-style-type: none;
 	margin-top: -15px;
+	margin-left: 30px;
   	display: none;
 }
 
@@ -212,6 +213,7 @@ a.nav-link{
 	font-family: 'Squada One', cursive;font-size: 20px;
 }
 a.edit{
+	margin-left: -10px;
 	width: 100px;
 }
 li.drow a{
