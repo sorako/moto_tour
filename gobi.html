@@ -41,6 +41,34 @@
 	    background-image: url("images/gobi-header.jpg");
 	}
 	</style>
+	<style type="text/css">
+		@import url(https://fonts.googleapis.com/css?family=Khula:700);
+
+.hidden {
+  opacity:0;
+}
+.container14 {
+ 
+  font-family:Khula;
+  font-size:1em;
+  text-align:center;
+  height:200px;
+  width:600px;
+  color:white;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  margin:auto;
+}
+.console-underscore {
+   display:inline-block;
+  position:relative;
+  color: black;
+  top:-0.14em;
+  left:10px;
+}
+	</style>
   </head>
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300"  class='content'>
 <!-- Gobi (title) -->  	
@@ -69,6 +97,7 @@
 	    </div>   
     </div>
 <!-- Gobi (title) image END  --><!-- 概要 END-->
+
 	<div class="container-fluid border-top">
 		<div class="row">
 			<div class=" col-lg-8 mr-auto">
@@ -368,7 +397,10 @@
 					<h6 style="font-size: 13px;margin-top: 10px;">※　燃油サーチャージ、現地経費込み。
 					<h6 style="font-size: 13px; ">※　現地発着またはウランバートルで合流は可能です。</h6>			
 				</div>
-				<!-- 含まれない費用 END -->	
+				<!-- 含まれない費用 END -->
+				<div class="row container" style="margin-top: 100px;">
+					<a href="QAA.html"><div class='row container14'><span id='text'></span><div class='console-underscore' id='console'>&#95;</div></div></a>	
+				</div>
 			</div>	
 		</div>
     </div>
@@ -550,7 +582,8 @@
                 <form id="test-form" class="form-inline rm-12 ">
                   <input  type="text"  name="name" class="form-control" id="name" placeholder="お名前" required="" oninvalid="this.setCustomValidity('お名前を入れてください')" oninput="setCustomValidity('')">
                   <input  type="number"  name="tel" class="form-control" id="tel" placeholder="電話番号" equired="" oninvalid="this.setCustomValidity('お電話番号を入れてください')" oninput="setCustomValidity('')" style="margin-top: 10px;">
-                  <input  type="email" name="Email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="最新情報を受け取る" equired="" oninvalid="this.setCustomValidity('メ-ルアドレスを入れてください')" oninput="setCustomValidity('')"  style="margin-top: 10px;">
+                  <input  type="email" name="Email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="メ-ルアドレス" equired="" oninvalid="this.setCustomValidity('メ-ルアドレスを入れてください')" oninput="setCustomValidity('')"  style="margin-top: 10px;">
+                  <textarea style="margin-top: 10px;height: 100px;" rows="4" cols="50" class="form-control" name="comment" id="comment"  placeholder="最新情報を受け取る"></textarea>
                   <button type="submit" id="submit" class="btn btn-primary form-control" style=" margin-top: 10px; ">送信</button>
                   <small style="color: gray;"><div class="thanks success"></div></small>
                  </form>
@@ -583,6 +616,59 @@
 <!-- SCRIPT  -->
 <script type='text/javascript' src="js/jquery-3.3.1.js"></script>
 <script type='text/javascript' src="js/main.js"></script>
+<script type="text/javascript">
+	// function([string1, string2],target id,[color1,color2])    
+ consoleText(['よくあるご質問。', 'ここに押してください', '何を探していますか？'], 'text',['gray','lightgray','black']);
+
+function consoleText(words, id, colors) {
+  if (colors === undefined) colors = ['#000'];
+  var visible = true;
+  var con = document.getElementById('console');
+  var letterCount = 1;
+  var x = 1;
+  var waiting = false;
+  var target = document.getElementById(id)
+  target.setAttribute('style', 'color:' + colors[0])
+  window.setInterval(function() {
+
+    if (letterCount === 0 && waiting === false) {
+      waiting = true;
+      target.innerHTML = words[0].substring(0, letterCount)
+      window.setTimeout(function() {
+        var usedColor = colors.shift();
+        colors.push(usedColor);
+        var usedWord = words.shift();
+        words.push(usedWord);
+        x = 1;
+        target.setAttribute('style', 'color:' + colors[0])
+        letterCount += x;
+        waiting = false;
+      }, 1000)
+    } else if (letterCount === words[0].length + 1 && waiting === false) {
+      waiting = true;
+      window.setTimeout(function() {
+        x = -1;
+        letterCount += x;
+        waiting = false;
+      }, 1000)
+    } else if (waiting === false) {
+      target.innerHTML = words[0].substring(0, letterCount)
+      letterCount += x;
+    }
+  }, 120)
+  window.setInterval(function() {
+    if (visible === true) {
+      con.className = 'console-underscore hidden'
+      visible = false;
+
+    } else {
+      con.className = 'console-underscore'
+
+      visible = true;
+    }
+  }, 400)
+}
+</script>
 <!-- SCRIPT END -->
 </body>
 </html>
