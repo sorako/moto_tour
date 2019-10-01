@@ -7,10 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link href="https://fonts.googleapis.com/css?family=Squada+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <meta charset="utf-8">
     <link href="css/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/main.css"> 
+    <link rel="stylesheet" href="css/add/main.css"> 
     <link rel="stylesheet" href="css/toggleQA.css">
   	<style type="text/css">
     .card {
@@ -62,6 +64,70 @@
       }
     }
 	</style>
+  <style type="text/css">
+    .search {
+      width: 100%;
+      position: relative;
+      display: flex;
+    }
+
+    .searchTerm {
+      width: 100%;
+      border: 3px solid #00B4CC;
+      border-right: none;
+      padding: 5px;
+      height: 50px;
+      border-radius: 5px 0 0 5px;
+      outline: none;
+      color: gray;
+    }
+
+    .searchTerm:focus{
+      color: #00B4CC;
+    }
+
+    .searchButton {
+      width: 150px;
+      height: 50px;
+      border: 1px solid #00B4CC;
+      background: #00B4CC;
+      text-align: center;
+      color: #fff;
+      border-radius: 0 5px 5px 0;
+      cursor: pointer;
+      font-size: 20px;
+    }
+    .like-counter {
+  color: #000;
+  text-decoration: none;
+  margin-right: 5px;
+    
+  &:hover {
+    text-decoration: underline;
+  }
+
+}
+.like, .dislike {
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background: #00B4CC;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.428571429;
+    border-radius: 4px;
+}
+.qty1, .qty2 {
+    border: none;
+    width:20px;
+    background: transparent;
+}
+  </style>
   </head>
 
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300"  class='content'>
@@ -69,7 +135,7 @@
   	<header class="site-navbar site-navbar-target" role="banner">
         <div class="container-fluid">
 	        <div class="row align-items-center position-relative">
-            <div class="col-3 ">
+            <div class="col-3">
 	            <div class="site-logo">
                 <div class="site-logo">
                   <a  href="index.html"><img src="images/logo/logoSorako.png" ></a>
@@ -93,105 +159,122 @@
     </div>
 <!-- QAA (title) image END  -->  
 <!-- QAA START -->
-  <div class="site-section" style="margin-top: -70px;">
+  <div class="site-section" >
     <div class="container">
-      <h4 class="  text-center">よくあるご質問（FAQ）</h4>
-        <div class="container border-top"></div>
-        <div class="col-md-6 mr-auto " style="margin-top: 20px; ">
-          <h4 style="margin-left: 40px;"><b>お申し込みについて</b></h4>
-            <ul style="margin-left: 80px; " class="">
-	            <li class="qa-li"><a href="#" id="toggle" style="color: #231F20;"><b>Q.チケットはどこで買えますか？</b></a>
-	                <div id="contact">
-	                     各プレイガイドにて販売いたします。早割セット券はローソンチケットのみでの販売です。
-	                </div>
-	            </li>
-	             <li class="qa-li"><a href="#" id="toggle1" style="color: #231F20;"><b>Q.当日参加は可能ですか？</b></a>
-	                <div id="contact1">
-	                     当日券の販売については未定です。前売りチケットをご購入下さい。
-	                </div>
-	            </li>
-	            <li class="qa-li"><a href="#" id="toggle2" style="color: #231F20;"><b>Q.子どもも参加できますか？</b></a>
-	                <div id="contact2">
-	                     参加可能です。保護者同伴の小学生以下は入場無料です。大人ひとりの料金につきましてはチケットページをご参照下さい。
-	                </div>
-	            </li>
-	             <li class="qa-li"><a href="#" id="toggle3" style="color: #231F20;"><b>Q.電車・バスでのアクセスは可能ですか？</b></a>
-	                <div id="contact3">
-	                     最寄りバス停からふもとっぱらまでは2km程度ございます。詳しくはこちらのページをご確認下さい。変更している可能性もございますので、必ず各鉄道会社、バス会社にお問い合わせ下さい。
-	                </div>
-	            </li>
-	        </ul> 
-	        <h4 style="margin-left: 40px; "><b>ツアー準備</b></h4>
-	        <ul style="margin-left: 80px; ">
-	            <li class="qa-li"><a href="#" id="toggle4" style="color: #231F20;"><b>Q.バイクでの参加はOKですか？</b></a>
-	                <div id="contact4">
-	                     ふもとっぱら会場にて可能です。駐車券は必要ありません。お越しになる人数分の入場券のみご購入下さい。移動可能時間などは各駐車位置の車と同様になります。
-	                </div>
-	            </li>
-	            <li class="qa-li"><a href="#" id="toggle5" style="color: #231F20;"><b>Q.早朝の入場は可能ですか？</b></a>
-	                <div id="contact5">
-	                     できません。土曜日の開場は8:30以降になりますので、開場時間に合わせてお越し頂けるよう、ご協力お願いいたします。現場の状況により、多少前後することがございます。ブランドアベニュー（メーカーの出展ブース）は土曜10:00オープンです。それより前に買い物はできませんのでご了承下さい。前夜祭ではブランドアベニューはオープンしておりません。ふもとっぱら会場は木曜日の宿泊はできません。
-	                </div>
-	            </li>
-	            <li class="qa-li"><a href="#" id="toggle6" style="color: #231F20;"><b>Q.夜は何時まで入場可能ですか？</b></a>
-	                <div id="contact6">
-	                     入場は金曜24:00、土曜22:00までとなります。
-	                </div>
-	            </li>
-	            <li class="qa-li"><a href="#" id="toggle7" style="color: #231F20;"><b>Q.薪は買えますか？</b></a>
-	                <div id="contact7">
-	                     いずれの会場でも一束500円で販売しています。
-	                </div>
-	            </li>
-            </ul>
-       <!--  </div>
-        <div class="col-md-6 mr-auto " style="margin-top: 20px;"> -->
-	         <ul style="margin-left: 80px; ">
-		        <li class="qa-li"><a href="#" id="toggle8" style="color: #231F20;"><b>Q.お風呂はありますか？</b></a>
-		            <div id="contact8">
-		                 ふもと村ファミリーサイトにはコインシャワーがございます。ふもと村宿泊者のみ使用可能です。ふもとっぱらにはシャワー・お風呂はありません。 ふもと村ファミリーサイト　24時間　100円／3分 ※シャンプー、タオルなどはご自身でご用意ください。
-		            </div>
-		        </li>
-		         <li class="qa-li"><a href="#" id="toggle9" style="color: #231F20;"><b>Q.宿泊施設はありますか？</b></a>
-		            <div id="contact9">
-		                 場内の宿泊施設はすべて関係者用となりますので、テントなどキャンプをするための宿泊用具をお持ち下さい。
-		            </div>
-		        </li>
-		        <li class="qa-li"><a href="#" id="toggle10" style="color: #231F20;"><b>女性の方でも安心してご利用頂けるトイレ完備！</b></a>
-		            <div id="contact10">
-		                 JISHEE
-		            </div>
-		        </li>
-		         <li class="qa-li"><a href="#" id="toggle11" style="color: #231F20;"><b>あなただけの旅の写真・動画を撮影し、ご帰国の前日にお渡しする！</b></a>
-		            <div id="contact11">
-		                 JISHEE
-		            </div>
-		        </li>
-		        <li class="qa-li"><a href="#" id="toggle12" style="color: #231F20;"><b>日差しの厳しい砂漠では水分補給が大切！飲料水１日２本付！</b></a>
-		            <div id="contact12">
-		                 JISHEE
-		            </div>
-		        </li>
-		        <li class="qa-li"><a href="#" id="toggle13" style="color: #231F20;"><b>１時間の乗馬体験付！さらにラクダに乗る体験（30分）付！</b></a>
-		            <div id="contact13">
-		                 JISHEE
-		            </div>
-		        </li>
-		        <li class="qa-li"><a href="#" id="toggle14" style="color: #231F20;"><b>遊牧民宅訪問・伝統生活スタイル見学付！</b></a>
-		            <div id="contact14">
-		                 JISHEE
-		            </div>
-		        </li>
-		        <li class="qa-li"><a href="#" id="toggle15" style="color: #231F20;"><b>お客様全員、モンゴル現地の旅行保険に加入！</b></a>
-		            <div id="contact15">
-		                 JISHEE
-		            </div>
-		        </li>
-	        </ul> 
-      </div>  
-    </div>
+      <div class="row">
+        <div class="col-md-4">
+        </div>
+        <!-- QUESTION AND ANSWER START -->
+        <div class="col-lg-5 mr-auto border-top">
+          <div class="wrap text-center">
+            <h4>よくあるご質問（FAQ）</h4>
+            <div class="search" style="margin-top: 40px">
+              <input type="text" class="searchTerm" id="myInput" placeholder="何を探していますか？">
+              <button type="submit" class="searchButton">
+                <i class="fa fa-search"> 探索</i>
+              </button>
+            </div>
+          </div>
+          <h4 style="margin-top: 100px;"><b>お申し込みについて</b></h4>
+          <ul id="myList">
+            <li><a href="#" id="toggle" class="qa-li"><b>Q.チケットはどこで買えますか？</b></a>
+                <div id="contact">
+                     各プレイガイドにて販売いたします。早割セット券はローソンチケットのみでの販売です。
+                </div>
+            </li>
+             <li><a href="#" id="toggle1" class="qa-li"><b>Q.当日参加は可能ですか？</b></a>
+                <div id="contact1">
+                     当日券の販売については未定です。前売りチケットをご購入下さい。
+                </div>
+            </li>
+            <li><a href="#" id="toggle2" class="qa-li"><b>Q.子どもも参加できますか？</b></a>
+                <div id="contact2">
+                     参加可能です。保護者同伴の小学生以下は入場無料です。大人ひとりの料金につきましてはチケットページをご参照下さい。
+                </div>
+            </li>
+             <li><a href="#" id="toggle3" class="qa-li"><b>Q.電車・バスでのアクセスは可能ですか？</b></a>
+                <div id="contact3">
+                     最寄りバス停からふもとっぱらまでは2km程度ございます。詳しくはこちらのページをご確認下さい。変更している可能性もございますので、必ず各鉄道会社、バス会社にお問い合わせ下さい。
+                </div>
+            </li>
+          <h4><b>ツアー準備</b></h4>
+            <li><a href="#" id="toggle4" class="qa-li"><b>Q.バイクでの参加はOKですか？</b></a>
+                <div id="contact4">
+                     ふもとっぱら会場にて可能です。駐車券は必要ありません。お越しになる人数分の入場券のみご購入下さい。移動可能時間などは各駐車位置の車と同様になります。
+                </div>
+            </li>
+            <li><a href="#" id="toggle5" class="qa-li"><b>Q.早朝の入場は可能ですか？</b></a>
+                <div id="contact5">
+                     できません。土曜日の開場は8:30以降になりますので、開場時間に合わせてお越し頂けるよう、ご協力お願いいたします。現場の状況により、多少前後することがございます。ブランドアベニュー（メーカーの出展ブース）は土曜10:00オープンです。それより前に買い物はできませんのでご了承下さい。前夜祭ではブランドアベニューはオープンしておりません。ふもとっぱら会場は木曜日の宿泊はできません。
+                </div>
+            </li>
+            <li><a href="#" id="toggle6" class="qa-li"><b>Q.夜は何時まで入場可能ですか？</b></a>
+                <div id="contact6">
+                     入場は金曜24:00、土曜22:00までとなります。
+                </div>
+            </li>
+            <li><a href="#" id="toggle7" class="qa-li"><b>Q.薪は買えますか？</b></a>
+                <div id="contact7">
+                     いずれの会場でも一束500円で販売しています。
+                </div>
+            </li>
+            <li><a href="#" id="toggle8" class="qa-li"><b>Q.お風呂はありますか？</b></a>
+                <div id="contact8">
+                     ふもと村ファミリーサイトにはコインシャワーがございます。ふもと村宿泊者のみ使用可能です。ふもとっぱらにはシャワー・お風呂はありません。 ふもと村ファミリーサイト　24時間　100円／3分 ※シャンプー、タオルなどはご自身でご用意ください。
+                </div>
+            </li>
+             <li><a href="#" id="toggle9" class="qa-li"><b>Q.宿泊施設はありますか？</b></a>
+                <div id="contact9">
+                     場内の宿泊施設はすべて関係者用となりますので、テントなどキャンプをするための宿泊用具をお持ち下さい。
+                </div>
+            </li>
+            <li><a href="#" id="toggle10" class="qa-li"><b>女性の方でも安心してご利用頂けるトイレ完備！</b></a>
+                <div id="contact10">
+                     JISHEE
+                </div>
+            </li>
+             <li><a href="#" id="toggle11" class="qa-li"><b>あなただけの旅の写真・動画を撮影し、ご帰国の前日にお渡しする！</b></a>
+                <div id="contact11">
+                     JISHEE
+                </div>
+            </li>
+            <li><a href="#" id="toggle12" class="qa-li"><b>日差しの厳しい砂漠では水分補給が大切！飲料水１日２本付！</b></a>
+                <div id="contact12">
+                     JISHEE
+                </div>
+            </li>
+            <li><a href="#" id="toggle13" class="qa-li"><b>１時間の乗馬体験付！さらにラクダに乗る体験（30分）付！</b></a>
+                <div id="contact13">
+                     JISHEE
+                </div>
+            </li>
+            <li><a href="#" id="toggle14" class="qa-li"><b>遊牧民宅訪問・伝統生活スタイル見学付！</b></a>
+                <div id="contact14">
+                     JISHEE
+                </div>
+            </li>
+            <li><a href="#" id="toggle15" class="qa-li"><b>お客様全員、モンゴル現地の旅行保険に加入！</b></a>
+                <div id="contact15">
+                     JISHEE
+                </div>
+            </li>
+          </ul>
+          <div class="container" style="margin-top: 100px;background-color: lightgray;height: 150px;">  
+             <div class="row"></div>
+            <h5 class="text-center" style="margin-top: 40px;"><b>この<strong> Q＆A</strong>は問題の解決に役立ちましたか？</b></h5>
+            <div class="text-center" style="margin-top: 40px;">
+              <a class="like"><i class="fa fa-thumbs-o-up"></i>  
+                    Like <input class="qty1" name="qty1" readonly="readonly" type="text" value="0" />
+                </a>
+                <a class="dislike"><i class="fa fa-thumbs-o-down"></i> 
+                    Dislike <input class="qty2"  name="qty2" readonly="readonly" type="text" value="0" />
+                </a>
+            </div>
+          </div>   
+        </div>
+      </div>
+    </div>  
   </div> 
-
 <!-- QAA END -->
 <!-- TOURS -->
   <div class="site-section border-top">
@@ -320,9 +403,23 @@
   </section>  
 <!-- Footer End -->
 <!-- SCRIPT  -->
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script type='text/javascript' src="js/jquery-3.3.1.js"></script>
 <script type='text/javascript' src="js/main.js"></script>
- <script type='text/javascript' src="js/toggleQA.js"></script>
+<script type='text/javascript' src="js/toggleQA.js"></script>
+<script type="text/javascript">
+$(function () {
+         $(".like").click(function () {
+             var input = $(this).find('.qty1');
+             input.val(parseInt(input.val())+ 1);
+    
+         });
+     $(".dislike").click(function () {
+         var input = $(this).find('.qty2');
+         input.val(input.val() - 1);
+     });
+  });
+</script>
 <!-- SCRIPT END -->
 </body>
 </html>
