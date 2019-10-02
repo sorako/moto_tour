@@ -2,15 +2,18 @@
 <html lang="en">
 
   <head>
-    <title>Tour &mdash; sorako</title>
+    <title>tour &mdash; Welcome mongolia</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link href="https://fonts.googleapis.com/css?family=Squada+One&display=swap" rel="stylesheet">
-    <meta charset="utf-8">
+    <link rel="icon" type="image/x-icon" href="images/logo/logoSorako.ico">
     <link href="css/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/main.css">  
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/toggleQA.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/hes-gallery.css"> 
   	<style type="text/css">
     .card {
         width: 50px;
@@ -42,11 +45,7 @@
 	}
 	</style>
 	<style type="text/css">
-		@import url(https://fonts.googleapis.com/css?family=Khula:700);
-
-.hidden {
-  opacity:0;
-}
+	
 .container14 {
  
   font-family:Khula;
@@ -405,88 +404,44 @@
 		</div>
     </div>
 <!-- GALLERY -->
-    <div class="container border-top text-center">
-        <div class="container">
-	        <div class="row mb-4">
-	        	<h5 class=" atama"></h5>
-				<h5 class=" atama" style="margin-top: 10px;"><b> ゴビ砂漠写真ギャラリー </b></h5>
-	        </div>
-	        <!-- FIRST ROW -->
-	        <div class="row">
-				<div class="col-md-6 mb-5 mb-lg-5 col-lg-2">
-					 <div class="project-item">
-				   		 <img src="dornod/gallery/img_1.jpg" onclick="openModal();currentSlide(1)" class="img-fluid">
-				    </div>
-				</div>
-				<div class="col-md-6 mb-5 mb-lg-5 col-lg-2">
-					 <div class="project-item">
-				    	<img src="dornod/gallery/img_2.jpg" onclick="openModal();currentSlide(2)" class="img-fluid">
-				    </div>
-				</div>
-				<div class="col-md-6 mb-5 mb-lg-5 col-lg-2">
-					 <div class="project-item">
-				    	<img src="dornod/gallery/img_3.jpg" onclick="openModal();currentSlide(3)" class="img-fluid">
-				    </div>
-				</div>
-				<div class="col-md-6 mb-5 mb-lg-5 col-lg-2">
-					 <div class="project-item">
-				    	<img src="dornod/gallery/img_4.jpg" onclick="openModal();currentSlide(4)" class="img-fluid">
-				    </div>
-				</div>
-				<div class="col-md-6 mb-5 mb-lg-5 col-lg-2">
-					<div class="project-item">
-				    	<img src="dornod/gallery/img_5.jpg" onclick="openModal();currentSlide(5)" class="img-fluid">
-					</div>
-				</div>
-				<div class="col-md-6 mb-5 mb-lg-5 col-lg-2">
-					<div class="project-item">
-				    	<img src="dornod/gallery/img_6.jpg" onclick="openModal();currentSlide(6)" class=" img-fluid">
-					</div>
-				</div>
-			</div>
-			<!-- The Modal/Lightbox -->
-			<div id="myModal" class="modal">
-			  <span class="close cursor" onclick="closeModal()">&times;</span>
-			    <div class="modal-content">
-
-				    <div class="mySlides">
-				      <div class="numbertext">1 /6</div>
-				      <img src="dornod/gallery/img_1.jpg" style="width:100%">
-				    </div>
-
-				    <div class="mySlides">
-				      <div class="numbertext">2 / 6</div>
-				      <img src="dornod/gallery/img_2.jpg" style="width:100%">
-				    </div>
-
-				    <div class="mySlides">
-				      <div class="numbertext">3 / 6</div>
-				      <img src="dornod/gallery/img_3.jpg" style="width:100%">
-				    </div>
-				     <div class="mySlides">
-				      <div class="numbertext">4 / 6</div>
-				      <img src="dornod/gallery/img_4.jpg" style="width:100%">
-				    </div>
-
-				    <div class="mySlides">
-				      <div class="numbertext">5 / 6</div>
-				      <img src="dornod/gallery/img_5.jpg" style="width:100%">
-				    </div>
-
-				    <div class="mySlides">
-				      <div class="numbertext">6 / 6</div>
-				      <img src="images/gallery/gobi/img_6.jpg" style="width:100%">
-				    </div>
-				    <!-- Next/previous controls -->
-				    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-				    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-				</div>    
-			</div>
-			 <!-- FIRST ROW END -->
+  <section id="gallery-section">
+    <h4 class="text-center"><b>写真ギャラリー</b></h4>
+    <div class="container text-center border-top" style="margin-top: 30px;"> 
+      <!-- FIRST ROW -->
+      <div class="row hes-gallery" style="margin-top: 50px;" >
+        <div class="col-lg-2">
+          <div class="project-item">  
+             <img src="images/gallery/gobi/img_1.jpg" alt="image1" data-subtext="kociak" class="img-fluid">
+          </div>   
+        </div>
+        <div class="col-md-6 mb-5 mb-lg-5 col-lg-2">
+          <div class="project-item">
+            <img src="images/gallery/gobi/img_2.jpg" alt="image2" data-subtext="kociak" data-alt="kociak" class="img-fluid">
+          </div>
+        </div>
+        <div class="col-md-6 mb-5 mb-lg-5 col-lg-2">
+          <div class="project-item">
+            <img src="images/gallery/gobi/img_3.jpg" alt="image3" data-subtext="kociak" data-alt="kociak" class="img-fluid">
+          </div>
+        </div>
+        <div class="col-md-6 mb-5 mb-lg-5 col-lg-2">
+          <div class="project-item">
+            <img src="images/gallery/gobi/img_4.jpg" alt="image4" data-subtext="kociak" data-alt="kociak" class="img-fluid">
+          </div>
+        </div>
+        <div class="col-md-6 mb-5 mb-lg-5 col-lg-2">
+          <div class="project-item">
+              <img src="images/gallery/gobi/img_5.jpg" alt="image5" data-subtext="kociak" data-alt="kociak" class="img-fluid">
+          </div>
+        </div>
+        <div class="col-md-6 mb-5 mb-lg-5 col-lg-2">
+          <div class="project-item">
+              <img src="images/gallery/gobi/img_6.jpg" alt="image6" data-subtext="kociak" data-alt="kociak" class=" img-fluid">
+          </div>
         </div>
     </div>
+  </section>  
 <!--Galary end -->
-<!-- TOURS -->
     <div class="site-section border-top">
         <div class="container-fluid">
           <div class="row align-items-stretch">
@@ -614,10 +569,22 @@
   </section>  
 <!-- Footer End -->
 <!-- SCRIPT  -->
+ <script src="js/hes-gallery.js"></script>
+    <script>
+
+        HesGallery.setOptions({
+            disableScrolling: false,
+            hostedStyles: false,
+            animations: true,
+
+            showImageCount: true,
+            wrapAround: true
+        });
+
+    </script>
 <script type='text/javascript' src="js/jquery-3.3.1.js"></script>
 <script type='text/javascript' src="js/main.js"></script>
-<script type="text/javascript">
-	// function([string1, string2],target id,[color1,color2])    
+<script type="text/javascript">   
  consoleText(['よくあるご質問。', 'ここに押してください', '何を探していますか？'], 'text',['gray','lightgray','black']);
 
 function consoleText(words, id, colors) {
