@@ -2124,8 +2124,8 @@ textarea.form-control {
     text-decoration: none; }
   .btn:focus, .btn.focus {
     outline: 0;
-    -webkit-box-shadow: 0 0 0 0.2rem rgba(255, 139, 0, 0.25);
-    box-shadow: 0 0 0 0.2rem rgba(255, 139, 0, 0.25); }
+    -webkit-box-shadow: 0 0 0 0rem rgba(255, 139, 0, 0.25);
+    box-shadow: 0 0 0 0rem rgba(255, 139, 0, 0.25); }
   .btn.disabled, .btn:disabled {
     opacity: 0.65; }
 

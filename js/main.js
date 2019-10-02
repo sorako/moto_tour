@@ -86,6 +86,15 @@ $(document).ready(function(){
             backgroundPosition: coords
         });
     }
+// IMAGE ZOOM 
+HesGallery.setOptions({
+    disableScrolling: false,
+    hostedStyles: false,
+    animations: true,
+
+    showImageCount: true,
+    wrapAround: true
+});
 // DROPDOWN MENU SCRIPT -->
 
   jQuery(document).ready(function () {
