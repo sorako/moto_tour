@@ -738,3 +738,65 @@ div.success {
       transform: scale(1.04);
       box-shadow: 2px 2px 6px #555;
     } 
+
+    /*link QAA*/
+
+.container14 {
+ 
+  font-family:Khula;
+  font-size:1em;
+  text-align:center;
+  height:200px;
+  width:600px;
+  color:white;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  margin:auto;
+}
+.console-underscore {
+   display:inline-block;
+  position:relative;
+  color: black;
+  top:-0.14em;
+  left:10px;
+}
+
+/*IMAGE SLIDE VIEW */
+.MultiCarousel {
+  margin-left: 3%;
+  overflow: hidden;
+  padding: 0;
+  width: 95%;
+  position:relative; 
+}
+.MultiCarousel .MultiCarousel-inner { 
+  transition: 1s ease all;
+  float: left; 
+}
+.MultiCarousel .MultiCarousel-inner .item {
+  float: left;
+}
+.MultiCarousel .MultiCarousel-inner .item > div {
+  text-align: center;
+  padding:7px;
+  margin:0px;
+}
+.MultiCarousel .leftLst, .MultiCarousel .rightLst { 
+  color: gray;
+  font-size: 50px;
+  position: absolute;
+  border-width: 0px;
+  border-radius:50%;
+  top:calc(50% - 40px); 
+}
+.MultiCarousel .leftLst {
+  left:0;
+}
+.MultiCarousel .rightLst { 
+  right:0;
+}
+.MultiCarousel .leftLst.over, .MultiCarousel .rightLst.over { pointer-events: none;
+  color: lightgray;
+}
