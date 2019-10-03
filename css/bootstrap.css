@@ -74,7 +74,7 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
   margin-top: 0;
-  margin-bottom: 1rem; }
+  margin-bottom: 0rem; }
 
 abbr[title],
 abbr[data-original-title] {
@@ -115,6 +115,11 @@ blockquote {
 b,
 strong {
   font-weight: bolder; }
+
+strong {
+  font-weight: bolder; 
+  color: tomato;
+}
 
 small {
   font-size: 80%; }
@@ -396,14 +401,14 @@ mark,
   height: 240px;
   background-repeat: no-repeat;
   background-size: contain;
-  border-radius: 5px; }
+  border-radius: 0px; }
  @media only screen and (max-width:1900px) {
   .img-fluid {
   max-width: 100%;
   height: 200px;
   background-repeat: no-repeat;
   background-size: contain; 
-  border-radius: 5px;
+  border-radius: 0px;
   }
  }
   @media only screen and (max-width:1800px) {
@@ -420,7 +425,7 @@ mark,
   height: 130px;
   background-repeat: no-repeat;
   background-size: contain; 
-  border-radius: 5px;}
+  border-radius: 0px;}
 }
 .img-thumbnail {
   padding: 0.25rem;
