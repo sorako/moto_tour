@@ -77,6 +77,8 @@ header .overlay {
 
 html {
 scroll-behavior: smooth;
+margin: 0;
+padding: 0;
 }
 *{
   margin: 0;
@@ -254,23 +256,34 @@ img.height{
 } 
 .yote
 {
+  text-align: center;
 	padding: 10px 10px;
-	text-align: center;
 	font-size: 13px;
 	color: #231F20;
 	font-family: 'Sawarabi Gothic', sans-serif;
 }
 .yote1
 {
-	padding: 10px 10px;
+  list-style-type: circle;
+	/*padding: 10px 10px;*/
+  text-align: center;
 	text-align: left;
-	font-size: 13px;
+	font-size: 12px;
 	color: #231F20;
 	font-family: 'Sawarabi Gothic', sans-serif;
 }
 th.yote
 {
-	background-color: lightgray;
+  padding: 10px 10px;
+  border-color: gray;
+  text-align: center;
+  font-size: 13px;
+  color: #231F20;
+  font-family: 'Sawarabi Gothic', sans-serif;
+}
+th.yote-header
+{
+  background-color: lightgray;
 	padding: 10px 10px;
 	border-color: gray;
 	text-align: center;
@@ -330,7 +343,7 @@ h5.atama
 		
 	li.info-li{
 		width: 390px;
-		margin-left: -60px;
+		margin-left: 60px;
 		 list-style-type: circle;
 		font-size: 12px; 
 		color: #231F20 ; 
@@ -338,7 +351,7 @@ h5.atama
 		font-family: 'Sawarabi Gothic', sans-serif;
 	}
 	table.une-table{
-		margin-left: 20px;
+		margin-left: -1000px;
 		width: 500px;
 	}
 	p.yote
@@ -742,12 +755,12 @@ div.success {
     /*link QAA*/
 
 .container14 {
- 
+  background-color: #F1EAEA;
   font-family:Khula;
-  font-size:1em;
+  font-size:2em;
   text-align:center;
-  height:200px;
-  width:600px;
+  height:50px;
+  width:100%;
   color:white;
   top:0;
   bottom:0;
@@ -765,7 +778,7 @@ div.success {
 
 /*IMAGE SLIDE VIEW */
 .MultiCarousel {
-  margin-left: 3%;
+  margin-left: 2%;
   overflow: hidden;
   padding: 0;
   width: 95%;
@@ -788,7 +801,6 @@ div.success {
   font-size: 50px;
   position: absolute;
   border-width: 0px;
-  border-radius:50%;
   top:calc(50% - 40px); 
 }
 .MultiCarousel .leftLst {
