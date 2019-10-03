@@ -1567,7 +1567,7 @@ form .form-control {
       background-color: #fb7400; }
 
 .project-item {
-  border-radius: 10px;
+  border-radius: 0px;
   position: relative;
   overflow: hidden; }
   .project-item .project-item-overlay {
