@@ -1,3 +1,9 @@
+/*map giude pop up*/
+#popup { display: none; position: fixed; top: 12%; left: 15%; width: 70%; height: 70%; background-color: white; z-index: 10; }
+#popup iframe { width: 100%; height: 100%; border: 0; }
+#popupdarkbg { position: fixed; z-index: 5; left: 0; top: 0; width: 100%; height: 100%; overflow: hidden; background-color: rgba(0,0,0,.75); display: none; }
+/*btn bleu border remove*/
+button:focus {outline:0;}    
 /*GOOGLE MAPS*/
 .mapouter{
   position:relative;
@@ -95,10 +101,10 @@ ul li.dev {
 }
 /*dropdown menu*/
 ul li ul.down{
-	list-style-type: none;
-	margin-top: -15px;
-	margin-left: 30px;
-  	display: none;
+  list-style-type: none;
+  margin-top: -15px;
+  margin-left: 30px;
+    display: none;
 }
 
 .shopping-cart {position: relative;display: inline-block;}
@@ -123,20 +129,20 @@ ul li ul.down{
   color: white;
 }
 li.drow{
-	font-family: 'Squada One', cursive;
+  font-family: 'Squada One', cursive;
 }
 a.nav-link{
-	font-family: 'Squada One', cursive;font-size: 20px;
+  font-family: 'Squada One', cursive;font-size: 20px;
 }
 a.edit{
-	margin-left: -10px;
-	width: 100px;
+  margin-left: -10px;
+  width: 100px;
 }
 li.drow a{
-	margin-left: -10px;
-	width:170px;  
-	font-family: 'Squada One', cursive;
-	color: #0B2161;
+  margin-left: -10px;
+  width:170px;  
+  font-family: 'Squada One', cursive;
+  color: #0B2161;
 }
 .content {
 scrollbar-width: none;
@@ -197,32 +203,32 @@ transform: translateY(-50%);
 /* HEADER END*/
 /*FOOTER START*/
 li.footer-li{
-	margin-left: 40px;
-	list-style-type: none;
-	font-size: 12px;
-	font-family: 'Sawarabi Gothic', sans-serif; 
-	color: #D2D5DA; 
-	margin-top: -5px;
+  margin-left: 40px;
+  list-style-type: none;
+  font-size: 12px;
+  font-family: 'Sawarabi Gothic', sans-serif; 
+  color: #D2D5DA; 
+  margin-top: -5px;
 }
 div.footer-div{
-	margin-left: 50px; 
-	font-size: 16px; 
-	color: #D2D5DA;
+  margin-left: 50px; 
+  font-size: 16px; 
+  color: #D2D5DA;
 }
 li.info-li{
-	list-style-type: circle;
-	font-size: 13px; 
-	color: #231F20 ; 
-	margin-top: 5px;
-	font-family: 'Sawarabi Gothic', sans-serif;
+  list-style-type: circle;
+  font-size: 13px; 
+  color: #231F20 ; 
+  margin-top: 5px;
+  font-family: 'Sawarabi Gothic', sans-serif;
 }
 .qa-li{
-	list-style-type: none;
-	font-size: 12px; 
-	color: #231F20 ; 
-	margin-top: 5px;
-	margin-left: 50px;
-	font-family: 'Sawarabi Gothic', sans-serif;
+  list-style-type: none;
+  font-size: 12px; 
+  color: #231F20 ; 
+  margin-top: 5px;
+  margin-left: 50px;
+  font-family: 'Sawarabi Gothic', sans-serif;
 }
 
 .site-navbar .site-logo {
@@ -240,15 +246,15 @@ li.info-li{
         position: relative; } }
 
 div.info-div{
-	margin-left: 50px; 
-	font-size: 20px; 
-	color: #231F20;
+  margin-left: 50px; 
+  font-size: 20px; 
+  color: #231F20;
 }
 div.logo-high{
-	margin-top: 100px;
+  margin-top: 100px;
 }
 img.height{
-	height: 50px;
+  height: 50px;
 }
  a.footer-link:hover {
     text-decoration: none;
@@ -257,20 +263,20 @@ img.height{
 .yote
 {
   text-align: center;
-	padding: 10px 10px;
-	font-size: 13px;
-	color: #231F20;
-	font-family: 'Sawarabi Gothic', sans-serif;
+  padding: 10px 10px;
+  font-size: 13px;
+  color: #231F20;
+  font-family: 'Sawarabi Gothic', sans-serif;
 }
 .yote1
 {
   list-style-type: circle;
-	/*padding: 10px 10px;*/
+  /*padding: 10px 10px;*/
   text-align: center;
-	text-align: left;
-	font-size: 12px;
-	color: #231F20;
-	font-family: 'Sawarabi Gothic', sans-serif;
+  text-align: left;
+  font-size: 12px;
+  color: #231F20;
+  font-family: 'Sawarabi Gothic', sans-serif;
 }
 th.yote
 {
@@ -284,229 +290,229 @@ th.yote
 th.yote-header
 {
   background-color: lightgray;
-	padding: 10px 10px;
-	border-color: gray;
-	text-align: center;
-	font-size: 13px;
-	color: #231F20;
-	font-family: 'Sawarabi Gothic', sans-serif;
+  padding: 10px 10px;
+  border-color: gray;
+  text-align: center;
+  font-size: 13px;
+  color: #231F20;
+  font-family: 'Sawarabi Gothic', sans-serif;
 }
 td.yote
 {
-	padding: 10px 10px;
-	text-align: left;
-	font-size: 12px;
-	color: #231F20;
-	font-family: 'Sawarabi Gothic', sans-serif;
+  padding: 10px 10px;
+  text-align: left;
+  font-size: 12px;
+  color: #231F20;
+  font-family: 'Sawarabi Gothic', sans-serif;
 }
 table.size-table
 {
-	width: 800px;
+  width: 800px;
 }
 p.yote
 {
-	width: 1200px;
-	padding: 10px 10px;
-	text-align: left;
-	font-size: 13px;
-	color: #231F20;
-	font-family: 'Sawarabi Gothic', sans-serif;
+  width: 1200px;
+  padding: 10px 10px;
+  text-align: left;
+  font-size: 13px;
+  color: #231F20;
+  font-family: 'Sawarabi Gothic', sans-serif;
 }
 .yote2
 {
-	margin-top: -10px;
-	padding: 10px 10px;
-	text-align: center;
-	font-size: 11px;
-	color: #231F20;
-	font-family: 'Sawarabi Gothic', sans-serif;
+  margin-top: -10px;
+  padding: 10px 10px;
+  text-align: center;
+  font-size: 11px;
+  color: #231F20;
+  font-family: 'Sawarabi Gothic', sans-serif;
 }
 h5.atama
 {
-	width: 440px;
-	margin-left:40px;
+  width: 440px;
+  margin-left:40px;
 }
 .une{
-	background-color: #CDCFD0;
-	color: black; 
-	text-align: center;	
+  background-color: #CDCFD0;
+  color: black; 
+  text-align: center; 
 }
 
   @media only screen and (max-width:1900px) {
-	.yote  {
-		 padding: 1px 1px;
-		text-align: left;
-		font-size: 12px;
-		color: #231F20;
-		font-family: 'Sawarabi Gothic', sans-serif;
-	}
-		
-	li.info-li{
-		width: 390px;
-		margin-left: 60px;
-		 list-style-type: circle;
-		font-size: 12px; 
-		color: #231F20 ; 
-		margin-top: 0px;
-		font-family: 'Sawarabi Gothic', sans-serif;
-	}
-	table.une-table{
-		margin-left: -1000px;
-		width: 500px;
-	}
-	p.yote
-	{
-		width: 1200px;
-		padding: 10px 10px;
-		text-align: left;
-		font-size: 13px;
-		color: #231F20;
-		font-family: 'Sawarabi Gothic', sans-serif;
-	}
+  .yote  {
+     padding: 1px 1px;
+    text-align: left;
+    font-size: 12px;
+    color: #231F20;
+    font-family: 'Sawarabi Gothic', sans-serif;
+  }
+    
+  li.info-li{
+    width: 390px;
+    margin-left: 60px;
+     list-style-type: circle;
+    font-size: 12px; 
+    color: #231F20 ; 
+    margin-top: 0px;
+    font-family: 'Sawarabi Gothic', sans-serif;
+  }
+  table.une-table{
+    margin-left: -1000px;
+    width: 500px;
+  }
+  p.yote
+  {
+    width: 1200px;
+    padding: 10px 10px;
+    text-align: left;
+    font-size: 13px;
+    color: #231F20;
+    font-family: 'Sawarabi Gothic', sans-serif;
+  }
  }
 
  @media only screen and (max-width:1800px) {
-	h5.atama
- 	{
- 		font-size: 20px;
-		width: 340px;
-		margin-left:20px;
-	}
+  h5.atama
+  {
+    font-size: 20px;
+    width: 340px;
+    margin-left:20px;
+  }
 
-	.yote  {
-		 padding: 1px 1px;
-		text-align: left;
-		font-size: 13px;
-		color: #231F20;
-		font-family: 'Sawarabi Gothic', sans-serif;
-	}
-		
-	li.info-li{
-		width: 430px;
-		margin-left: 10px;
-		 list-style-type: circle
-		font-size: 13px; 
-		color: #231F20 ; 
-		margin-top: 0px;
-		font-family: 'Sawarabi Gothic', sans-serif;
-	}
+  .yote  {
+     padding: 1px 1px;
+    text-align: left;
+    font-size: 13px;
+    color: #231F20;
+    font-family: 'Sawarabi Gothic', sans-serif;
+  }
+    
+  li.info-li{
+    width: 430px;
+    margin-left: 10px;
+     list-style-type: circle
+    font-size: 13px; 
+    color: #231F20 ; 
+    margin-top: 0px;
+    font-family: 'Sawarabi Gothic', sans-serif;
+  }
 
-	.une{
-		background-color: #CDCFD0;
-		color: black; 
-		text-align: center;	
-	}
+  .une{
+    background-color: #CDCFD0;
+    color: black; 
+    text-align: center; 
+  }
 
-	table.une-table{
-		margin-left: 20px;
-		width: 450px;
-	}
-	p.yote
-	{
-		width: 1040px;
-		padding: 10px 10px;
-		text-align: left;
-		font-size: 11px;
-		color: #231F20;
-		font-family: 'Sawarabi Gothic', sans-serif;
-	}
+  table.une-table{
+    margin-left: 20px;
+    width: 450px;
+  }
+  p.yote
+  {
+    width: 1040px;
+    padding: 10px 10px;
+    text-align: left;
+    font-size: 11px;
+    color: #231F20;
+    font-family: 'Sawarabi Gothic', sans-serif;
+  }
 
  }
  @media only screen and (max-width:1500px) {
- 	h5.atama
- 	{
- 		font-size: 17px;
-		width: 340px;
-		margin-left:20px;
-	}
-	.yote  {
-		 padding: 1px 1px;
-		text-align: left;
-		font-size: 12px;
-		color: #231F20;
-		font-family: 'Sawarabi Gothic', sans-serif;
-	}
-		
-	li.info-li{
-		width: 390px;
-		margin-left: -40px;
-		 list-style-type: circle;
-		font-size: 12px; 
-		color: #231F20 ; 
-		margin-top: 0px;
-		font-family: 'Sawarabi Gothic', sans-serif;
-	}
+  h5.atama
+  {
+    font-size: 17px;
+    width: 340px;
+    margin-left:20px;
+  }
+  .yote  {
+     padding: 1px 1px;
+    text-align: left;
+    font-size: 12px;
+    color: #231F20;
+    font-family: 'Sawarabi Gothic', sans-serif;
+  }
+    
+  li.info-li{
+    width: 390px;
+    margin-left: -40px;
+     list-style-type: circle;
+    font-size: 12px; 
+    color: #231F20 ; 
+    margin-top: 0px;
+    font-family: 'Sawarabi Gothic', sans-serif;
+  }
 
-	.une{
-		 /*#CDCFD0*/
-		background-color:#CDCFD0;
-		color: black; 
-		text-align: center;	
-		margin-left: -40px;
+  .une{
+     /*#CDCFD0*/
+    background-color:#CDCFD0;
+    color: black; 
+    text-align: center; 
+    margin-left: -40px;
 
-	}
+  }
 
-	table.une-table{
-		margin-left: -80px;
-		width: 450px;
-	}
-	p.yote
-	{
-		width: 750px;
-		padding: 10px 10px;
-		text-align: left;
-		font-size: 10px;
-		color: #231F20;
-		font-family: 'Sawarabi Gothic', sans-serif;
-	}
+  table.une-table{
+    margin-left: -80px;
+    width: 450px;
+  }
+  p.yote
+  {
+    width: 750px;
+    padding: 10px 10px;
+    text-align: left;
+    font-size: 10px;
+    color: #231F20;
+    font-family: 'Sawarabi Gothic', sans-serif;
+  }
 
  }
 
 @media only screen and (max-width:1300px) {
-	h5.atama
- 	{
- 		font-size: 17px;
-		width: 340px;
-		margin-left:-10px;
-	}
-	.yote  {
-		 padding: 1px 1px;
-		text-align: left;
-		font-size: 10px;
-		color: #231F20;
-		font-family: 'Sawarabi Gothic', sans-serif;
-	}
-		
-	li.info-li{
-		width: 390px;
-		margin-left: -60px;
-		 list-style-type: circle;
-		font-size: 10px; 
-		color: #231F20 ; 
-		margin-top: 0px;
-		font-family: 'Sawarabi Gothic', sans-serif;
-	}
-	.une{
-		 /*#CDCFD0*/
-		background-color:#CDCFD0;
-		color: black; 
-		text-align: center;	
-		
+  h5.atama
+  {
+    font-size: 17px;
+    width: 340px;
+    margin-left:-10px;
+  }
+  .yote  {
+     padding: 1px 1px;
+    text-align: left;
+    font-size: 10px;
+    color: #231F20;
+    font-family: 'Sawarabi Gothic', sans-serif;
+  }
+    
+  li.info-li{
+    width: 390px;
+    margin-left: -60px;
+     list-style-type: circle;
+    font-size: 10px; 
+    color: #231F20 ; 
+    margin-top: 0px;
+    font-family: 'Sawarabi Gothic', sans-serif;
+  }
+  .une{
+     /*#CDCFD0*/
+    background-color:#CDCFD0;
+    color: black; 
+    text-align: center; 
+    
 
-	}
-	th.yote
-	{
-		font-size: 11px;
-	}
-	td.yote
-	{
-		font-size: 10px;
-	}
+  }
+  th.yote
+  {
+    font-size: 11px;
+  }
+  td.yote
+  {
+    font-size: 10px;
+  }
 }
 p{
-	margin-left: 12px;
-	margin-right: 2px; 
-	color:  #231F20 ;
+  margin-left: 12px;
+  margin-right: 2px; 
+  color:  #231F20 ;
 }
 /*FOOTER END*/
 /*Happy user*/
@@ -633,13 +639,13 @@ p{
   .testimony-section .owl-dots {
     text-align: center; }
     .testimony-section .owl-dots .owl-dot {
-      width: 10px;
-      height: 10px;
-      margin: 5px;
-      border-radius: 50%;
-      background: rgba(0, 0, 0, 0.1); }
-      .testimony-section .owl-dots .owl-dot.active {
-        background: black; }
+    width: 10px;
+    height: 10px;
+    margin: 5px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.1); }
+    .testimony-section .owl-dots .owl-dot.active {
+      background: black; }
 
 div.success {
       -webkit-animation: seconds 1.0s forwards;
@@ -685,7 +691,7 @@ div.success {
     }
 
     .searchTerm:focus{
-    	/*#00B4CC tsaivar tsenher ongo*/
+      /*#00B4CC tsaivar tsenher ongo*/
       color: black;
     }
 
