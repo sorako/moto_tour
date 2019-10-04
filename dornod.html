@@ -286,7 +286,7 @@
 							</tr>
 						</tbody>
 					</table>
-					<div class="border">
+					<div>
 						<p style="font-size: 13px;">※ 交通事情や天候条件により、日程の変更を余儀なくされる場合があります。ご参加の皆様には特殊地域での旅行ということを事前にご了承いただいた上でご参加いただきますようお願い申し上げます。</p>
 						<p style="font-size: 13px;">※ 添乗員は同行しませんが、現地にて日本語係員が同行します。</p>
 						<p style="font-size: 13px;">※ 旅券有効残存期間は入国時より6ヶ月以上。</p>	
@@ -378,21 +378,26 @@
 				</div>
 				<!-- END -->
 				<!-- QAA LINK START -->
-				<div class="row container text-right" style="margin-top: 50px;">
+				<div class="row container text-right" style="margin-top: 20px;">
 					<a href="QAA.html" style="margin-left: 20%;">
 						<div class='row container14'><span id='text'></span>
-							<div class='console-underscore' id='console'>
-								
-							</div>
+							<div class='console-underscore' id='console'></div>
 						</div>
 					</a>	
 				</div>
 				<!-- QAA LINK END -->
+				<!-- Map popup -->
+				<div class="row container text-center" style="margin-top: 40px;">
+						<button class="btn btn-success" style="width: 100%;"id="link">MAP GUIDE</button>
+					<div id="popup"><iframe id="popupiframe"></iframe></div>
+					<div id="popupdarkbg"></div>
+				</div>
+				<!-- Map popup END-->
 			</div>	
 		</div>
     </div>
 <!-- GALLERY -->
-    <h4 class="text-center" style="margin-top: 100px;"><b>写真ギャラリー</b></h4>
+    <h4 class="text-center" style="margin-top: 50px;"><b>写真ギャラリー</b></h4>
     <div class="container border-top"></div>
     <div class="container" style="margin-top: 20px; "> 
       	<div class="row hes-gallery">
@@ -489,6 +494,7 @@
 		</div>
     </div>  
 <!--Galary end -->
+<!-- Tour Start -->
     <div class="site-section border-top" style="margin-top: 20px;">
     	<!-- <h4 class="text-center"><b>ツアーガイド</b></h4> -->
         <div class="container-fluid" style="margin-top: -80px;">
@@ -543,7 +549,7 @@
 <!--TOURS END -->
 </div>  
 <div id = " section-map" style="margin-top: -100px;">
-			<iframe style="border-radius: 0px;" src="https://www.google.com/maps/d/embed?mid=1u8DxI6yKPLURtHV5jltbaMozlSFcRFqx" width="100%" height="500"></iframe>
+			
 </div> 
 <a href="#" class="back-to-top">トップへ戻る</a>
 <!-- Footer -->
@@ -626,6 +632,27 @@
 <script type='text/javascript' src="js/pic-slide.js"></script>
 <script type='text/javascript' src="js/link-QAA.js"></script>
 <script type='text/javascript' src="js/main.js"></script>
+<script type="text/javascript">
+document.getElementById("link").onclick = function(e) {
+	e.preventDefault();
+	document.getElementById("popupdarkbg").style.display = "block";
+	document.getElementById("popup").style.display = "block";
+	document.getElementById('popupiframe').src = "https://www.google.com/maps/d/embed?mid=1u8DxI6yKPLURtHV5jltbaMozlSFcRFqx";
+	document.getElementById('popupdarkbg').onclick = function() {
+	document.getElementById("popup").style.display = "none";
+	document.getElementById("popupdarkbg").style.display = "none";
+	};
+	return false;
+}
+window.onkeydown = function(e) {
+	if (e.keyCode == 27) {
+	document.getElementById("popup").style.display = "none";
+	document.getElementById("popupdarkbg").style.display = "none";
+	e.preventDefault();
+	return;
+	}
+}
+</script>
 <!-- SCRIPT END -->
 </body>
 </html>
