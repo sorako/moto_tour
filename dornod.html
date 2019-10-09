@@ -385,8 +385,8 @@
 					</div>		
 				</div>
 				<!-- Map popup -->
-				<div></div>
-				<div class="row container-fluid text-center" id="map" style="margin-top: 50px;"></div>
+				<!-- <div class="row container-fluid text-center" id="map" style="margin-top: 50px;"></div> -->
+     			<div id="map" style="width: 500px; height: 500px; color: black;"></div >
 				<!-- Map popup END-->
 			</div>	
 		</div>
@@ -646,15 +646,57 @@
 <script type='text/javascript' src="js/pic-slide.js"></script>
 <script type='text/javascript' src="js/link-QAA.js"></script>
 <script type='text/javascript' src="js/main.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?callback=map" async defer></script>
-<script type="text/javascript">
-	function map() {
-	new google.maps.Map(document.getElementById('map'), {
-          center: {lat: -34.397, lng: 150.644},
-          zoom: 8
-        });
-}
-</script>
+<script type='text/javascript' src="js/google.js"></script>
+<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+   <script type="text/javascript">
+   var markers = [
+    
+            {
+            
+               "title": 'Alibaug',
+               "lat": '47.921230',
+               "lng": '106.918556',
+               "description": 'Ulaanbaataraas garna'
+           }
+    
+       ,
+    
+            {
+               "title": 'Mumbai',
+               "lat": '47.921260',
+               "lng": '103.918556',
+               "description": 'end ochin'
+           }
+    
+
+
+       ,
+       	{
+               "title": 'Mumbai',
+               "lat": '43.921230',
+               "lng": '99.918556',
+               "description": 'end ochin'
+           }
+    
+       ,
+    
+            {
+               "title": 'Pune',
+               "lat": '43.921230',
+               "lng": '99.918556',
+               "description": 'end hurtel duguigar yvna'
+           }
+           ,
+    
+            {
+               "title": 'DSDS',
+                "lat": '47.921230',
+               "lng": '106.918556',
+               "description": 'end hurtel duguigar yvna'
+           }
+    
+   ];
+   </script>
 <!-- SCRIPT END -->
 </body>
 </html>
