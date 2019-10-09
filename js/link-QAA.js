@@ -1,7 +1,7 @@
 
 
 
-consoleText(['よくあるご質問。', 'ここに押してください', '何を探していますか？'], 'text',['tomato','red','green']);
+consoleText(['よくあるご質問。', 'Q&A ここに押して下さい。', 'ここから探して見て下さい。'], 'text',['tomato','red','green']);
 
 function consoleText(words, id, colors) {
   if (colors === undefined) colors = ['#000'];
@@ -33,12 +33,12 @@ function consoleText(words, id, colors) {
         x = -1;
         letterCount += x;
         waiting = false;
-      }, 1000)
+      }, 2000)
     } else if (waiting === false) {
       target.innerHTML = words[0].substring(0, letterCount)
       letterCount += x;
     }
-  }, 120)
+  }, 40)
   window.setInterval(function() {
     if (visible === true) {
       con.className = 'console-underscore hidden'
@@ -49,5 +49,5 @@ function consoleText(words, id, colors) {
 
       visible = true;
     }
-  }, 400)
+  }, 300)
 }
