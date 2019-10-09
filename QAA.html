@@ -174,17 +174,25 @@
 			                </div>
 			            </li>
 			        </ul>
-		         	<div class="container" style="margin-top: 100px;background-color: lightgray;height: 150px;">  
-		             	<div class="row"></div>
-		            	<h5 class="text-center" style="margin-top: 40px;"><b>この<strong> Q＆A</strong>は問題の解決に役立ちましたか？</b></h5>
-			            <div class="text-center" style="margin-top: 40px;">
-			             	 <a class="like"><i class="fa fa-thumbs-o-up"></i>  
-			                    Like <input class="qty1" name="qty1" readonly="readonly" type="text" value="0" />
-			                </a>
-			                <a class="dislike"><i class="fa fa-thumbs-o-down"></i> 
-			                    Dislike <input class="qty2"  name="qty2" readonly="readonly" type="text" value="0" />
-			                </a>
-			            </div>
+		         	<div class="row  text-center div" style="margin-top: 100px;background-color: lightgray;height: 150px;">  
+		             	<div class="col-md-12 ">
+		            		<h5  style="margin-top: 40px;"><b>この<strong> Q＆A</strong>は問題の解決に役立ちましたか？</b></h5>
+		            	</div>
+		            	<div class="col-md-3"></div>
+			            <div class="col-md-3">
+		        			<form id="like-form">
+				            	<input  type="like" name="like" class="form-control" id="like" value="1" style="display: none;" >
+				            	<button type="submit" id="submit" class="reloadpage btn btn-secondary"  style="background-color: #00B4CC; border: none;"> 
+		            			<i class="fa fa-thumbs-o-up"></i> Like <span id="totlike"></span></button>
+		            		</form>
+		      			</div>
+		       			<div class="col-md-3">
+			            	<form id="dislike-form">
+				            	<input  type="dislike" name="dislike" class="form-control" id="dislike" value="1" style="display: none;" >
+				            	<button type="submit" id="submit" class="reloadpage btn btn-secondary" style="background-color: #00B4CC; border: none; "> 
+			            		<i class="fa fa-thumbs-o-down"></i> Dislike  -<span id="totdislike"></span>	</button>	
+			            	</form>
+			            </div> 
 		            </div>   
 		        </div>
 	        </div>
@@ -320,26 +328,29 @@
 <script type='text/javascript' src="js/jquery-3.3.1.js"></script>
 <script type='text/javascript' src="js/main.js"></script>
 <script type='text/javascript' src="js/toggleQA.js"></script>
-<script type="text/javascript">
-// QAA used 
-$(function () {
-$(".like").click(function () {
-    var input = $(this).find('.qty1');
-    input.val(parseInt(input.val())+ 1);
+ <script type="text/javascript">
+	$.getJSON("https://spreadsheets.google.com/feeds/list/1uFw4_OstzvujAEQ3z-8D8a_qQeZ2m9HwXCJJkqhzfgg/od6/public/values?alt=json", function (data) {
 
- });
- $(".dislike").click(function () {
-     var input = $(this).find('.qty2');
-     input.val(input.val() - 1);
- });
-});
-$(document).ready(function(){
-  $("#myInput").on("keyup", function() {
-    var value = $(this).val().toLowerCase();
-    $("#myList li").filter(function() {
-      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+      var sheetData = data.feed.entry;
+
+      var i;
+      for (i = 0; i < sheetData.length; i++) {
+
+        var totlike = data.feed.entry[i]['gsx$like']['$t'];
+        var totdislike = data.feed.entry[i]['gsx$dislike']['$t'];
+      }
+
+      document.getElementById('totlike').innerHTML += ('<span>'+totlike+'</span>');
+      document.getElementById('totdislike').innerHTML += ('<span>'+totdislike+'</span>');
+   
+     
+     console.log(dislikes);
     });
-  });
+</script>
+ <script>
+$('.reloadpage').click(function() {
+
+    location.reload();
 });
 </script>
 <!-- SCRIPT END -->
