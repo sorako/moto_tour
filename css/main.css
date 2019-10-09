@@ -309,6 +309,10 @@ table.size-table
 {
   width: 800px;
 }
+#map {
+    width: 600px;
+    height: 500px;
+  }
 p.yote
 {
   width: 1200px;
@@ -318,6 +322,7 @@ p.yote
   color: #231F20;
   font-family: 'Sawarabi Gothic', sans-serif;
 }
+
 .yote2
 {
   margin-top: -10px;
@@ -346,6 +351,16 @@ h5.atama
     color: #231F20;
     font-family: 'Sawarabi Gothic', sans-serif;
   }
+  #map {
+    width: 550px;
+    height: 500px;
+  }
+  table.size-table
+  {
+    margin-left: 50px;
+    width: 800px;
+  /*background-color: red;*/
+  } 
     
   li.info-li{
     width: 390px;
@@ -402,6 +417,16 @@ h5.atama
     color: black; 
     text-align: center; 
   }
+
+  #map {
+    width: 400px;
+    height: 400px;
+  }
+  table.size-table
+  {
+    margin-left: 0px;
+    width: 400px;
+  } 
 
   table.une-table{
     margin-left: 20px;
@@ -764,8 +789,7 @@ div.success {
   /*background-color: ;*/
   font-family:Khula;
   font-size:2em;
-  text-align:center;
-  height:50px;
+  height:100px;
   width:100%;
   color:white;
   top:0;

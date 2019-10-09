@@ -1,7 +1,8 @@
 
 
 
-consoleText(['よくあるご質問。', 'Q&A ここに押して下さい。', 'ここから探して見て下さい。'], 'text',['tomato','red','green']);
+
+consoleText(['よくあるご質問 Q&A', 'ここに押して下さい。', 'Q&Aここから探して見て下さい。'], 'text',['tomato','red','green']);
 
 function consoleText(words, id, colors) {
   if (colors === undefined) colors = ['#000'];
