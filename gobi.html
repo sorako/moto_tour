@@ -44,6 +44,10 @@
 	    background-attachment: fixed;
 	    background-image: url("images/gobi-header.jpg");
 	}
+	#map {
+	  width: 500px;
+	  height: 500px;
+	}
 	</style>
 </head>
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300"  class='content'>
@@ -291,7 +295,16 @@
 						<p style="font-size: 13px;">※ 添乗員は同行しませんが、現地にて日本語係員が同行します。</p>
 						<p style="font-size: 13px;">※ 旅券有効残存期間は入国時より6ヶ月以上。</p>	
 					</div>
-					
+					<!-- END --><!-- QAA LINK START -->
+					<div class="row container-fluid" style="margin-top:200px;">
+						<a href="QAA.html" style="margin-left: 20%;">
+							<div class='row container14'><span id='text'></span>
+								<div class='console-underscore' id='console'>
+								</div>
+							</div>
+						</a>	
+					</div>
+					<!-- QAA LINK END -->
 				</div>
 				<!-- 日程表 END-->		
 			</div>
@@ -373,26 +386,10 @@
 					<div>
 						<p style="font-size: 13px;">※　燃油サーチャージ、現地経費込み</p>
 						<p style="font-size: 13px;">※　現地発着またはウランバートルで合流は可能です。</p>
-					</div>
-							
+					</div>		
 				</div>
-				<!-- END -->
-				<!-- QAA LINK START -->
-				<div class="row container text-right" style="margin-top:20px;">
-					<a href="QAA.html" style="margin-left: 20%;">
-						<div class='row container14'><span id='text'></span>
-							<div class='console-underscore' id='console'>
-							</div>
-						</div>
-					</a>	
-				</div>
-				<!-- QAA LINK END -->
 				<!-- Map popup -->
-				<div class="row container text-center" style="margin-top: 40px;">
-						<button class="btn btn-success" style="width: 100%;"id="link"><i class="fas fa-map-marked-alt" style="font-size:20px;"></i> MAP GUIDE</button>
-					<div id="popup"><iframe id="popupiframe"></iframe> </div>
-					<div id="popupdarkbg"></div>
-				</div>
+				<div id="map"></div>
 				<!-- Map popup END-->
 			</div>	
 		</div>
@@ -652,25 +649,13 @@
 <script type='text/javascript' src="js/pic-slide.js"></script>
 <script type='text/javascript' src="js/link-QAA.js"></script>
 <script type='text/javascript' src="js/main.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?callback=map" async defer></script>
 <script type="text/javascript">
-document.getElementById("link").onclick = function(e) {
-	e.preventDefault();
-	document.getElementById("popupdarkbg").style.display = "block";
-	document.getElementById("popup").style.display = "block";
-	document.getElementById('popupiframe').src = "https://www.google.com/maps/d/embed?mid=1u8DxI6yKPLURtHV5jltbaMozlSFcRFqx";
-	document.getElementById('popupdarkbg').onclick = function() {
-	document.getElementById("popup").style.display = "none";
-	document.getElementById("popupdarkbg").style.display = "none";
-	};
-	return false;
-}
-window.onkeydown = function(e) {
-	if (e.keyCode == 27) {
-	document.getElementById("popup").style.display = "none";
-	document.getElementById("popupdarkbg").style.display = "none";
-	e.preventDefault();
-	return;
-	}
+	function map() {
+	new google.maps.Map(document.getElementById('map'), {
+          center: {lat: -34.397, lng: 150.644},
+          zoom: 8
+        });
 }
 </script>
 <!-- SCRIPT END -->
