@@ -31,6 +31,70 @@ $(document).ready(function(){
       $("#submit").remove();
     });
  });
+
+$(document).ready(function(){
+  $.fn.serializeObject = function()
+    {
+     var o = {};
+     var a = this.serializeArray();
+     $.each(a, function() {
+         if (o[this.name]) {
+             if (!o[this.name].push) {
+                 o[this.name] = [o[this.name]];
+             }
+             o[this.name].push(this.value || '');
+         } else {
+             o[this.name] = this.value || '';
+         }
+     });
+     return o;
+    };
+  var form = $('form#like-form'),
+    url = 'https://script.google.com/macros/s/AKfycbxGE-_-ukYv6GJCbTCGMhbiolY8DXHBBv2uClRc0_ztDMfIfmJR/exec';
+    form.submit(function(e){
+      e.preventDefault();
+    var jqxhr = $.ajax({
+      url: url,
+      method: "GET",
+      dataType: "json",
+      data: form.serializeObject()
+    });
+      $(".form-control").return();
+      $("#submit").return();
+    });
+ });
+$(document).ready(function(){
+  $.fn.serializeObject = function()
+    {
+     var o = {};
+     var a = this.serializeArray();
+     $.each(a, function() {
+         if (o[this.name]) {
+             if (!o[this.name].push) {
+                 o[this.name] = [o[this.name]];
+             }
+             o[this.name].push(this.value || '');
+         } else {
+             o[this.name] = this.value || '';
+         }
+     });
+     return o;
+    };
+  var form = $('form#dislike-form'),
+    url = 'https://script.google.com/macros/s/AKfycbxGE-_-ukYv6GJCbTCGMhbiolY8DXHBBv2uClRc0_ztDMfIfmJR/exec';
+    form.submit(function(e){
+      e.preventDefault();
+    var jqxhr = $.ajax({
+      url: url,
+      method: "GET",
+      dataType: "json",
+      data: form.serializeObject()
+    });
+      $(".form-control").return();
+      $("#submit").return();
+       $("div#return").return();
+    });
+ });
 // BACK TO TOP BTN
   $(document).ready(function() {
       var offset = 220;
@@ -87,14 +151,14 @@ $(document).ready(function(){
         });
     }
 // IMAGE ZOOM 
-HesGallery.setOptions({
-    disableScrolling: false,
-    hostedStyles: false,
-    animations: true,
+// HesGallery.setOptions({
+//     disableScrolling: false,
+//     hostedStyles: false,
+//     animations: true,
 
-    showImageCount: true,
-    wrapAround: true
-});
+//     showImageCount: true,
+//     wrapAround: true
+// });
 // DROPDOWN MENU SCRIPT -->
 
   jQuery(document).ready(function () {
