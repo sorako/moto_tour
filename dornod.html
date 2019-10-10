@@ -4,6 +4,7 @@
 <head>
     <title>tour &mdash; Welcome mongolia</title>
     <meta charset="utf-8">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link href="https://fonts.googleapis.com/css?family=Squada+One&display=swap" rel="stylesheet">
@@ -42,11 +43,11 @@
 	    background-position: 50% 0;
 	    background-repeat: no-repeat;
 	    background-attachment: fixed;
-	    background-image: url("images/gobi-header.jpg");
+	    background-image: url("images/dornod-header.jpg");
 	}
 	</style>
 </head>
-<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300"  class='content' onload="LoadMap();">
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300"  class='content'>
 <!-- Gobi (title) -->  	
   	<header class="site-navbar site-navbar-target" role="banner">
         <div class="container-fluid">
@@ -384,9 +385,10 @@
 						<p style="font-size: 13px;">※　現地発着またはウランバートルで合流は可能です。</p>
 					</div>		
 				</div>
-				<!-- Map popup -->
+				<!-- Map  -->
 				<div id="myMap"></div>
  	 			<!-- <div id='directionsItinerary'></div>  -->
+ 	 			<!-- Map END-->
 			</div>	
 		</div>
     </div>
@@ -645,7 +647,6 @@
 <script type='text/javascript' src="js/pic-slide.js"></script>
 <script type='text/javascript' src="js/link-QAA.js"></script>
 <script type='text/javascript' src="js/main.js"></script>
-<script type='text/javascript' src="js/google.js"></script>
 <!-- map -->
 <script type='text/javascript' src="js/gobi.js"></script>
 <script type='text/javascript' src='http://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=AhroJA-0sFr3w-CFB7jrZQHfVj64D8cafX5gVMkxPtfhydUFlqNVNAiM7KttMakF' async defer></script>
