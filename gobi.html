@@ -46,7 +46,7 @@
 	}
 	</style>
 </head>
-<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300"  class='content'>
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300"  class='content' onload="LoadMap();">
 <!-- Gobi (title) -->  	
   	<header class="site-navbar site-navbar-target" role="banner">
         <div class="container-fluid">
@@ -385,9 +385,8 @@
 					</div>		
 				</div>
 				<!-- Map popup -->
-				<!-- <div class="row container-fluid text-center" id="map" style="margin-top: 50px;"></div> -->
-     			<div id="map" style="width: 500px; height: 500px; color: black;"></div >
-				<!-- Map popup END-->
+				<div id="myMap"></div>
+ 	 			<!-- <div id='directionsItinerary'></div>  -->
 			</div>	
 		</div>
     </div>
@@ -647,56 +646,9 @@
 <script type='text/javascript' src="js/link-QAA.js"></script>
 <script type='text/javascript' src="js/main.js"></script>
 <script type='text/javascript' src="js/google.js"></script>
-<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
-   <script type="text/javascript">
-   var markers = [
-    
-            {
-            
-               "title": 'Alibaug',
-               "lat": '47.921230',
-               "lng": '106.918556',
-               "description": 'Ulaanbaataraas garna'
-           }
-    
-       ,
-    
-            {
-               "title": 'Mumbai',
-               "lat": '47.921260',
-               "lng": '103.918556',
-               "description": 'end ochin'
-           }
-    
-
-
-       ,
-       	{
-               "title": 'Mumbai',
-               "lat": '43.921230',
-               "lng": '99.918556',
-               "description": 'end ochin'
-           }
-    
-       ,
-    
-            {
-               "title": 'Pune',
-               "lat": '43.921230',
-               "lng": '99.918556',
-               "description": 'end hurtel duguigar yvna'
-           }
-           ,
-    
-            {
-               "title": 'DSDS',
-                "lat": '47.921230',
-               "lng": '106.918556',
-               "description": 'end hurtel duguigar yvna'
-           }
-    
-   ];
-   </script>
+<!-- map -->
+<script type='text/javascript' src="js/gobi.js"></script>
+<script type='text/javascript' src='http://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=AhroJA-0sFr3w-CFB7jrZQHfVj64D8cafX5gVMkxPtfhydUFlqNVNAiM7KttMakF' async defer></script>
 <!-- SCRIPT END -->
 </body>
 </html>
