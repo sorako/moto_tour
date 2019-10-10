@@ -307,8 +307,9 @@ table.size-table
   width: 800px;
 }
  #myMap {
+    margin-top: 20px;
     position:relative;
-    width: 600px;
+    width: 580px;
     height: 500px;
   }
 p.yote
