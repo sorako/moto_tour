@@ -192,16 +192,16 @@
 		            	<div class="col-md-3"></div>
 			            <div class="col-md-3">
 		        			<form id="like-form">
-				            	<input  type="like" name="like" class="form-control" id="like" value="1" style="display: none;">
-				            	<button type="submit" id="submit" class="reloadpage btn btn-secondary"  style="background-color: #00B4CC; border: none; width: 100px;"> 
-		            			<i class="fa fa-thumbs-o-up"></i> Like <span id="totlike"></span></button>
+				            	<input  type="like" name="like" class="form-control" id="like" value="1" style="display: none">
+				            	<button type="submit" id="submit" class="btn btn-secondary1"  style="width: 140px;"> 
+		            			<i class="fa fa-thumbs-o-up"></i> Like <span class="like yote" style="background-color: transparent;"></span></button>
 		            		</form>
 		      			</div>
 		       			<div class="col-md-3">
 			            	<form id="dislike-form">
 				            	<input  type="dislike" name="dislike" class="form-control" id="dislike" value="1" style="display: none;">
-				            	<button type="submit" id="submit" class="reloadpage btn btn-secondary" style="background-color: #00B4CC; border: none;width: 120px; "> 
-			            		<i class="fa fa-thumbs-o-down"></i> Dislike -<span id="totdislike"></span></button> 	
+				            	<button type="submit" id="submit" class="btn btn-secondary1" style=";width: 140px; "> 
+			            		<i class="fa fa-thumbs-o-down"></i> Dislike <span class="dislike yote"  style="background-color: transparent;"></span></button> 	
 			            	</form>
 			            </div> 
 		            </div>   
@@ -210,6 +210,17 @@
 	    </div>  
   	</div> 
 <!-- QAA END -->
+<!-- btn disable jishee -->
+<!-- <button id="id" class="disable-btn">Click to disable other for 1 second</button>
+<br/>
+<button class="disable-btn">Will Disable for 1 sec</button>
+<br/>
+<button class="disable-btn">Will Disable for 1 sec</button>
+<br/>
+<button>Will not Disable</button>
+<br/>
+<button class="disable-btn">Will Disable for 1 sec</button>
+<br/> -->
 <!-- TOUR START -->
 	<!-- <h4 class="text-center"><b>ツアーガイド</b></h4> -->
     <div class="container-fluid">
@@ -360,30 +371,29 @@
 <script type='text/javascript' src="js/jquery-3.3.1.js"></script>
 <script type='text/javascript' src="js/main.js"></script>
 <script type='text/javascript' src="js/toggleQA.js"></script>
- <script type="text/javascript">
-	$.getJSON("https://spreadsheets.google.com/feeds/list/1uFw4_OstzvujAEQ3z-8D8a_qQeZ2m9HwXCJJkqhzfgg/od6/public/values?alt=json", function (data) {
+<script type="text/javascript">
+// $('#id').click(function() {	
+//   // let a common class(disable-btn) for each button which should be disabled for on second
+//   $('.disable-btn').prop('disabled', false);
+//   setTimeout(function() {
+//     // enable click after 1 second
+//     $('.disable-btn').prop('disabled', true);
+//   }, 2000); // 1 second delay
+//   });
+</script>
+<script>
+ var spreadsheetID = "1uFw4_OstzvujAEQ3z-8D8a_qQeZ2m9HwXCJJkqhzfgg";
+ 
+ var url = "https://spreadsheets.google.com/feeds/list/" + spreadsheetID + "/od6/public/values?alt=json";
+$.getJSON(url, function(data) {
 
-	    var sheetData = data.feed.entry;
-	    var i;
-	   
-	    for (i = 0; i < sheetData.length; i++) {
-
-        	var totlike = data.feed.entry[i]['gsx$like']['$t'];
-        	var totdislike = data.feed.entry[i]['gsx$dislike']['$t'];
-      	}
-
-    document.getElementById('totlike').innerHTML += ('<span>'+totlike+'</span>');
-    document.getElementById('totdislike').innerHTML += ('<span>'+totdislike+'</span>');
-
-    });
-    $('.reloadpage').click(function() {
-	 setInterval(function() {
-    	cache_clear()
-  		}, 1300);
+	var entry = data.feed.entry;
+	$(entry).each(function(){
+		
+		$('.like').prepend('<span>'+this.gsx$like.$t+'</span>');
+		$('.dislike').prepend('<span>'+this.gsx$dislike.$t+'</span>');
 	});
-	function cache_clear() {
-	  window.location.reload(true);
-	}
+});
 </script>
 <!-- SCRIPT END -->
 </body>
