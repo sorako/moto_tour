@@ -1424,8 +1424,11 @@ h1, h2, h3, h4, h5,h6,
       max-width: 100%; }
   .service-2 h3 {
     font-size: 20px;
-    color: #000;
+    color: darkgray;
     font-weight: 700;
+    position: relative; }
+    .service-2 p {
+    color: darkgray;
     position: relative; }
     .service-2 h3 span {
       display: inline-block;
@@ -1446,11 +1449,13 @@ h1, h2, h3, h4, h5,h6,
     box-shadow: 0 5px 10px 0 rgba(148, 147, 147); }
     .service-2:hover h3 {
       /*:#D2232A*/
-      color:#C2BEBE; }
+      color:#000; }
       .service-2:hover h3 span:after {
         background-color:  #D2232A; }
+        .service-2: p {
+      color:gray; }
     .service-2:hover p {
-      color:black; }
+      color:gray; }
 
 .section-3 {
   background-size: cover;
