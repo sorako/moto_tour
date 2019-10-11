@@ -14,7 +14,7 @@
             });
 
             // Create waypoints to route between.
-        var Tosoh = new Microsoft.Maps.Directions.Waypoint({ address: 'モンゴルの首都ウランバートルへ向かいます',
+        var Tosoh = new Microsoft.Maps.Directions.Waypoint({ address: 'チンギスハーン国際空港',
         location: new Microsoft.Maps.Location(47.852887, 106.763013) });
         directionsManager.addWaypoint(Tosoh);
 
