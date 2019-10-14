@@ -1417,11 +1417,28 @@ h1, h2, h3, h4, h5,h6,
   transition: .3s all ease; 
  -webkit-box-shadow: 0 5px 50px 0 rgba(46, 49, 146, 0.1);
     box-shadow: 0 5px 10px 0 rgba(46, 49, 146, 0.1);}
-  .service-2 .svg {
-    width:100%;
-    margin-bottom: 20px; }
-    .service-2 .svg img {
-      max-width: 100%; }
+
+.service-2 .svg img {
+    max-width: 100%;
+      /*opacity: .3;*/
+    background: #CA9C4E; }
+
+.service-2 .svg {
+  width:100%;
+  margin-bottom: 20px; }
+
+
+.service-2 .svg img:hover {
+  max-width: 100%;
+    opacity: .6;
+}
+
+.service-2 .svg:hover {
+  width:100%;
+  margin-bottom: 20px; 
+  background: black;
+}
+   
   .service-2 h3 {
     font-size: 20px;
     color: darkgray;
@@ -1434,28 +1451,20 @@ h1, h2, h3, h4, h5,h6,
       display: inline-block;
       position: relative;
       padding-bottom: 10px; }
-      .service-2 h3 span:after {
-        /*content: "";
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        background-color:  #D2232A;
-        height: 4px;*/
-         }
+
   .service-2:hover {
     /*background-color: lightgray;*/
-    -webkit-box-shadow: 0 5px 50px 0 rgba(46, 49, 146, 0.1);
+    /*-webkit-box-shadow: 0 5px 50px 0 rgba(46, 49, 146, 0.1);*/
     box-shadow: 0 5px 10px 0 rgba(148, 147, 147); }
-    .service-2:hover h3 {
-      /*:#D2232A*/
-      color:#000; }
-      .service-2:hover h3 span:after {
-        background-color:  #D2232A; }
-        .service-2: p {
-      color:gray; }
-    .service-2:hover p {
-      color:gray; }
+.service-2:hover h3 {
+  /*:#D2232A*/
+  color:#000; }
+  .service-2:hover h3 span:after {
+    background-color:  #D2232A; }
+    .service-2: p {
+  color:gray; }
+.service-2:hover p {
+  color:gray; }
 
 .section-3 {
   background-size: cover;

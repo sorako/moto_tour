@@ -581,7 +581,7 @@ div.success {
     }
 
     .hes-gallery img:hover {
-      transform: scale(1.04);
+      /*transform: scale(1.04);*/
       box-shadow: 2px 2px 6px #555;
     } 
 
