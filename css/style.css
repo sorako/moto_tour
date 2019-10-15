@@ -1539,6 +1539,12 @@ form .form-control {
   margin-left:130px;
   background: #3D3E3F;
 }
+form .form-control1 {
+  border-color: transparent;
+  margin-right: 10px;
+  margin-left:60px;
+  background: #3D3E3F;
+}
 
 
 .line-bottom {

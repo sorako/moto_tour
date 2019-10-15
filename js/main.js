@@ -25,8 +25,42 @@ var form = $('form#test-form'),
     dataType: "json",
     data: form.serializeObject()
   });
-    $(".thanks").html("登録しました。ありがとうございます。").css("font-size","1rem");
+    $(".thanks").html("サインアップしていただきありがとうございます。 電子メールの受信トレイで、新しい電子メールサブスクリプションの確認を確認してください。").css("font-size","1rem");
     $(".form-control").remove();
+    $(".form-control1").remove();
+    $("#submit").remove();
+  });
+});
+// EMAIL BURTGEJ BGA HESEG
+$(document).ready(function(){
+$.fn.serializeObject = function(){
+  var o = {};
+  var a = this.serializeArray();
+  $.each(a, function() {
+  if (o[this.name]) {
+    if (!o[this.name].push) {
+      o[this.name] = [o[this.name]];
+    }
+      o[this.name].push(this.value || '');
+  } else {
+      o[this.name] = this.value || '';
+    }
+  });
+return o;
+};
+var form = $('form#test-form1'),
+  url = 'https://script.google.com/macros/s/AKfycbxEV5VQyZJ-b3UduuPMmqp--alp5fwqxAzDUNwJ1f4y41K4kmuM/exec';
+  form.submit(function(e){
+    e.preventDefault();
+  var jqxhr = $.ajax({
+    url: url,
+    method: "GET",
+    dataType: "json",
+    data: form.serializeObject()
+  });
+    $(".thanks").html("サインアップしていただきありがとうございます。 電子メールの受信トレイで、新しい電子メールサブスクリプションの確認を確認してください。").css("font-size","1rem");
+    $(".form-control").remove();
+    $(".form-control1").remove();
     $("#submit").remove();
   });
 });
