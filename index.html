@@ -33,49 +33,143 @@
     }
     .card1:hover {
         background: url("images/logo/fb1.png") no-repeat;
-    } 
+    }.modal {
+    	width: 500px;
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 40%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
   	</style>
 </head>
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300" class='content'>
 <!-- header -->
-	<header class="site-navbar headerVideo" >
-	    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-	      <source src="images/My Video 1.mp4" type="video/mp4">
-	    </video>
-	    <div class="container-fluid">
+	<header class="site-navbar" style="background-color: white; ">
+		 <div class="container">
 	        <div class="row align-items-center position-relative">
-	       		 <div class="col-3">
-		            <div class="site-logo">
-		              <a href="index.html"><img src="images/logo/logoSorako.png" ></a>
-		              <a href="index.html"><strong><b>Tour</b></strong>Sorako .</a>
-		            </div>
+	       		<div class="col-4 text-right">
+	              	<a href="index.html"><img src="images/logo/logoSorako.png" ></a>
 	            </div>
-	            <div class="col-9 text-right">
-		            <nav class="nav site-navigation text-right ">
-			            <ul class="site-menu js-clone-nav ml-auto ">
-			                <li class="dev"><a href="#home-section" class="nav-link"><b class="color">HOME</b></a></li>
-			                <li class="dev"><a href="#about-section" class="nav-link edit" style="margin-left: -10px;"><b class="color">ABOUT US</b></a></li>
-			                <li class="dev shopping-cart"><a href="#tour-section" class="nav-link"><b class="color">TOURS</b></a>
-				                <div class="minicart-dropdown">
-				                    <div class="cart-buttons">
+	            <div class="col-2 text-right">
+	            </div>
+	            <div class="col-6">
+	            	<div class="row">
+	            		<div class="col-8 text-right">
+		            		<a href="www.facebook.com"> <img src="images/logo/head_fb.png"></a>
+		            		<a href="www.facebook.com" style="margin-left: 10px;"> <img src="images/logo/head_Instegram.png"></a>
+		            		<a href="#" id="myBtn" style="margin-left: 10px; color:#0B2161;"><b> 最新情報を受け取る</b></a>
+		            		<span><b class="color" style="margin-left: 20px;">+9768888-8888</b></span>
+							<div id="myModal" class="modal">
+								<div class="modal-content">
+								    <span class="close">&times;</span>
+								    <h2 class="text-center"><b>最新情報に登録する</b></h2>
+								    <p class="text-center"><b>毎月のメールニュースレターを受け取る他の探検家に参加してください。これには、当社のサービスに<br>関する最新情報に加えて、時折のプロモーションの事前通知が含まれます。 いつでも退会できます。</b></p>
+								    <form id="test-form1" class="form-inline" style="margin-top: 30px;">
+									    <table>
+											<tr>
+												<th>
+													<p class="form-control1" style="background-color: white;"><b>お名前<span style="color: red;">*</span>:</b></p>
+												</th>
+												<th>
+													<input  type="text"  name="name" class="form-control form-inline" id="name" placeholder="お名前" required="" oninvalid="this.setCustomValidity('お名前を入れてください')" oninput="setCustomValidity('')">
+												</th>
+											</tr>
+											<tr>
+												<th>
+													<p class="form-control1" style="background-color: white;"><b>お電話番号:</b></p>
+												</th>
+												<th>
+													<input  type="number"  name="tel" class="form-control" id="tel" placeholder="電話番号" equired="" oninvalid="this.setCustomValidity('お電話番号を入れてください')" oninput="setCustomValidity('')" style="margin-top: 10px;">
+												</th>
+											</tr>
+											<tr>
+												<th>
+													<p class="form-control1" style="background-color: white;"><b>メ-ルアドレス<span style="color: red;">*</span>:</b></p>
+												</th>
+												<th>
+													<input  type="email" name="Email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="メ-ルアドレス" equired="" oninvalid="this.setCustomValidity('メ-ルアドレスを入れてください')" oninput="setCustomValidity('')"  style="margin-top: 10px;">
+												</th>
+											</tr>
+											<tr>
+												<th>
+												</th>
+												<th>
+													<button type="submit" id="submit" class="btn btn-primary form-control" style=" margin-top: 10px; ">送信</button>
+												</th>
+											</tr>
+										</table>	
+							            
+							            <small style="color:black;"><div class="thanks success"></div></small>
+							        </form>	             
+								</div>
+							</div>
+	            		</div>
+	            		<div class="col-4">
+	            		</div>
+	            	</div>
+	            	<div class="row">
+			            <nav class="nav site-navigation col-sm-12 text-center ">
+				            <ul class="site-menu">
+				                <li class="dev"><a href="#home-section" class="nav-link"><b class="color">Home</b></a></li>
+				                <li class="dev"><a href="#about-section" class="nav-link edit" style="margin-left: -10px;"><b class="color">About US</b></a></li>
+				                <li class="dev shopping-cart"><a href="#tour-section" class="nav-link"><b class="color">Tours</b></a>
+					                <div class="minicart-dropdown">
 				                        <ul class="down">
 				                            <li class="drow text-left"><a href="gobi.html">OFFROADBIKE TOUR</a></li>
 				                            <li class="drow text-left"><a href="#">MOUNTAIN BIKE TOUR</a></li>
 				                            <li class="drow text-left"><a href="#">HORSE RIDING TOUR</a></li>
 				                            <li class="drow text-left"><a href="#">FISHING TOUR</a></li>
 				                        </ul>
-				                    </div>
-				                </div>
-			                </li>
-			                <li class="dev"><a href="QAA.html" class="nav-link"><b class="color">Q&A</b></a></li>
-			                <li class="dev"><a href="#gallery-section" class="nav-link"><b class="color">GALLERY</b></a></li>
-			                <li class="dev"><a href="#footer-section" class="nav-link"><b class="color">CONTACT</b></a></li>
-			            </ul>
-		            </nav> 
+					                </div>
+				                </li>
+				                <li class="dev"><a href="QAA.html" class="nav-link"><b class="color">Q&A</b></a></li>
+				                <li class="dev"><a href="#gallery-section" class="nav-link"><b class="color">Gallery</b></a></li>
+				                <li class="dev"><a href="#footer-section" class="nav-link"><b class="color">Contact</b></a></li>
+				            </ul>
+			            </nav> 
+		            </div>
 	       		</div>
 	        </div>  
 	    </div>
 	</header>
+	<!-- header VIDEO -->
+	<div class="headerVideo" >
+	    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+	      <source src="images/My Video 1.mp4" type="video/mp4">
+	    </video>
+	</div>
+	<!-- header VIDEO END-->
 <!-- header END -->
 <div style="background-color: white;">
 <!-- ABOUT US -->
@@ -317,8 +411,8 @@
 				            </ul> 
 			             	<div class="row rm-6">
 				                <div class="col-sm-12 logo-high" style="margin-left: 15%; margin-top: 20px;">
-					                <a href="https://www.instagram.com"> <div class="card " style="height: 50px;"></div></a> 
-					                <a href="https://www.facebook.com"> <div class="card1 " style="height: 50px;"></div></a>
+					                <a href="https://www.instagram.com"> <div class="card "></div></a> 
+					                <a href="https://www.facebook.com"> <div class="card1 "></div></a>
 				              	</div>   
 			              	</div>   
 			            </div> 
@@ -341,7 +435,7 @@
 					                <input  type="text"  name="name" class="form-control" id="name" placeholder="お名前" required="" oninvalid="this.setCustomValidity('お名前を入れてください')" oninput="setCustomValidity('')">
 					                <input  type="number"  name="tel" class="form-control" id="tel" placeholder="電話番号" equired="" oninvalid="this.setCustomValidity('お電話番号を入れてください')" oninput="setCustomValidity('')" style="margin-top: 10px;">
 					                <input  type="email" name="Email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="メ-ルアドレス" equired="" oninvalid="this.setCustomValidity('メ-ルアドレスを入れてください')" oninput="setCustomValidity('')"  style="margin-top: 10px;">
-					                <textarea style="margin-top: 10px;height: 100px;" rows="4" cols="50" class="form-control" name="comment" id="comment"  placeholder="最新情報を受け取る"></textarea>
+					                <textarea style="margin-top: 10px;height: 100px;" rows="4" cols="50" class="form-control" name="comment" id="comment"  placeholder=""></textarea>
 					                <button type="submit" id="submit" class="btn btn-primary form-control" style=" margin-top: 10px; ">送信</button>
 					                <small style="color: gray;"><div class="thanks success"></div></small>
 				                </form>
@@ -386,5 +480,32 @@
 <script src="js/add/scrollax.min.js"></script>
 <script src="js/add/main.js"></script>
 <!-- SCRIPT END -->
+<script type="text/javascript">
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
 </body>
 </html>

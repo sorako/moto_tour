@@ -44,18 +44,19 @@ input:focus::-webkit-input-placeholder {
 /*HEADER VIDEO */
 .headerVideo{
   position: relative;
+  margin-top: 100px;
   background-color: black;
-  height: 100vh;
+  height: 90vh;
   min-height: 25rem;
   width: 100%;
   overflow: hidden;
 }
-header video {
+div video {
   position: absolute;
   top: 50%;
   left: 50%;
   min-width: 100%;
-  min-height: 100%;
+  min-height: 80%;
   width: auto;
   height: auto;
   z-index: 0;
@@ -101,15 +102,16 @@ ul li ul.down{
   list-style-type: none;
   margin-top: -15px;
   margin-left: 30px;
-    display: none;
+  display: none;
 }
 
 .shopping-cart {position: relative;display: inline-block;}
   .minicart-dropdown {
     margin-left: -20px;
     margin-top:  -25px;
-    width: 120px;
-    background-color: transparent;
+    width: 200px;
+    background-color: white;
+    text-align: center;
     min-width: 160px;
     z-index: 1;
     padding: 20px;
@@ -587,19 +589,6 @@ div.success {
 
     /*link QAA*/
 
-.container14 {
-  /*background-color: ;*/
-  font-family:Khula;
-  font-size:2em;
-  height:100px;
-  width:100%;
-  color:white;
-  top:0;
-  bottom:0;
-  left:0;
-  right:0;
-  margin:auto;
-}
 .console-underscore {
    display:inline-block;
   position:relative;
