@@ -1073,7 +1073,7 @@ h1, h2, h3, h4, h5,h6,
   background-position: center center;
   background-repeat: no-repeat; }
   .ftco-cover-2, .ftco-cover-2 .container > .row {
-    height: 40vh;
+    height: 100vh;
     /*header image high*/
     min-height: 500px; }
   .ftco-cover-2.innerpage, .ftco-cover-2.innerpage .container > .row {
