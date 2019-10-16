@@ -36,19 +36,17 @@
     }
   	</style>
 </head>
-<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300" class='content'>
+<body>
 <!-- header -->
 	<header class="site-navbar" style="background-color: white; ">
 		 <div class="container">
 	        <div class="row align-items-center position-relative">
-	       		<div class="col-4 text-right">
+	       		<div class="col-4 text-center">
 	              	<a href="index.html"><img src="images/logo/logoSorako.png" ></a>
-	            </div>
-	            <div class="col-2 text-right">
 	            </div>
 	            <div class="col-6">
 	            	<div class="row">
-	            		<div class="col-8 text-right">
+	            		<div class="col-12 text-right">
 		            		<a href="www.facebook.com"> <img src="images/logo/head_fb.png"></a>
 		            		<a href="www.facebook.com" style="margin-left: 10px;"> <img src="images/logo/head_Instegram.png"></a>
 		            		<a href="#" id="myBtn" style="margin-left: 10px; color:#0B2161;"><b> 最新情報を受け取る</b></a>
@@ -98,29 +96,23 @@
 								</div>
 							</div>
 	            		</div>
-	            		<div class="col-4">
-	            		</div>
 	            	</div>
 	            	<div class="row">
-			            <nav class="nav site-navigation col-sm-12 text-center ">
-				            <ul class="site-menu">
-				                <li class="dev"><a href="#home-section" class="nav-link"><b class="color">Home</b></a></li>
-				                <li class="dev"><a href="#about-section" class="nav-link edit" style="margin-left: -10px;"><b class="color">About US</b></a></li>
-				                <li class="dev shopping-cart"><a href="#tour-section" class="nav-link"><b class="color">Tours</b></a>
-					                <div class="minicart-dropdown">
-				                        <ul class="down">
-				                            <li class="drow text-left"><a href="gobi.html">OFFROADBIKE TOUR</a></li>
-				                            <li class="drow text-left"><a href="#">MOUNTAIN BIKE TOUR</a></li>
-				                            <li class="drow text-left"><a href="#">HORSE RIDING TOUR</a></li>
-				                            <li class="drow text-left"><a href="#">FISHING TOUR</a></li>
-				                        </ul>
-					                </div>
-				                </li>
-				                <li class="dev"><a href="QAA.html" class="nav-link"><b class="color">Q&A</b></a></li>
-				                <li class="dev"><a href="#gallery-section" class="nav-link"><b class="color">Gallery</b></a></li>
-				                <li class="dev"><a href="#footer-section" class="nav-link"><b class="color">Contact</b></a></li>
-				            </ul>
-			            </nav> 
+					    <ul class="menu__list">
+					     	<li class="menu__group" style="margin-left: 36.5%;"><a href="#home-section" class="menu__link">Home</a></li>
+					        <li class="menu__group"><a href="#about-section" class="menu__link">About US</a></li>
+					        <li class="menu__group"><a href="#tour-section" class="menu__link">Tours <i class="fa fa-angle-down"></i></a>
+					        	<ul class="dropdown">
+					                <li><a href="#">Off Road bike tour</a></li>
+					                <li><a href="#">Mountain bike tour </a></li>
+					                <li><a href="#">Horse riding tour</a></li>
+					                <li><a href="#">Fishing tour</a></li>
+					            </ul>
+					        </li>
+					        <li class="menu__group"><a href="QAA.html" class="menu__link">Q&A</a></li>
+					        <li class="menu__group"><a href="#gallery-section" class="menu__link">Gallery</a></li>
+					        <li class="menu__group "><a href="#footer-section" class="menu__link">Contact</a></li>
+					    </ul>
 		            </div>
 	       		</div>
 	        </div>  
@@ -129,7 +121,7 @@
 	<!-- header VIDEO -->
 	<div class="headerVideo" >
 	    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-	      <source src="images/My Video 1.mp4" type="video/mp4">
+	      	<source src="images/My Video 1.mp4" type="video/mp4">
 	    </video>
 	</div>
 	<!-- header VIDEO END-->
@@ -356,7 +348,7 @@
 </div>
  <a href="#" class="back-to-top"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
 <!-- Footer -->
-    <section id="footer-section" style="margin-top: 40px;">
+    <section id="footer-section" style="margin-top: 200px;">
 	    <footer class="site-footer">
 	        <div class="container-fluid" style="margin-top: 2%;"> 
 		        <div class="container1">
@@ -364,7 +356,7 @@
 			            <!-- COMPANY ADRESS -->   
 			            <div class="col-sm-4 ">
 			              	<div class="footer-div" style="margin-left: 20px;">株式会社カイラス</div>
-				            <ul style="">
+				            <ul>
 				                <li class="footer-li" style="margin-top: 7px;"> 〒123−0022 東京都多摩市一丁目2-89 国立ビル１階</li>
 				                <li class="footer-li" style="margin-top: -10px;">TEL: 030-0000-1234</li>
 				                <li class="footer-li" style="margin-top: -10px;">FAX: 030-1234-5678</li>
