@@ -1421,24 +1421,24 @@ h1, h2, h3, h4, h5,h6,
 
 .service-2 .svg img {
     max-width: 100%;
-      /*opacity: .3;*/
-    background: #CA9C4E; }
+     }
 
 .service-2 .svg {
   width:100%;
-  margin-bottom: 20px; }
-
-
-.service-2 .svg img:hover {
-  max-width: 100%;
-    opacity: .6;
+  margin-bottom: 20px; 
 }
 
+
+/*.service-2 .svg img:hover {
+  max-width: 100%;
+    opacity: .6;
+
+}
 .service-2 .svg:hover {
   width:100%;
   margin-bottom: 20px; 
   background: black;
-}
+}*/
    
   .service-2 h3 {
     font-size: 20px;

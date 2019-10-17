@@ -36,7 +36,7 @@
     }
   	</style>
 </head>
-<body>
+<body >
 <!-- header -->
 	<header class="site-navbar" style="background-color: white; ">
 		 <div class="container">
@@ -86,12 +86,11 @@
 												<th>
 												</th>
 												<th>
-													<button type="submit" id="submit" class="btn btn-primary form-control" style=" margin-top: 10px; ">送信</button>
+													<button type="submit" id="submit" class="btn btn-primary form-control" style=" margin-top: 10px;" onClick="insert_value()">送信</button>
 												</th>
 											</tr>
 										</table>	
-							            
-							            <small style="color:black;"><div class="thanks success"></div></small>
+							            <small style="color:black;"><div class="thanks success container"></div></small>
 							        </form>	             
 								</div>
 							</div>
@@ -99,7 +98,7 @@
 	            	</div>
 	            	<div class="row">
 					    <ul class="menu__list">
-					     	<li class="menu__group" style="margin-left: 36.5%;"><a href="#home-section" class="menu__link">Home</a></li>
+					     	<li class="menu__group push"><a href="#home-section" class="menu__link">Home</a></li>
 					        <li class="menu__group"><a href="#about-section" class="menu__link">About US</a></li>
 					        <li class="menu__group"><a href="#tour-section" class="menu__link">Tours <i class="fa fa-angle-down"></i></a>
 					        	<ul class="dropdown">
@@ -111,7 +110,7 @@
 					        </li>
 					        <li class="menu__group"><a href="QAA.html" class="menu__link">Q&A</a></li>
 					        <li class="menu__group"><a href="#gallery-section" class="menu__link">Gallery</a></li>
-					        <li class="menu__group "><a href="#footer-section" class="menu__link">Contact</a></li>
+					        <li class="menu__group"><a href="#footer-section" class="menu__link">Contact</a></li>
 					    </ul>
 		            </div>
 	       		</div>
@@ -134,7 +133,7 @@
 		        <div class="row">
 		            <div class="col-md-15 pr-md-5 mr-auto">
 			            <h2 class="line-bottom" >WELCOME TO SORAKO OFF-ROAD</h2>
-			            <p>Established in 2015, we have turned into the leading prime enduro tour operator in Mongolia. In late 2017 we became official importer & dealer for Husqvarna bikes, which will guarantee you the best equipment in entire Mongolia, including perfectly trained staff and service. With almost 140 riders coming from over 25 countries this summer we are fully booked for this season. 2020 season sales have started, make sure to get your spot early enough and be part of a magical experience. We are granting a 20% off early bird rate on the total tour price for bookings reaching us before May 15th. Mongolia - a unique destination for unique visitors. </p>
+			            <p>2015年に設立され、モンゴルの主要なエンデューロツアーオペレーターになりました。 2017年後半、ハスクバーナバイクの公式輸入業者およびディーラーになりました。これにより、完璧に訓練されたスタッフとサービスを含む、モンゴル全体で最高の機器が保証されます。 今年の夏、25か国以上から140人近いライダーが来場しているため、今シーズンは満席です。2020年シーズンの販売が開始されました。スポットを十分に早く獲得し、魔法の体験に参加してください。 5月15日までに到着した予約については、ツアーの合計金額に対してアーリーバード料金が20％オフになります。 モンゴル-ユニークな訪問者のためのユニークな目的地。</p>
 		            </div>
 		        </div>
 	        </div>
@@ -150,8 +149,13 @@
             <div class="row align-items-stretch">          	
 	            <div class="col-md-14 mb-5 mb-lg-5 col-lg-3">
 	             	<div class="service-2 ">
-		                <div class="svg">
-		                   <a href="dornod.html"> <img src="images/tours/tour1.jpg" alt="Image" class=""></a>
+		                <div class="svg img__wrap">
+		                   	<a href="dornod.html"> <img src="images/tours/tour1.jpg" alt="Image" class=""></a>
+						  	<div class="img__description_layer">
+						   		 <p class="img__description container" style="color: white;"><b>ドルノド県</b><br>
+						   		大きさで世界第４位を誇るモンゴルのゴビ砂漠は首都ウランバートルから南部に約600キロ離れた所に位置する。砂漠でありながらも緑の草原地帯が多いのが特徴です。
+						   		</p>
+						  	</div>
 		                </div>
 		                <a href="dornod.html"> 
 		                   <h3 style="margin-left: 10px;">ドルノド県</h3> 
@@ -160,9 +164,14 @@
 	             	</div>
 	            </div>
 	            <div class="col-md-14 mb-5 mb-lg-5 col-lg-3">
-	                <div class="service-2 h-100">
-		                <div class="svg">
-		                   <a href="gobi.html"> <img src="images/tours/tour3.jpg" alt="Image" class=""></a>
+	                <div class="service-2">
+		                <div class="svg img__wrap">
+		                    <a href="gobi.html"> <img src="images/tours/tour3.jpg" alt="Image" class=""></a>
+		                    <div class="img__description_layer">
+						   		<p class="img__description container" style="color: white;"><b>ゴビ砂漠</b><br>
+						   		大きさで世界第４位を誇るモンゴルのゴビ砂漠は首都ウランバートルから南部に約600キロ離れた所に位置する。砂漠でありながらも緑の草原地帯が多いのが特徴です。
+						   		</p>
+						  	</div>
 		                </div>
 		                <a href="gobi.html"> 
 		                   <h3 style="margin-left: 10px;">ゴビ砂漠</h3> 
@@ -170,34 +179,44 @@
 		                <p><b class="border-top">6日間、650キロ</b></p>
 	                </div>
 	            </div>
-	           <div class="col-md-14 mb-5 mb-lg-5 col-lg-3">
-	              <div class="service-2 h-100">
-		                <div class="svg">
-		                   <a href="gobi.html"> <img src="images/tours/tour3.jpg" alt="Image" class=""></a>
-		                </div>
-		                <a href="gobi.html"> 
-		                   <h3 style="margin-left: 10px;">ゴビ砂漠</h3> 
-		                </a>  
-	                    <p><b class="border-top">6日間、650キロ</b></p>
-	              </div>
-	            </div>
 	            <div class="col-md-14 mb-5 mb-lg-5 col-lg-3">
-		            <div class="service-2 h-100">
-		                <div class="svg">
-		                   <a href="gobi.html"> <img src="images/tours/tour3.jpg" alt="Image" class=""></a>
+	                <div class="service-2">
+		                <div class="svg img__wrap">
+		                    <a href="gobi.html"> <img src="images/tours/tour3.jpg" alt="Image" class=""></a>
+		                    <div class="img__description_layer">
+						   		<p class="img__description container" style="color: white;"><b>ゴビ砂漠</b><br>
+						   		大きさで世界第４位を誇るモンゴルのゴビ砂漠は首都ウランバートルから南部に約600キロ離れた所に位置する。砂漠でありながらも緑の草原地帯が多いのが特徴です。
+						   		</p>
+						  	</div>
 		                </div>
 		                <a href="gobi.html"> 
 		                   <h3 style="margin-left: 10px;">ゴビ砂漠</h3> 
 		                </a>  
 		                <p><b class="border-top">6日間、650キロ</b></p>
-		            </div>
+	                </div>
+	            </div>
+	            <div class="col-md-14 mb-5 mb-lg-5 col-lg-3">
+	                <div class="service-2">
+		                <div class="svg img__wrap">
+		                    <a href="gobi.html"> <img src="images/tours/tour3.jpg" alt="Image" class=""></a>
+		                    <div class="img__description_layer">
+						   		<p class="img__description container" style="color: white;"><b>ゴビ砂漠</b><br>
+						   		大きさで世界第４位を誇るモンゴルのゴビ砂漠は首都ウランバートルから南部に約600キロ離れた所に位置する。砂漠でありながらも緑の草原地帯が多いのが特徴です。
+						   		</p>
+						  	</div>
+		                </div>
+		                <a href="gobi.html"> 
+		                   <h3 style="margin-left: 10px;">ゴビ砂漠</h3> 
+		                </a>  
+		                <p><b class="border-top">6日間、650キロ</b></p>
+	                </div>
 	            </div>
             </div>
         </div>  
 	</section>    
 <!--TOURS END -->
 <!-- Happy user -->
-    <section id="q&a-section">
+    <section id="q&a-section" style="margin-top: 40px;">
     	  <h4 class="  text-center"><b>お客様の声</b></h4>
       	<div class="container testimony-section border-top">
             <div class="carousel-testimony owl-carousel" style="margin-top: 20px;">
@@ -276,67 +295,67 @@
     </section>  
 <!-- Happy user END-->
 <!-- GALLERY -->
-  	<section id="gallery-section" style="margin-top: 20px;">
+  	<section id="gallery-section" style="margin-top: 40px;">
 	    <h4 class="text-center"><b>写真ギャラリー</b></h4>
 	    <div class="container text-center border-top"> 
 	      <!-- FIRST ROW -->
 	     	 <div class="row hes-gallery" style="margin-top: 40px;" >
-		        <div class="col-md-6 mb-5 mb-lg-5  col-lg-2">
+		        <div class="col-md-6 mb-5 mb-lg-5 col-lg-2 col-md-2">
 		            <div class="project-item">  
 		             	<img src="images/gallery/gobi/img_1.jpg" alt="image1" data-subtext="zurag tailbar" class="img-fluid">
 		            </div>   
 		        </div>
-		        <div class="col-md-6 mb-5 mb-lg-5 col-lg-2">
+		        <div class="col-md-6 mb-5 mb-lg-5 col-lg-2 col-md-2">
 		          	<div class="project-item">
 		            	<img src="images/gallery/gobi/img_2.jpg" alt="image2" data-subtext="zurag tailbar" data-alt="kociak" class="img-fluid">
 		          	</div>
 		        </div>
-		        <div class="col-md-6 mb-5 mb-lg-5 col-lg-2">
+		        <div class="col-md-6 mb-5 mb-lg-5 col-lg-2 col-md-2">
 		          	<div class="project-item">
 		           		<img src="images/gallery/gobi/img_3.jpg" alt="image3" data-subtext="zurag tailbar" data-alt="kociak" class="img-fluid">
 		          	</div>
 		        </div>
-		        <div class="col-md-6 mb-5 mb-lg-5 col-lg-2">
+		        <div class="col-md-6 mb-5 mb-lg-5 col-lg-2 col-md-2">
 		          	<div class="project-item">
 		           		<img src="images/gallery/gobi/img_4.jpg" alt="image4" data-subtext="zurag tailbar" data-alt="kociak" class="img-fluid">
 		         	</div>
 		        </div>
-		        <div class="col-md-6 mb-5 mb-lg-5 col-lg-2">
+		        <div class="col-md-6 mb-5 mb-lg-5 col-lg-2 col-md-2">
 		          	<div class="project-item">
 		             	<img src="images/gallery/gobi/img_5.jpg" alt="image5" data-subtext="zurag tailbar" data-alt="kociak" class="img-fluid">
 		          	</div>
 		        </div>
-		        <div class="col-md-6 mb-5 mb-lg-5 col-lg-2">
+		        <div class="col-md-6 mb-5 mb-lg-5 col-lg-2 col-md-2">
 		          	<div class="project-item">
 		             	<img src="images/gallery/gobi/img_6.jpg" alt="image6" data-subtext="zurag tailbar" data-alt="kociak" class=" img-fluid">
 		          	</div>
 		        </div>
-		        <div class="col-md-6 mb-5 mb-lg-5 col-lg-2">
+		        <div class="col-md-6 mb-5 mb-lg-5 col-lg-2 col-md-2">
 		         	 <div class="project-item">
 		            	<img src="images/gallery/gobi/img_1.jpg" alt="image7" data-subtext="zurag tailbar" data-alt="kociak" class="img-fluid">
 		          	</div>
 		        </div>
-		        <div class="col-md-6 mb-5 mb-lg-5 col-lg-2">
+		        <div class="col-md-6 mb-5 mb-lg-5 col-lg-2 col-md-2">
 		         	 <div class="project-item">
 		           		<img src="images/gallery/gobi/img_2.jpg" alt="image8" data-subtext="zurag tailbar" data-alt="kociak" class="img-fluid">
 		         	 </div>
 		        </div>
-		        <div class="col-md-6 mb-5 mb-lg-5 col-lg-2">
+		        <div class="col-md-6 mb-5 mb-lg-5 col-lg-2 col-md-2">
 		         	 <div class="project-item">
 		          		<img src="images/gallery/gobi/img_3.jpg" alt="image9" data-subtext="zurag tailbar" data-alt="kociak" class="img-fluid">
 		          	</div>
 		        </div>
-		        <div class="col-md-6 mb-5 mb-lg-5 col-lg-2">
+		        <div class="col-md-6 mb-5 mb-lg-5 col-lg-2 col-md-2">
 		         	 <div class="project-item">
 		            	<img src="images/gallery/gobi/img_4.jpg" alt="image10" data-subtext="zurag tailbar" data-alt="kociak" class="img-fluid">
 		          	</div>
 		        </div>
-		        <div class="col-md-6 mb-5 mb-lg-5 col-lg-2">
+		        <div class="col-md-6 mb-5 mb-lg-5 col-lg-2 col-md-2">
 		          	<div class="project-item">
 		             	<img src="images/gallery/gobi/img_5.jpg" alt="image12" data-subtext="zurag tailbar" data-alt="kociak" class="img-fluid">
 		         	</div>
 		        </div>
-		        <div class="col-md-6 mb-5 mb-lg-5 col-lg-2">
+		        <div class="col-md-6 mb-5 mb-lg-5 col-lg-2 col-md-2">
 		          	<div class="project-item">
 		             	<img src="images/gallery/gobi/img_6.jpg" alt="image13" data-subtext="zurag tailbar" data-alt="kociak" class=" img-fluid">
 		         	 </div>
@@ -348,7 +367,7 @@
 </div>
  <a href="#" class="back-to-top"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
 <!-- Footer -->
-    <section id="footer-section" style="margin-top: 200px;">
+    <section id="footer-section" style="margin-top: 60px;">
 	    <footer class="site-footer">
 	        <div class="container-fluid" style="margin-top: 2%;"> 
 		        <div class="container1">
@@ -426,9 +445,7 @@
 <script type='text/javascript' src="js/main.js"></script>
 <script type='text/javascript' src="js/toggleQA.js"></script>
   <!-- add js -->
-<!-- <script src="js/add/jquery.min.js"></script> -->
 <script src="js/add/jquery-migrate-3.0.1.min.js"></script>
-<!-- <script src="js/add/jquery.waypoints.min.js"></script> -->
 <script src="js/add/jquery.stellar.min.js"></script>
 <script src="js/add/owl.carousel.min.js"></script>
 <script src="js/add/aos.js"></script>
