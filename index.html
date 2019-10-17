@@ -34,9 +34,39 @@
     .card1:hover {
         background: url("images/logo/fb1.png") no-repeat;
     }
+    #loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid blue;
+  border-bottom: 16px solid blue;
+  width: 60px;
+  height: 60px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+  visibility: hidden;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
   	</style>
 </head>
-<body>
+<body >
 <!-- header -->
 	<header class="site-navbar" style="background-color: white; ">
 		 <div class="container">
@@ -86,12 +116,11 @@
 												<th>
 												</th>
 												<th>
-													<button type="submit" id="submit" class="btn btn-primary form-control" style=" margin-top: 10px; ">送信</button>
+													<button type="submit" id="submit" class="btn btn-primary form-control" style=" margin-top: 10px;" onClick="insert_value()">送信</button>
 												</th>
 											</tr>
 										</table>	
-							            
-							            <small style="color:black;"><div class="thanks success"></div></small>
+							            <small style="color:black;"><div class="thanks success container"></div></small>
 							        </form>	             
 								</div>
 							</div>
@@ -99,7 +128,7 @@
 	            	</div>
 	            	<div class="row">
 					    <ul class="menu__list">
-					     	<li class="menu__group" style="margin-left: 36.5%;"><a href="#home-section" class="menu__link">Home</a></li>
+					     	<li class="menu__group push"><a href="#home-section" class="menu__link">Home</a></li>
 					        <li class="menu__group"><a href="#about-section" class="menu__link">About US</a></li>
 					        <li class="menu__group"><a href="#tour-section" class="menu__link">Tours <i class="fa fa-angle-down"></i></a>
 					        	<ul class="dropdown">
@@ -111,7 +140,7 @@
 					        </li>
 					        <li class="menu__group"><a href="QAA.html" class="menu__link">Q&A</a></li>
 					        <li class="menu__group"><a href="#gallery-section" class="menu__link">Gallery</a></li>
-					        <li class="menu__group "><a href="#footer-section" class="menu__link">Contact</a></li>
+					        <li class="menu__group"><a href="#footer-section" class="menu__link">Contact</a></li>
 					    </ul>
 		            </div>
 	       		</div>
@@ -134,7 +163,8 @@
 		        <div class="row">
 		            <div class="col-md-15 pr-md-5 mr-auto">
 			            <h2 class="line-bottom" >WELCOME TO SORAKO OFF-ROAD</h2>
-			            <p>Established in 2015, we have turned into the leading prime enduro tour operator in Mongolia. In late 2017 we became official importer & dealer for Husqvarna bikes, which will guarantee you the best equipment in entire Mongolia, including perfectly trained staff and service. With almost 140 riders coming from over 25 countries this summer we are fully booked for this season. 2020 season sales have started, make sure to get your spot early enough and be part of a magical experience. We are granting a 20% off early bird rate on the total tour price for bookings reaching us before May 15th. Mongolia - a unique destination for unique visitors. </p>
+			            <p><b>2015年に設立され、モンゴルの主要なエンデューロツアーオペレーターになりました。 2017年後半、ハスクバーナバイクの公式輸入業者およびディーラーになりました。これにより、完璧に訓練されたスタッフとサービスを含む、モンゴル全体で最高の機器が保証されます。 今年の夏、25か国以上から140人近いライダーが来場しているため、今シーズンは満席です。 2020年シーズンの販売が開始されました。スポットを十分に早く獲得し、魔法の体験に参加してください。 5月15日までに到着した予約については、ツアーの合計金額に対してアーリーバード料金が20％オフになります。 モンゴル-ユニークな訪問者のためのユニークな目的地。</b></p><span id="dots">...</span><span id="more">
+			            <button onclick="myFunction()" id="myBtn">Read more</button>
 		            </div>
 		        </div>
 	        </div>
@@ -197,7 +227,7 @@
 	</section>    
 <!--TOURS END -->
 <!-- Happy user -->
-    <section id="q&a-section">
+    <section id="q&a-section" style="margin-top: 40px;">
     	  <h4 class="  text-center"><b>お客様の声</b></h4>
       	<div class="container testimony-section border-top">
             <div class="carousel-testimony owl-carousel" style="margin-top: 20px;">
@@ -276,67 +306,67 @@
     </section>  
 <!-- Happy user END-->
 <!-- GALLERY -->
-  	<section id="gallery-section" style="margin-top: 20px;">
+  	<section id="gallery-section" style="margin-top: 40px;">
 	    <h4 class="text-center"><b>写真ギャラリー</b></h4>
 	    <div class="container text-center border-top"> 
 	      <!-- FIRST ROW -->
 	     	 <div class="row hes-gallery" style="margin-top: 40px;" >
-		        <div class="col-md-6 mb-5 mb-lg-5  col-lg-2">
+		        <div class="col-md-6 mb-5 mb-lg-5 col-lg-2 col-md-2">
 		            <div class="project-item">  
 		             	<img src="images/gallery/gobi/img_1.jpg" alt="image1" data-subtext="zurag tailbar" class="img-fluid">
 		            </div>   
 		        </div>
-		        <div class="col-md-6 mb-5 mb-lg-5 col-lg-2">
+		        <div class="col-md-6 mb-5 mb-lg-5 col-lg-2 col-md-2">
 		          	<div class="project-item">
 		            	<img src="images/gallery/gobi/img_2.jpg" alt="image2" data-subtext="zurag tailbar" data-alt="kociak" class="img-fluid">
 		          	</div>
 		        </div>
-		        <div class="col-md-6 mb-5 mb-lg-5 col-lg-2">
+		        <div class="col-md-6 mb-5 mb-lg-5 col-lg-2 col-md-2">
 		          	<div class="project-item">
 		           		<img src="images/gallery/gobi/img_3.jpg" alt="image3" data-subtext="zurag tailbar" data-alt="kociak" class="img-fluid">
 		          	</div>
 		        </div>
-		        <div class="col-md-6 mb-5 mb-lg-5 col-lg-2">
+		        <div class="col-md-6 mb-5 mb-lg-5 col-lg-2 col-md-2">
 		          	<div class="project-item">
 		           		<img src="images/gallery/gobi/img_4.jpg" alt="image4" data-subtext="zurag tailbar" data-alt="kociak" class="img-fluid">
 		         	</div>
 		        </div>
-		        <div class="col-md-6 mb-5 mb-lg-5 col-lg-2">
+		        <div class="col-md-6 mb-5 mb-lg-5 col-lg-2 col-md-2">
 		          	<div class="project-item">
 		             	<img src="images/gallery/gobi/img_5.jpg" alt="image5" data-subtext="zurag tailbar" data-alt="kociak" class="img-fluid">
 		          	</div>
 		        </div>
-		        <div class="col-md-6 mb-5 mb-lg-5 col-lg-2">
+		        <div class="col-md-6 mb-5 mb-lg-5 col-lg-2 col-md-2">
 		          	<div class="project-item">
 		             	<img src="images/gallery/gobi/img_6.jpg" alt="image6" data-subtext="zurag tailbar" data-alt="kociak" class=" img-fluid">
 		          	</div>
 		        </div>
-		        <div class="col-md-6 mb-5 mb-lg-5 col-lg-2">
+		        <div class="col-md-6 mb-5 mb-lg-5 col-lg-2 col-md-2">
 		         	 <div class="project-item">
 		            	<img src="images/gallery/gobi/img_1.jpg" alt="image7" data-subtext="zurag tailbar" data-alt="kociak" class="img-fluid">
 		          	</div>
 		        </div>
-		        <div class="col-md-6 mb-5 mb-lg-5 col-lg-2">
+		        <div class="col-md-6 mb-5 mb-lg-5 col-lg-2 col-md-2">
 		         	 <div class="project-item">
 		           		<img src="images/gallery/gobi/img_2.jpg" alt="image8" data-subtext="zurag tailbar" data-alt="kociak" class="img-fluid">
 		         	 </div>
 		        </div>
-		        <div class="col-md-6 mb-5 mb-lg-5 col-lg-2">
+		        <div class="col-md-6 mb-5 mb-lg-5 col-lg-2 col-md-2">
 		         	 <div class="project-item">
 		          		<img src="images/gallery/gobi/img_3.jpg" alt="image9" data-subtext="zurag tailbar" data-alt="kociak" class="img-fluid">
 		          	</div>
 		        </div>
-		        <div class="col-md-6 mb-5 mb-lg-5 col-lg-2">
+		        <div class="col-md-6 mb-5 mb-lg-5 col-lg-2 col-md-2">
 		         	 <div class="project-item">
 		            	<img src="images/gallery/gobi/img_4.jpg" alt="image10" data-subtext="zurag tailbar" data-alt="kociak" class="img-fluid">
 		          	</div>
 		        </div>
-		        <div class="col-md-6 mb-5 mb-lg-5 col-lg-2">
+		        <div class="col-md-6 mb-5 mb-lg-5 col-lg-2 col-md-2">
 		          	<div class="project-item">
 		             	<img src="images/gallery/gobi/img_5.jpg" alt="image12" data-subtext="zurag tailbar" data-alt="kociak" class="img-fluid">
 		         	</div>
 		        </div>
-		        <div class="col-md-6 mb-5 mb-lg-5 col-lg-2">
+		        <div class="col-md-6 mb-5 mb-lg-5 col-lg-2 col-md-2">
 		          	<div class="project-item">
 		             	<img src="images/gallery/gobi/img_6.jpg" alt="image13" data-subtext="zurag tailbar" data-alt="kociak" class=" img-fluid">
 		         	 </div>
@@ -348,7 +378,7 @@
 </div>
  <a href="#" class="back-to-top"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
 <!-- Footer -->
-    <section id="footer-section" style="margin-top: 200px;">
+    <section id="footer-section" style="margin-top: 60px;">
 	    <footer class="site-footer">
 	        <div class="container-fluid" style="margin-top: 2%;"> 
 		        <div class="container1">
