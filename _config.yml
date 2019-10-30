@@ -1,0 +1,26 @@
+collections:
+  tour:
+    output: true
+    permalink: /tour/:path/
+
+  happyUser:
+    output: true
+    permalink: /happyUser/:path/ 
+  
+  gallery:
+    output: true
+    permalink: /gallery/:path/   
+
+  gobi:
+    output: true
+    permalink: /gobi/:path/       
+  my_collection:
+    output: true
+    permalink: /:collection/:name
+jekyll_admin:
+  hidden_links:
+    - posts
+    - pages
+    - staticfiles
+    - datafiles
+    - configuration    

@@ -1,0 +1,14 @@
+- src = images/dornod-header.jpg
+  date = 10-01-2017
+  name = cute cat
+  category = cats  # if you need to filter by category ?   
+
+- src = images/dornod-header.jpg
+  date = 12-01-2017
+  name = grumpy cat-2
+  category = cats 
+
+- src = images/dornod-header.jpg
+  date = 10-11-2016
+  name = cool dog
+  category = dogs  
