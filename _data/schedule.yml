@@ -1,0 +1,49 @@
+- day: １日目
+  expenses: モンゴルの首都ウランバートルへ向かいます。チンギスハーン国際空港に到着後、ホテルへご案内。チェックイン後に夕食。明日からのツアーの説明ミーティング。
+  transportation:  assets/images/logo/plane.png
+  morning: 無
+  lunch:  無
+  dinner:  有
+  Lodging:  assets/images/logo/hotel.png
+
+- day: 2日目
+  expenses: ウランバートル⇨南ゴビのダランザドガド市まで✈️で1.5時間、ダランザドガド市⇨バヤンザグ（砂漠の林という意味）まで１６０キロ⇨モルツォグ砂丘まで４０キロオフロードバイクツーリング。　　ウランバートル市から空路で南ゴビ砂漠へ出発、広大な砂漠に到着、ダランザドガド市の空港からバイクを受け取り、サポートカー、スタッフ付の万全な体制で本格的なゴビ砂漠オフロードバイクツーリング開始、バヤンザグ（砂漠の林という意味）へ向かって出発。巨大な大平原を走ります。バヤンザグは古代恐竜タルボサウルスの化石が発掘された場所です。ここは1922年、アメリカの古生物学者ロイ・チャップマン・アンドリューズが世界で初めて恐竜の卵の入った巣の化石を発見した場所。その発見により恐竜が卵で子孫を残すことが証明されました。そのためバヤンザクは恐竜化石の聖地としても知られています。今では殺風景でさえあるバヤンザクの風景ですが、約6500年前以上には巨大な恐竜が闊歩する豊かな土地だったことがうかがえますね。ゴビ砂漠に生息する希少な動植物を観察。ゴビの絹の砂丘をラクダや徒歩で散策。バヤンザグからモルツォグ砂漠へ向かう。ラクダに乗り砂漠を歩く。
+  transportation:  assets/images/logo/plane.png  
+  transportation1:  assets/images/logo/bike.png  
+  morning: 有
+  lunch:  有
+  dinner:  有
+  Lodging:  assets/images/logo/tents.png
+
+- day: 3日目
+  expenses: モルツォグ砂丘⇨ホンゴル砂漠２００キロ、南ゴビで一番大きな砂漠です。モンゴルのゴビは国土面積の2.5％を占めるがそのほんの小さな分が生き物が住めない所である。ホンゴル砂漠は広さ15〜20キロ、長さ180キロの面積を占める。ホンゴル砂漠の北側をホンゴル川が流れる。この川の辺には芝と花をはじめ様々な植物が生えている。ハイキング、ラクダに乗る体験、ツーリングには最高の場所。日の出を観察、夜は満天の星空を観察、
+  transportation1:  assets/images/logo/bike.png 
+  morning: 有
+  lunch:  有
+  dinner:  有
+  Lodging:  assets/images/logo/tents.png
+
+- day: 4日目
+  expenses: ホンゴル砂漠⇨ヨリーン・アム　２００キロ、「ワシの口」を意味するこの谷は、標高2200ｍの高地にあり初夏でも雪が残るほど涼しい渓谷です。湖の周辺で生息するアルガリ（野生の羊）やヤンギル（野生の山羊）、ナキウサギなどの野生動物を探しながら渓谷を付近散策はなかなか楽しい。ヨリーンアムはゴビ・ゴルバンサイハン山脈に位置する渓谷。
+  transportation1:  assets/images/logo/bike.png 
+  morning: 有
+  lunch:  有
+  dinner:  有
+  Lodging:  assets/images/logo/tents.png 
+
+- day: 5日目
+  expenses: ヨリーン・アム⇨ダランザドガド市４０キロ、ヨリーン・アムからダランザドガド市の空港へ、国内線でウランバートル市へ1.5時間の直行便のフライト。ウランバートル到着後、ホテルへ移動、ホテルチェックイン、自由時間。ショッピング、夕方にはモンゴル民族音楽団によるコンサートを鑑賞、夕方にはさようならパーティ。
+  transportation1:  assets/images/logo/bike.png 
+  morning: 有
+  lunch:  有
+  dinner:  有
+  Lodging:  assets/images/logo/tents.png
+
+- day: 6日目
+  expenses: 早朝、チエックアウト、専用車でチンギスハーン国際空港へお見送り、楽しかった思い出共にご帰国。
+  transportation:  assets/images/logo/plane.png 
+  morning: 有
+  lunch:  無
+  dinner:  無
+  Lodging:  assets/images/logo/hotel.png
+      
