@@ -10,24 +10,24 @@ title: home page
 </div>
 <!-- header VIDEO END-->
 <!-- ABOUT US -->
-    <section id="about-section">
-        <div class="site-section">
-	        <div class="container">
-		        <div class="row">
-		            <div class="col-md-15 pr-md-5 mr-auto">
-		            	{% for indexAboutUs in site.data.indexAboutUs %}	
-			            <h2 class="line-bottom" >{{ indexAboutUs.title }}</h2>
-			            <p>{{ indexAboutUs.content }}</p>
-			            {% endfor %}  
-		            </div>
-		        </div>
+<section id="about-section">
+    <div class="site-section">
+        <div class="container">
+	        <div class="row">
+	            <div class="col-md-15 pr-md-5 mr-auto">
+	            	{% for indexAboutUs in site.data.indexAboutUs %}	
+		            <h2 class="line-bottom" >{{ indexAboutUs.title }}</h2>
+		            <p>{{ indexAboutUs.content }}</p>
+		            {% endfor %}  
+	            </div>
 	        </div>
         </div>
-    </section>
+    </div>
+</section>
 <!-- ABOUT US END --> 
 <!-- TOUR START -->
 <section id="tour-section" style="margin-top: 20px;">
-<h4 class="text-center"><b>ツアーガイド</b></h4>
+	<h4 class="text-center"><b>ツアーガイド</b></h4>
 	<div class="container-fluid">
         <div class="row align-items-stretch">          	
 		{% for tour in site.data.tour %}
