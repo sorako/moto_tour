@@ -1,0 +1,79 @@
+<header class="site-navbar" style="background-color: white; ">
+	<div class="container">
+        <div class="row align-items-center position-relative">
+       		<div class="col-4 text-center">
+              	<a href="index.html"><img src="assets/images/logo/logoSorako.png" ></a>
+            </div>
+            <div class="col-6">
+            	<div class="row">
+            		<div class="col-12 text-right">
+	            		<a href="www.facebook.com"> <img src="assets/images/logo/head_fb.png"></a>
+	            		<a href="www.facebook.com" style="margin-left: 10px;"> <img src="assets/images/logo/head_Instegram.png"></a>
+	            		<a href="#" id="myBtn" style="margin-left: 10px; color:#0B2161;"><b> 最新情報を受け取る</b></a>
+	            		<span><b class="color" style="margin-left: 20px;">+9768888-8888</b></span>
+						<div id="myModal" class="modal">
+							<div class="modal-content">
+							    <span class="close">&times;</span>
+							    <h2 class="text-center"><b>最新情報に登録する</b></h2>
+							    <p class="text-center"><b>毎月のメールニュースレターを受け取る他の探検家に参加してください。これには、当社のサービスに<br>関する最新情報に加えて、時折のプロモーションの事前通知が含まれます。 いつでも退会できます。</b></p>
+							    <form id="test-form1" class="form-inline" style="margin-top: 30px;">
+								    <table>
+										<tr>
+											<th>
+												<p class="form-control1" style="background-color: white;"><b>お名前<span style="color: red;">*</span>:</b></p>
+											</th>
+											<th>
+												<input  type="text"  name="name" class="form-control form-inline" id="name" placeholder="お名前" required="" oninvalid="this.setCustomValidity('お名前を入れてください')" oninput="setCustomValidity('')">
+											</th>
+										</tr>
+										<tr>
+											<th>
+												<p class="form-control1" style="background-color: white;"><b>お電話番号:</b></p>
+											</th>
+											<th>
+												<input  type="number"  name="tel" class="form-control" id="tel" placeholder="電話番号" equired="" oninvalid="this.setCustomValidity('お電話番号を入れてください')" oninput="setCustomValidity('')" style="margin-top: 10px;">
+											</th>
+										</tr>
+										<tr>
+											<th>
+												<p class="form-control1" style="background-color: white;"><b>メ-ルアドレス<span style="color: red;">*</span>:</b></p>
+											</th>
+											<th>
+												<input  type="email" name="Email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="メ-ルアドレス" equired="" oninvalid="this.setCustomValidity('メ-ルアドレスを入れてください')" oninput="setCustomValidity('')"  style="margin-top: 10px;">
+											</th>
+										</tr>
+										<tr>
+											<th>
+											</th>
+											<th>
+												<button type="submit" id="submit" class="btn btn-primary form-control" style=" margin-top: 10px;" onClick="insert_value()">送信</button>
+											</th>
+										</tr>
+									</table>	
+						            <small style="color:black;"><div class="thanks success container"></div></small>
+						        </form>	             
+							</div>
+						</div>
+            		</div>
+            	</div>
+            	<div class="row">
+				    <ul class="menu__list">
+				     	<li class="menu__group push"><a href="#home-section" class="menu__link">Home</a></li>
+				        <li class="menu__group"><a href="#about-section" class="menu__link">About US</a></li>
+				        <li class="menu__group"><a href="#tour-section" class="menu__link">Tours <i class="fa fa-angle-down"></i></a>
+				        	<ul class="dropdown">
+				                <li><a href="#">Off Road bike tour</a></li>
+				                <li><a href="#">Mountain bike tour </a></li>
+				                <li><a href="#">Horse riding tour</a></li>
+				                <li><a href="#">Fishing tour</a></li>
+				            </ul>
+				        </li>
+				        <li class="menu__group"><a href="QAA.html" class="menu__link">Q&A</a></li>
+				        <li class="menu__group"><a href="#gallery-section" class="menu__link">Gallery</a></li>
+				        <li class="menu__group"><a href="#footer-section" class="menu__link">Contact</a></li>
+				    </ul>
+	            </div>
+       		</div>
+        </div>  
+    </div>
+</header>
